@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (https://fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" gorn="0" height="1.1277211in" id="svg5762" version="1.2" viewBox="0 0 123.19384 81.195706" width="1.7110271in" x="0in"  y="0in">
+    <desc id="desc1" >
+        <referenceFile >LCD-FM-RX-V2_0.svg</referenceFile>
+    </desc>
+    <defs id="defs5766" >
+        <rect gorn="0.1.0" height="9.213788" id="rect1232" width="14.47881" x="201.05803"  y="170.78415"/>
+        <rect gorn="0.1.1" height="17.11132" id="rect1134" width="120.43738" x="137.87776"  y="91.150696"/>
+        <rect gorn="0.1.2" height="16.12413" id="rect1063" width="100.69354" x="145.44623"  y="91.808823"/>
+        <linearGradient id="linearGradient899" >
+            <stop id="stop895" offset="0" style="stop-color:#008000;stop-opacity:1;" />
+            <stop id="stop897" offset="1" style="stop-color:#008000;stop-opacity:0;" />
+        </linearGradient>
+        <rect gorn="0.1.4" height="19.743832" id="rect1732" width="150.38219" x="105.6295"  y="180.327"/>
+        <rect gorn="0.1.5" height="11.846299" id="rect1726" width="150.05313" x="106.61669"  y="186.90828"/>
+        <linearGradient gradientTransform="translate(-82.409513,-65.401594)" gradientUnits="userSpaceOnUse" href="#linearGradient899" id="linearGradient901" x1="199.16571" x2="-64.414192"  y1="99.706093" y2="142.6489"/>
+    </defs>
+    <g gorn="0.2" id="g1" >
+        <path d="M 0.1761615,0.17609247 H 123.01769 V 81.019616 H 0.1761615 Z" fill="#378f6b" fill-opacity="1" font-size="2.56001" gorn="0.2.0" id="rect3008-8" stroke="#000000" stroke-opacity="1" stroke-width="0.352323" style="display:inline;fill:#008080;fill-opacity:1;stroke-miterlimit:4" />
+        <path d="m 121.91821,5.9227595 c 0,2.30569 -1.86913,4.1748195 -4.17481,4.1748195 -2.30569,0 -4.17481,-1.8691295 -4.17481,-4.1748195 0,-2.305678 1.86913,-4.174799 4.17481,-4.174799 2.30569,0 4.17481,1.869121 4.17481,4.174799 z" fill="#faf7f4" fill-opacity="1" gorn="0.2.1" id="path3786-6-0-1-4-6" stroke="#ffc928" stroke-opacity="1" stroke-width="0.721255" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 120.81121,5.9227595 c 0,1.69483 -1.37393,3.06876 -3.06875,3.06876 -1.69482,0 -3.06876,-1.37393 -3.06876,-3.06876 0,-1.694821 1.37394,-3.068744 3.06876,-3.068744 1.69482,0 3.06875,1.373923 3.06875,3.068744 z" fill="#80bf40" fill-opacity="0.156863" gorn="0.2.2" id="path6213-6-6-1-20-5" stroke="#0e100d" stroke-opacity="1" stroke-width="0.949111" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 9.8720655,5.7993615 c 0,2.30569 -1.86913,4.17482 -4.17481,4.17482 -2.30569,0 -4.17481,-1.86913 -4.17481,-4.17482 0,-2.30568 1.86913,-4.1748 4.17481,-4.1748 2.30569,0 4.17481,1.86912 4.17481,4.1748 z" fill="#faf7f4" fill-opacity="1" gorn="0.2.3" id="path3786-6-0-1-4-4-5" stroke="#ffc928" stroke-opacity="1" stroke-width="0.721255" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 8.7650655,5.7993615 c 0,1.69483 -1.37393,3.06875 -3.06875,3.06875 -1.69482,0 -3.06876,-1.37392 -3.06876,-3.06875 0,-1.69482 1.37394,-3.06875 3.06876,-3.06875 1.69482,0 3.06875,1.37393 3.06875,3.06875 z" fill="#80bf40" fill-opacity="0.156863" gorn="0.2.4" id="path6213-6-6-1-2-4" stroke="#0e100d" stroke-opacity="1" stroke-width="0.949111" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 9.2291655,80.918146 v -7.33864 h 0.01456 c 0.132298,-0.97216 1.1336495,-1.73104 2.3306895,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 0.0011,0.008 -9.6e-4,0.0168 0,0.0248 0.008,0.0656 0.01456,0.12776 0.01456,0.19504 0,0.0672 -0.0066,0.14168 -0.01456,0.20728 v 6.91192 H 9.2291655 Z" fill="#fcc460" fill-opacity="1" gorn="0.2.5" id="connector14pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 12.936865,74.186146 c 0,0.75648 -0.613283,1.36976 -1.36981,1.36976 -0.756523,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.613284,-1.36984 1.36981,-1.36984 0.756524,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.6" id="path1" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 16.429165,80.918146 v -7.33864 h 0.01456 c 0.132304,-0.97216 1.13365,-1.73104 2.330702,-1.73104 1.19703,0 2.18382,0.75888 2.31611,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.661372 z" fill="#fcc460" fill-opacity="1" gorn="0.2.7" id="connector13pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 20.136867,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36981,1.36976 -0.75652,0 -1.369802,-0.61328 -1.369802,-1.36976 0,-0.75656 0.613282,-1.36984 1.369802,-1.36984 0.75652,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.8" id="path2" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 23.629167,80.918146 v -7.33864 h 0.0146 c 0.13229,-0.97216 1.13365,-1.73104 2.33068,-1.73104 1.19704,0 2.18383,0.75888 2.31613,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.9" id="connector12pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 27.336867,74.186146 c 0,0.75648 -0.61328,1.36976 -1.36981,1.36976 -0.75652,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61329,-1.36984 1.36981,-1.36984 0.75653,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.10" id="path3" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 30.829167,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.3307,-1.73104 1.19703,0 2.18382,0.75888 2.31611,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66137 z" fill="#fcc460" fill-opacity="1" gorn="0.2.11" id="connector11pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 34.536867,74.186146 c 0,0.75648 -0.61329,1.36976 -1.3698,1.36976 -0.75653,0 -1.36982,-0.61328 -1.36982,-1.36976 0,-0.75656 0.61328,-1.36984 1.36982,-1.36984 0.75651,0 1.3698,0.61328 1.3698,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.12" id="path4" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 38.029067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13366,-1.73104 2.33069,-1.73104 1.19704,0 2.18383,0.75888 2.31613,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66142 z" fill="#fcc460" fill-opacity="1" gorn="0.2.13" id="connector10pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 41.737067,74.186146 c 0,0.75648 -0.61328,1.36976 -1.36981,1.36976 -0.75653,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61328,-1.36984 1.36981,-1.36984 0.75653,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.14" id="path5" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 45.229067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13364,-1.73104 2.33068,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66137 z" fill="#fcc460" fill-opacity="1" gorn="0.2.15" id="connector9pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 48.937067,74.186146 c 0,0.75648 -0.61327,1.36976 -1.3698,1.36976 -0.75652,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61329,-1.36984 1.36981,-1.36984 0.75653,0 1.3698,0.61328 1.3698,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.16" id="path6" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 52.429067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.33069,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.17" id="connector8pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 56.137067,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36981,1.36976 -0.75653,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61328,-1.36984 1.36981,-1.36984 0.75652,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.18" id="path7" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 59.629067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13364,-1.73104 2.33068,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66137 z" fill="#fcc460" fill-opacity="1" gorn="0.2.19" id="connector7pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 63.337067,74.186146 c 0,0.75648 -0.61327,1.36976 -1.3698,1.36976 -0.75652,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61329,-1.36984 1.36981,-1.36984 0.75653,0 1.3698,0.61328 1.3698,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.20" id="path8" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 66.829067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.3307,-1.73104 1.19703,0 2.18382,0.75888 2.31611,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.21" id="connector6pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 70.537067,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36981,1.36976 -0.75653,0 -1.36982,-0.61328 -1.36982,-1.36976 0,-0.75656 0.61329,-1.36984 1.36982,-1.36984 0.75652,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.22" id="path9" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 74.029067,80.918146 v -7.33864 h 0.0146 c 0.13229,-0.97216 1.13365,-1.73104 2.33068,-1.73104 1.19704,0 2.18382,0.75888 2.31613,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.23" id="connector5pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 77.737067,74.186146 c 0,0.75648 -0.61327,1.36976 -1.3698,1.36976 -0.75652,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61329,-1.36984 1.36981,-1.36984 0.75653,0 1.3698,0.61328 1.3698,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.24" id="path10" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 81.229067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.33069,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.25" id="connector4pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 84.937067,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36982,1.36976 -0.75652,0 -1.3698,-0.61328 -1.3698,-1.36976 0,-0.75656 0.61328,-1.36984 1.3698,-1.36984 0.75653,0 1.36982,0.61328 1.36982,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.26" id="path11" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 88.429067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13366,-1.73104 2.33069,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.27" id="connector3pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 92.137067,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36981,1.36976 -0.75653,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61328,-1.36984 1.36981,-1.36984 0.75652,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.28" id="path12" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 95.629067,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.33069,-1.73104 1.19704,0 2.183823,0.75888 2.316123,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.661413 z" fill="#fcc460" fill-opacity="1" gorn="0.2.29" id="connector2pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 99.337067,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36982,1.36976 -0.75651,0 -1.3698,-0.61328 -1.3698,-1.36976 0,-0.75656 0.61329,-1.36984 1.3698,-1.36984 0.75653,0 1.36982,0.61328 1.36982,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.30" id="path13" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 102.82907,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13366,-1.73104 2.33069,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66138 z" fill="#fcc460" fill-opacity="1" gorn="0.2.31" id="connector1pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 106.53707,74.186146 c 0,0.75648 -0.61329,1.36976 -1.36981,1.36976 -0.75653,0 -1.36981,-0.61328 -1.36981,-1.36976 0,-0.75656 0.61328,-1.36984 1.36981,-1.36984 0.75652,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.32" id="connector1pin-1" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="m 110.02907,80.918146 v -7.33864 h 0.0146 c 0.1323,-0.97216 1.13365,-1.73104 2.33069,-1.73104 1.19704,0 2.18382,0.75888 2.31612,1.73104 8e-4,0.008 -8e-4,0.0168 0,0.0248 0.008,0.0656 0.0146,0.12776 0.0146,0.19504 0,0.0672 -0.006,0.14168 -0.0146,0.20728 v 6.91192 h -4.66141 z" fill="#fcc460" fill-opacity="1" gorn="0.2.33" id="connector0pin" stroke="#0e100d" stroke-opacity="1" stroke-width="0.426423" style="display:inline" />
+        <path d="m 113.73707,74.186146 c 0,0.75648 -0.61328,1.36976 -1.36981,1.36976 -0.75651,0 -1.3698,-0.61328 -1.3698,-1.36976 0,-0.75656 0.61329,-1.36984 1.3698,-1.36984 0.75653,0 1.36981,0.61328 1.36981,1.36984 z" fill="#fffdfa" fill-opacity="1" gorn="0.2.34" id="path14" stroke="#0e100d" stroke-opacity="1" stroke-width="0.548574" style="display:inline;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path d="M 25.846907,17.87184 H 101.5425 V 53.698736 H 25.846907 Z" fill="#b5d776" fill-opacity="1" gorn="0.2.35" id="rect3835-6" stroke="#000000" stroke-opacity="1" stroke-width="0.684874" style="display:inline;stroke-miterlimit:4" />
+        <path d="m 26.428261,35.785289 v -17.39924 h 37.266444 37.266455 v 17.39924 17.399234 H 63.694705 26.428261 Z" fill="#00ffff" gorn="0.2.36" id="path592" stroke="#999999" stroke-width="0.209875" style="fill-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;stop-color:#000000" />
+        <g transform="translate(9.9473299,-0.25505974)" >
+            <g >
+                <g >
+                    <g fill="#ffffff" font-size="4.98896" gorn="0.2.37.0.0.0" id="text1140" stroke-width="0.749999" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                        <text fill="#ffffff" font-size="4.98896" gorn="0.2.37.0.0.0.0" id="tspan1138" stroke-width="0.749999" x="24.70068"  y="11.845919">LCD-FM-RX-V2.0</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="scale(1.0575307,0.94559903)" >
+            <g >
+                <g >
+                    <g gorn="0.2.38.0.0.0" id="g17" >
+                        <g gorn="0.2.38.0.0.0.0" id="g16" >
+                            <g gorn="0.2.38.0.0.0.0.0" id="g15" >
+                                <g gorn="0.2.38.0.0.0.0.0.0" id="g14" >
+                                    <g font-size="3.63108" gorn="0.2.38.0.0.0.0.0.0.0" id="text1194" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.38.0.0.0.0.0.0.0.0" id="tspan1192" stroke-width="0.7092" style="font-size:5.66928606px" x="8.4211569"  y="74.12085">L</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="scale(1.0575307,0.94559903)" >
+            <g >
+                <g >
+                    <g gorn="0.2.39.0.0.0" id="g21" >
+                        <g gorn="0.2.39.0.0.0.0" id="g20" >
+                            <g gorn="0.2.39.0.0.0.0.0" id="g19" >
+                                <g gorn="0.2.39.0.0.0.0.0.0" id="g18" >
+                                    <g font-size="3.63108" gorn="0.2.39.0.0.0.0.0.0.0" id="text1198" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.39.0.0.0.0.0.0.0.0" id="tspan1196" stroke-width="0.7092" style="font-size:5.66928606px" x="15.422294"  y="74.354218">G</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="scale(1.0575307,0.94559903)" >
+            <g >
+                <g >
+                    <g gorn="0.2.40.0.0.0" id="g25" >
+                        <g gorn="0.2.40.0.0.0.0" id="g24" >
+                            <g gorn="0.2.40.0.0.0.0.0" id="g23" >
+                                <g gorn="0.2.40.0.0.0.0.0.0" id="g22" >
+                                    <g font-size="3.63108" gorn="0.2.40.0.0.0.0.0.0.0" id="text1202" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.40.0.0.0.0.0.0.0.0" id="tspan1200" stroke-width="0.7092" style="font-size:5.66928606px" x="22.423445"  y="74.124039">R</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.41.0.0.0" id="g29" >
+                        <g gorn="0.2.41.0.0.0.0" id="g28" >
+                            <g gorn="0.2.41.0.0.0.0.0" id="g27" >
+                                <g gorn="0.2.41.0.0.0.0.0.0" id="g26" >
+                                    <g font-size="3.63108" gorn="0.2.41.0.0.0.0.0.0.0" id="text1206" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.41.0.0.0.0.0.0.0.0" id="tspan1204" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="33.621605">V+</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.42.0.0.0" id="g33" >
+                        <g gorn="0.2.42.0.0.0.0" id="g32" >
+                            <g gorn="0.2.42.0.0.0.0.0" id="g31" >
+                                <g gorn="0.2.42.0.0.0.0.0.0" id="g30" >
+                                    <g font-size="3.63108" gorn="0.2.42.0.0.0.0.0.0.0" id="text1210" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.42.0.0.0.0.0.0.0.0" id="tspan1208" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="40.389389">V-</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.43.0.0.0" id="g37" style="display:inline" >
+                        <g gorn="0.2.43.0.0.0.0" id="g36" >
+                            <g gorn="0.2.43.0.0.0.0.0" id="g35" >
+                                <g gorn="0.2.43.0.0.0.0.0.0" id="g34" >
+                                    <g font-size="3.63108" gorn="0.2.43.0.0.0.0.0.0.0" id="text1214" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.43.0.0.0.0.0.0.0.0" id="tspan1212" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="47.390495">F+</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.44.0.0.0" id="g41" >
+                        <g gorn="0.2.44.0.0.0.0" id="g40" >
+                            <g gorn="0.2.44.0.0.0.0.0" id="g39" >
+                                <g gorn="0.2.44.0.0.0.0.0.0" id="g38" >
+                                    <g font-size="3.63108" gorn="0.2.44.0.0.0.0.0.0.0" id="text1218" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.44.0.0.0.0.0.0.0.0" id="tspan1216" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="53.691505">F-</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.45.0.0.0" id="g45" >
+                        <g gorn="0.2.45.0.0.0.0" id="g44" >
+                            <g gorn="0.2.45.0.0.0.0.0" id="g43" >
+                                <g gorn="0.2.45.0.0.0.0.0.0" id="g42" >
+                                    <g font-size="3.63108" gorn="0.2.45.0.0.0.0.0.0.0" id="text1222" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.45.0.0.0.0.0.0.0.0" id="tspan1220" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="61.000221">P</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.67061749,0.74999928,0,-62.539907,205.49607)" >
+            <g >
+                <g >
+                    <g gorn="0.2.46.0.0.0" id="g49" >
+                        <g gorn="0.2.46.0.0.0.0" id="g48" >
+                            <g gorn="0.2.46.0.0.0.0.0" id="g47" >
+                                <g gorn="0.2.46.0.0.0.0.0.0" id="g46" >
+                                    <g gorn="0.2.46.0.0.0.0.0.0.0" id="text1230" style="font-weight:bold;font-size:8px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold';white-space:pre;shape-inside:url(#rect1232);display:inline" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.46.0.0.0.0.0.0.0.0" id="tspan2414" style="font-size:7.99393313px" x="201.05859"  y="178.1832">DP</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.47.0.0.0" id="g53" >
+                        <g gorn="0.2.47.0.0.0.0" id="g52" >
+                            <g gorn="0.2.47.0.0.0.0.0" id="g51" >
+                                <g gorn="0.2.47.0.0.0.0.0.0" id="g50" >
+                                    <g font-size="3.63108" gorn="0.2.47.0.0.0.0.0.0.0" id="text1238" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.47.0.0.0.0.0.0.0.0" id="tspan1236" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="74.228233">DM</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.48.0.0.0" id="g57" >
+                        <g gorn="0.2.48.0.0.0.0" id="g56" >
+                            <g gorn="0.2.48.0.0.0.0.0" id="g55" >
+                                <g gorn="0.2.48.0.0.0.0.0.0" id="g54" >
+                                    <g font-size="3.63108" gorn="0.2.48.0.0.0.0.0.0.0" id="text1242" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.48.0.0.0.0.0.0.0.0" id="tspan1240" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="80.996712">TX</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.49.0.0.0" id="g61" >
+                        <g gorn="0.2.49.0.0.0.0" id="g60" >
+                            <g gorn="0.2.49.0.0.0.0.0" id="g59" >
+                                <g gorn="0.2.49.0.0.0.0.0.0" id="g58" >
+                                    <g font-size="3.63108" gorn="0.2.49.0.0.0.0.0.0.0" id="text1246" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.49.0.0.0.0.0.0.0.0" id="tspan1244" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="87.764351">RX</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.50.0.0.0" id="g65" >
+                        <g gorn="0.2.50.0.0.0.0" id="g64" >
+                            <g gorn="0.2.50.0.0.0.0.0" id="g63" >
+                                <g gorn="0.2.50.0.0.0.0.0.0" id="g62" >
+                                    <g font-size="3.63108" gorn="0.2.50.0.0.0.0.0.0.0" id="text1250" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.50.0.0.0.0.0.0.0.0" id="tspan1248" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.727921"  y="94.69178">+5V</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.51.0.0.0" id="g69" >
+                        <g gorn="0.2.51.0.0.0.0" id="g68" >
+                            <g gorn="0.2.51.0.0.0.0.0" id="g67" >
+                                <g gorn="0.2.51.0.0.0.0.0.0" id="g66" >
+                                    <g font-size="3.63108" gorn="0.2.51.0.0.0.0.0.0.0" id="text1254" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.51.0.0.0.0.0.0.0.0" id="tspan1252" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.72934"  y="101.37037">G</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0,-0.94559903,1.0575307,0,0,0)" >
+            <g >
+                <g >
+                    <g gorn="0.2.52.0.0.0" id="g73" >
+                        <g gorn="0.2.52.0.0.0.0" id="g72" >
+                            <g gorn="0.2.52.0.0.0.0.0" id="g71" >
+                                <g gorn="0.2.52.0.0.0.0.0.0" id="g70" >
+                                    <g font-size="3.63108" gorn="0.2.52.0.0.0.0.0.0.0" id="text1258" stroke-width="0.7092" style="font-weight:bold;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA Bold'" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace">
+                                        <text gorn="0.2.52.0.0.0.0.0.0.0.0" id="tspan1256" stroke-width="0.7092" style="font-size:5.66928606px" x="-74.72934"  y="108.4614">ANT</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

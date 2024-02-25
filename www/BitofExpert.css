@@ -1,0 +1,82 @@
+/** HTML5/CSS3, EDGE/CHROME                             *** BitofExpert.css ***
+ *
+ ******************************************************************************
+ * Крошки опыта             Кусочки информации о  преодоленных препятствиях в *
+ *          программировании всего лишь одного человека. Здесь не представлен *
+ *          весь путь: ассемблеры, алгол, фортран, кобол, бэйсик, c, clipper, *
+ *          delphi, lazarus, java, PHP, js, apitor, arduino, chto-esche-budet * 
+ ******************************************************************************
+ * v1.1, 25.01.2024                                   Автор:      Труфанов В.Е.
+ * Copyright © 2024 tve                               Дата создания: 21.01.2024 
+**/
+
+html
+{
+   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;	
+   font-size:10px;
+}
+body 
+{
+   font-size:1.8rem;  
+   width:99%;
+   height:100%;
+}
+#kroshki-opyta 
+{
+   margin-left:1rem; 
+   margin-right:1rem; 
+   min-width:50%;
+   text-align:justify; 
+}
+table
+{
+   width:100%;
+}
+td
+{
+   font-size:2.2rem;
+   border:0.4rem solid olive;
+}
+blockquote
+{
+   background:#FFE9EF;
+   padding:.2rem 2rem .2rem 2rem;
+   font-size:1.8rem;  
+	font-weight:bold;
+   text-align:right; 
+   width:80%;
+   margin-left:10%; 
+   border-radius:1rem; 
+}
+
+#kroshki-opyta img
+{
+   border:0.4rem solid olive;
+   border-radius:1rem; 
+}
+
+#kroshki-opyta img,
+#kroshki-opyta figcaption
+{
+   width:80%;
+   margin:10px auto 20px;
+   display:block;
+}
+
+#kroshki-opyta figcaption
+{
+   color:olive;
+   font-size:1.6rem;  
+	font-weight:bold;
+   font-style:italic; 
+   margin-top:-1.6rem; 
+}
+
+#kroshki-opyta .imgWidth40,
+#kroshki-opyta .imgWidth40 + figcaption 
+{
+   width:40%;
+}
+
+/********************************************************* BitofExpert.css ***/
+

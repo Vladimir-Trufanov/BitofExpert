@@ -1,0 +1,62 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultDir=C:\BitofExpert
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+BitofExpert
+	+BitofExpert
+		-bifeArduino
+			-infrakrasnyj-pult-na-smartfone-dlya-vsego
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md
+			-pyat-kopeek-pro-ukazateli-v-arduino
+				-PointersAndLinks
+					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
+				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md
+				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md.backup
+		-bifeFritzing
+			-predstavlenie-detali-komponenta-vo-fritzing
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.html
+		-bifeGitHub
+			-kak-udalit-repozitarij-iz-github
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Dashboard.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Ihaveread.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Iwont.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\kak-udalit-repozitarij-iz-github.md
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Last-step.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\probnyj-proekt.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Setting.jpg
+				bifeGitHub\kak-udalit-repozitarij-iz-github\Toconfirm.jpg
+		-bifeRaspberry
+		-bifeWindows
+			-kak-zamenit-drajver-na-windows
+				bifeWindows\kak-zamenit-drajver-na-windows\kak-zamenit-drajver-na-windows.md
+		+www
+			www\BitofExpert.css
+			www\index.php
+			www\iniWorkSpace.php
+			www\log.txt
+		BitofExpert.ppr
+		LICENSE
+		README.md
+		Прозрачный разрыв страницы.png
+[Open project files]
+0=www\index.php
+[Selected Project Files]
+Main=
+Selected=www\index.php
+[www\index.php]
+TopLine=13
+Caret=30,43
