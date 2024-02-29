@@ -32,36 +32,15 @@ BitofExpert
 					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
 				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md
 		+bifeFritzing
-			+kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz
-				-fil
-					-fil
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md.backup
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\part.USB converer CP2102_a0a6f2322f63790c617626f6e31fbfab_2.fzp
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.breadboard.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_breadboard.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.icon.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_icon.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.pcb.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_pcb.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.schematic.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_schematic.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\USB converter CP2102.fzpz
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\USB converter CP2102.jpg
-				-fol
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\part.USB-UART CP2102-dtr.fzp
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\piNUL
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.breadboard.USB-UART CP2102-dtr_breadboard.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.icon.USB-UART CP2102-dtr_icon.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.pcb.USB-UART CP2102-dtr_pcb.svg
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.schematic.USB-UART CP2102-dtr_schematic.svg
+			+kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
 					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\7z.exe
 					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\make-fzpz.bat
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\USB converer CP2102.fzpz
 				-part
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzo
 					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzp
 				-svg
 					-breadboard
 						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svg
-						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svo
 					-icon
 						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\icon\USB-UART-CP2102-dtr_icon.svg
 					-pcb
@@ -69,10 +48,12 @@ BitofExpert
 					-schematic
 						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\schematic\USB-UART-CP2102-dtr_schematic.svg
 				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\7z.exe
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.html
 				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md.backup
 				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\make-fzpz.bat
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\Structura-katalogov.jpg
 				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.fzpz
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.jpg
 			-predstavlenie-detali-komponenta-vo-fritzing
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.fzpz
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.xml
@@ -111,9 +92,13 @@ BitofExpert
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
+1=..\DoorTry\www\BitofExpert\BitofExpert.html
 [Selected Project Files]
 Main=
-Selected=www\index.php
+Selected=..\DoorTry\www\BitofExpert\BitofExpert.html
 [www\index.php]
 TopLine=13
 Caret=30,43
+[..\DoorTry\www\BitofExpert\BitofExpert.html]
+TopLine=23
+Caret=178,47
