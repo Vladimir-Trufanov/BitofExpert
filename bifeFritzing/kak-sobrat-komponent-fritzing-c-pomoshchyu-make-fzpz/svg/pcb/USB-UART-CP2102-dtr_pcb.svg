@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" height="0.80260414in" viewBox="0 0 44.274805 57.787497" enable-background="new 0 0 72 46.8" id="Layer_1" gorn="0" width="0.61492783in" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" version="1.1"  xml:space="preserve">
+    <desc >
+        <referenceFile >CP2102_breakout_pcb-presne.svg</referenceFile>
+    </desc>
+    <metadata id="metadata3799" >
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work rdf:about="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs3797" />
+    <g transform="translate(103.68439,29.917862)" >
+        <g >
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g id="icon_1_" gorn="0.3.0.0.0.0.0.0.0.0.0"  style="display:inline">
+                                            <path id="path3681" gorn="0.3.0.0.0.0.0.0.0.0.0.0" fill="#ffffff" d="m -59.409585,27.869638 h -44.274805 v -57.7875 h 44.274805 z m -5.477823,-3.598558 c 0,0.80391 0.65193,1.45585 1.455841,1.45585 0.803845,0 1.455765,-0.65194 1.455765,-1.45585 0,-0.803864 -0.65192,-1.455776 -1.455765,-1.455776 -0.803911,0 -1.455841,0.651912 -1.455841,1.455776 z m -7.199088,0 c 0,0.80391 0.651922,1.45585 1.455846,1.45585 0.80391,0 1.455807,-0.65194 1.455807,-1.45585 0,-0.803864 -0.651897,-1.455776 -1.455807,-1.455776 -0.803924,0 -1.455846,0.651912 -1.455846,1.455776 z m -7.198058,0 c 0,0.80391 0.651902,1.45585 1.455819,1.45585 0.803914,0 1.455839,-0.65194 1.455839,-1.45585 0,-0.803864 -0.651925,-1.455776 -1.455839,-1.455776 -0.803917,0 -1.455819,0.651912 -1.455819,1.455776 z m -7.200072,0 c 0,0.80391 0.651925,1.45585 1.455842,1.45585 0.803859,0 1.455784,-0.65194 1.455784,-1.45585 0,-0.803864 -0.651925,-1.455776 -1.455784,-1.455776 -0.803917,0 -1.455842,0.651912 -1.455842,1.455776 z m -7.198068,0 c 0,0.80391 0.651917,1.45585 1.455835,1.45585 0.80386,0 1.45579,-0.65194 1.45579,-1.45585 0,-0.803864 -0.65193,-1.455776 -1.45579,-1.455776 -0.803918,0 -1.455835,0.651912 -1.455835,1.455776 z m -7.199116,0 c 0,0.80391 0.65213,1.45585 1.455824,1.45585 0.803963,0 1.455873,-0.65194 1.455873,-1.45585 0,-0.803864 -0.65191,-1.455776 -1.455873,-1.455776 -0.803694,0 -1.455824,0.651912 -1.455824,1.455776 z" stroke-width="0.99986893" />
+                                            <g transform="matrix(0.99986932,0,0,0.99986932,-124.62276,-18.924299)" >
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <g id="copper1" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0"  style="display:inline">
+                                                                                    <circle stroke="#f5bd18" id="connector11pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="61.199001" stroke-width="1.22399998" />
+                                                                                    <circle stroke="#f5bd18" id="connector10pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.1" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="53.999001" stroke-width="1.22399998" />
+                                                                                    <circle stroke="#f5bd18" id="connector9pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.2" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="46.799999" stroke-width="1.22399998" />
+                                                                                    <circle stroke="#f5bd18" id="connector8pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.3" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="39.598999" stroke-width="1.22399998" />
+                                                                                    <circle stroke="#f5bd18" id="connector7pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.4" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="32.400002" stroke-width="1.22399998" />
+                                                                                    <circle stroke="#f5bd18" id="connector6pad" gorn="0.3.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.5" r="2.052" stroke-opacity="1" fill="none" cy="43.201" cx="25.200001" stroke-width="1.22399998" />
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

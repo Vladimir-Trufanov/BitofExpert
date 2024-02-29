@@ -20,15 +20,71 @@ BitofExpert
 	+BitofExpert
 		-bifeArduino
 			-infrakrasnyj-pult-na-smartfone-dlya-vsego
+				-vybor-kodov-universalnogo-pulta
+					-VyborKodovPulta
+						bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta\VyborKodovPulta\VyborKodovPulta.ino
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta\vybor-kodov-universalnogo-pulta.png
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\ik-datchik-vs1838b.jpg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\modul-ky-022-s-infrakrasnym-datchikom.jpg
 			-pyat-kopeek-pro-ukazateli-v-arduino
 				-PointersAndLinks
 					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
 				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md
-				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md.backup
-		-bifeFritzing
+		+bifeFritzing
+			+kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz
+				-fil
+					-fil
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md.backup
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\part.USB converer CP2102_a0a6f2322f63790c617626f6e31fbfab_2.fzp
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.breadboard.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_breadboard.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.icon.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_icon.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.pcb.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_pcb.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\svg.schematic.USB converer CP2102_5ca80177e541435c25fa3852330ba1c2_4_schematic.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\USB converter CP2102.fzpz
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fil\USB converter CP2102.jpg
+				-fol
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\part.USB-UART CP2102-dtr.fzp
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\piNUL
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.breadboard.USB-UART CP2102-dtr_breadboard.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.icon.USB-UART CP2102-dtr_icon.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.pcb.USB-UART CP2102-dtr_pcb.svg
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\fol\svg.schematic.USB-UART CP2102-dtr_schematic.svg
+				-original
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\7z.exe
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\make-fzpz.bat
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\USB converer CP2102.fzpz
+				-part
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzo
+					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzp
+				-svg
+					-breadboard
+						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svg
+						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svo
+					-icon
+						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\icon\USB-UART-CP2102-dtr_icon.svg
+					-pcb
+						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\pcb\USB-UART-CP2102-dtr_pcb.svg
+					-schematic
+						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\schematic\USB-UART-CP2102-dtr_schematic.svg
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\7z.exe
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md.backup
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\make-fzpz.bat
+				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.fzpz
 			-predstavlenie-detali-komponenta-vo-fritzing
-				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.html
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.fzpz
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.xml
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V20.jpg
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V20-parts.jpg
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\part.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1.fzp
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.md
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.md.backup
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.breadboard.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_breadboard.svg
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.icon.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_icon.svg
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.pcb.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_pcb.svg
+				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.schematic.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_schematic.svg
 		-bifeGitHub
 			-kak-udalit-repozitarij-iz-github
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Dashboard.jpg
@@ -43,7 +99,7 @@ BitofExpert
 		-bifeWindows
 			-kak-zamenit-drajver-na-windows
 				bifeWindows\kak-zamenit-drajver-na-windows\kak-zamenit-drajver-na-windows.md
-		+www
+		-www
 			www\BitofExpert.css
 			www\index.php
 			www\iniWorkSpace.php
@@ -51,6 +107,7 @@ BitofExpert
 		BitofExpert.ppr
 		LICENSE
 		README.md
+		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php

@@ -31,6 +31,8 @@
 
 ### Fritzing - напряжение упрощает схемное движение
 
+#### [Как собрать компонент Fritzing с помощью make-fzpz](bifeFritzing/kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz/kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md) [2024-02-25]
+
 #### [Представление детали (компонента) во Fritzing](bifeFritzing/predstavlenie-detali-komponenta-vo-fritzing/predstavlenie-detali-komponenta-vo-fritzing.md) [2024-02-21]
 
 ---
