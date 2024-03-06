@@ -18,42 +18,98 @@ Extensions=*.*
 [Project tree]
 BitofExpert
 	+BitofExpert
-		-bifeArduino
+		+bifeArduino
 			-infrakrasnyj-pult-na-smartfone-dlya-vsego
+				-Blink-by-IR
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Blink-by-IR\Blink-by-IR.ino
+				-getCodeByIRremote352
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\getCodeByIRremote352\getCodeByIRremote352.ino
+				+MakeProntoHEX
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\PinDefinitionsAndMore.h
+				-Strob600.ino
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob600.ino\Strob600.ino.ino
+				-Strob610-4.ino
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4.ino\Strob610-4.ino.ino
+				-Strob610-4v2.ino
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4v2.ino\Strob610-4v2.ino.ino
 				-vybor-kodov-universalnogo-pulta
-					-VyborKodovPulta
-						bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta\VyborKodovPulta\VyborKodovPulta.ino
 					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta\vybor-kodov-universalnogo-pulta.png
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\ik-datchik-vs1838b.jpg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md.backup
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\IR_ChrisTree.txt
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\modul-ky-022-s-infrakrasnym-datchikom.jpg
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\nec8-protocol.jpeg
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\One-or-Zero.jpeg
 			-pyat-kopeek-pro-ukazateli-v-arduino
 				-PointersAndLinks
 					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
 				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md
-		+bifeFritzing
-			+kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
+			-Елка и реле
+				-Декодирование сигналов инфракрасного пульта дистанционного управления
+					-NEC
+						-.dep
+							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\bcd.o.d
+							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\lcd_lib.o.d
+							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\main.o.d
+							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\timer.o.d
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.c
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.h
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.lst
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.o
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bits_macros.h
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.c
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.h
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.lst
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.o
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.c
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.eep
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.elf
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.hex
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.lss
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.lst
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.map
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.o
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.sym
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\Makefile
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\nec.pnproj
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\nec.pnps
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.c
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.h
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.lst
+						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.o
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\A.Tores_Infrakrasnoe_distancionnoe_upravlenie.pdf
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-1.png
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-2.png
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-3.png
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-4.png
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-5.png
+					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\Декодирование сигналов инфракрасного пульта дистанционного управления.doc
+				bifeArduino\Елка и реле\jolka i rele.md
+				bifeArduino\Елка и реле\jolka i rele.md.backup
+		-bifeFritzing
+			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\7z.exe
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\original\make-fzpz.bat
+					bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\original\7z.exe
+					bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\original\make-fzpz.bat
 				-part
-					bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzp
+					bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\part\USB-UART-CP2102-dtr.fzp
 				-svg
 					-breadboard
-						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svg
+						bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\svg\breadboard\USB-UART-CP2102-dtr_breadboard.svg
 					-icon
-						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\icon\USB-UART-CP2102-dtr_icon.svg
+						bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\svg\icon\USB-UART-CP2102-dtr_icon.svg
 					-pcb
-						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\pcb\USB-UART-CP2102-dtr_pcb.svg
+						bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\svg\pcb\USB-UART-CP2102-dtr_pcb.svg
 					-schematic
-						bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\svg\schematic\USB-UART-CP2102-dtr_schematic.svg
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\7z.exe
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.html
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz.md
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\make-fzpz.bat
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\Structura-katalogov.jpg
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.fzpz
-				bifeFritzing\kak-sobrat-komponent-fritzing-c-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.jpg
+						bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\svg\schematic\USB-UART-CP2102-dtr_schematic.svg
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\7z.exe
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz.md
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\make-fzpz.bat
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\Structura-katalogov.jpg
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.fzpz
+				bifeFritzing\kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz\USB-UART-CP2102-dtr.jpg
 			-predstavlenie-detali-komponenta-vo-fritzing
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.fzpz
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V2.0.xml
@@ -61,7 +117,6 @@ BitofExpert
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\LCD-FM-RX-V20-parts.jpg
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\part.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1.fzp
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.md
-				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\predstavlenie-detali-komponenta-vo-fritzing.md.backup
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.breadboard.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_breadboard.svg
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.icon.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_icon.svg
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.pcb.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_pcb.svg
@@ -88,17 +143,16 @@ BitofExpert
 		BitofExpert.ppr
 		LICENSE
 		README.md
-		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
-1=..\DoorTry\www\BitofExpert\BitofExpert.html
+1=bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
 [Selected Project Files]
 Main=
-Selected=..\DoorTry\www\BitofExpert\BitofExpert.html
+Selected=bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
 [www\index.php]
-TopLine=13
+TopLine=26
 Caret=30,43
-[..\DoorTry\www\BitofExpert\BitofExpert.html]
-TopLine=23
-Caret=178,47
+[bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino]
+TopLine=1
+Caret=1,1
