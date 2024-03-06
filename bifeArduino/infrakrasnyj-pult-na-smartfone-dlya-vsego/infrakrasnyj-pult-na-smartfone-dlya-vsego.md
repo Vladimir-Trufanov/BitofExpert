@@ -1,4 +1,4 @@
-### Инфракрасный пульт на смартфоне для всего [2024-01-08]
+### [Инфракрасный пульт на смартфоне для всего](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md)  [2024-01-08]
 
 <b><i>
 
