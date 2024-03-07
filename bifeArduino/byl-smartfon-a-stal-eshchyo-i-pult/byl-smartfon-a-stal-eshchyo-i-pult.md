@@ -1,6 +1,6 @@
-### Был смартфон, а стал ещё и пульт [2024-03-06]
+### [Был смартфон, а стал ещё и пульт](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeArduino/byl-smartfon-a-stal-eshchyo-i-pult/byl-smartfon-a-stal-eshchyo-i-pult.md) [2024-03-06]
 
-Приступаем ко второму этапу работы (коды универсального пульта сформированы в ["Инфракрасный пульт на смартфоне для всего"](../infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md)) - делаем универсальный пульт из смартфона ***Redmi Note 4***.
+Приступаем ко второму этапу работы (коды универсального пульта сформированы в ***"[Инфракрасный пульт на смартфоне для всего](../../bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md)"***) - делаем универсальный пульт из смартфона ***Redmi Note 4***.
 
 
 <!--
@@ -77,6 +77,11 @@ IYO -
 #### Вот такой получился пульт
 
 <video src="GalaxyS4-Pult.mp4" width="640" type='video/mp4' controls poster="poster-pult.jpg"></video>
+
+<!--
+<iframe src="https://vk.com/video_ext.php?oid=41932239&id=456239392&hash=ad25d1a9c868b9d8" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+-->
 
 
 #### Библиография:
