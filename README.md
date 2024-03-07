@@ -13,6 +13,8 @@
 
 ### Arduino - небольшие спичи про ардуиновы скетчи
 
+#### [Был смартфон, а стал ещё и пульт](bifeArduino/byl-smartfon-a-stal-eshchyo-i-pult/byl-smartfon-a-stal-eshchyo-i-pult.md) [2024-03-06]
+
 #### [Инфракрасный пульт на смартфоне для всего](bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md) [2024-01-08]
 
 #### [Как заменить драйвер на Windows](bifeWindows/kak-zamenit-drajver-na-windows/kak-zamenit-drajver-na-windows.md) [2024-01-23]
