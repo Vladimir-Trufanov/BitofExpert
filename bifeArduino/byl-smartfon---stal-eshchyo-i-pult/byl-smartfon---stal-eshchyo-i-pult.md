@@ -1,4 +1,4 @@
-### [Был смартфон - стал ещё и пульт](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeArduino/byl-smartfon-a-stal-eshchyo-i-pult/byl-smartfon-a-stal-eshchyo-i-pult.md) [2024-03-06]
+### [Был смартфон - стал ещё и пульт](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeArduino/byl-smartfon---stal-eshchyo-i-pult/byl-smartfon---stal-eshchyo-i-pult.md) [2024-03-06]
 
 Приступаем ко второму этапу работы - делаем универсальный пульт из смартфона ***Redmi Note 4*** (коды универсального пульта сформированы ранее в ***"[Инфракрасный пульт на смартфоне для всего](../../bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md)"***) .
 
