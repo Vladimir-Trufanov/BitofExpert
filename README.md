@@ -37,6 +37,8 @@
 
 #### [Представление детали (компонента) во Fritzing](bifeFritzing/predstavlenie-detali-komponenta-vo-fritzing/predstavlenie-detali-komponenta-vo-fritzing.md) [2024-02-21]
 
+#### [Рабочие компоненты для Fritzing - tve_parts](bifeFritzing/rabochie-komponenty-dlya-fritzing-tve-parts/rabochie-komponenty-dlya-fritzing-tve-parts.md) [2024-03-15]
+
 ---
 
 ### Windows - окна обнаруживают истинную природу вещей
