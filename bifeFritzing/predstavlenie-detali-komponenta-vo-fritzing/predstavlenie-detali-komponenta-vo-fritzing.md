@@ -1,4 +1,4 @@
-### [Представление детали (компонента) во Fritzing](https://github.com/Vladimir-Trufanov/Fritzing-parts/blob/main/Part-file-format/Part-file-format.md) [2024-02-21]
+### [Представление детали (компонента) во Fritzing](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeFritzing/predstavlenie-detali-komponenta-vo-fritzing/predstavlenie-detali-komponenta-vo-fritzing.md) [2024-02-21]
 
 ![Модуль радиоприемника DSP PLL FM на макетной плате](LCD-FM-RX-V20.jpg)
 

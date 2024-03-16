@@ -1,4 +1,4 @@
-### [Рабочие компоненты для Fritzing - tve parts](https://github.com/Vladimir-Trufanov/Fritzing-parts/blob/main/Part-file-format/Part-file-format.md) [2024-03-15]
+### [Рабочие компоненты для Fritzing - tve parts](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeFritzing/rabochie-komponenty-dlya-fritzing---tve-parts/rabochie-komponenty-dlya-fritzing---tve-parts.md) [2024-03-15]
 
 В данном материале представлены некоторые компоненты (детали) для использования в проектах Fritzing. Детали были пересобраны из других компонентов или построены с нуля. 
 
