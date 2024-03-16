@@ -1,6 +1,8 @@
-### [Рабочие компоненты для Fritzing - tve_parts](https://github.com/Vladimir-Trufanov/Fritzing-parts/blob/main/Part-file-format/Part-file-format.md)  [2024-03-15]
+### [Рабочие компоненты для Fritzing - tve parts](https://github.com/Vladimir-Trufanov/Fritzing-parts/blob/main/Part-file-format/Part-file-format.md) [2024-03-15]
 
-В данном материале представлены компоненты (детали) для использования в проектах Fritzing. Детали были пересобраны из других компонентов или построены с нуля. Список рабочих компонентов изложен в алфавитном порядке:
+В данном материале представлены некоторые компоненты (детали) для использования в проектах Fritzing. Детали были пересобраны из других компонентов или построены с нуля. 
+
+#### Список рабочих компонентов:
 
 #### [Battery3AA-A - батарея из трех элемeнтов AAA или AA](#battery3aa-a---%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F-%D0%B8%D0%B7-%D1%82%D1%80%D0%B5%D1%85-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-aaa-%D0%B8%D0%BB%D0%B8-aa)
 
@@ -38,7 +40,7 @@
 
 ![](images/Battery3AA-A.jpg)
 
-###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve_parts)
+###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve-parts-2024-03-15)
 
 ---
 
@@ -57,7 +59,7 @@ EEPROM с конфигурационными параметрами  1024 бай
 
 ![](images/CP2102-USB-UART.jpg)
 
-###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve_parts)
+###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve-parts-2024-03-15)
 
 ---
 
@@ -76,7 +78,7 @@ EEPROM с конфигурационными параметрами  1024 бай
 ```
 ![](images/IRFZ24N.jpg)
 
-###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve_parts)
+###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve-parts-2024-03-15)
 
 ---
 
@@ -103,7 +105,7 @@ EEPROM с конфигурационными параметрами  1024 бай
 
 ![](images/LCD-FM-RX-V2.0.jpg)
 
-###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve_parts)
+###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve-parts-2024-03-15)
 
 ---
 
@@ -119,10 +121,4 @@ USB-UART преобразователь предназначен для прог
 
 ![](images/USB-TTL_UART.jpg)
 
-###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve_parts)
-
-
-
-
-
-
+###### [в начало](#%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-fritzing---tve-parts-2024-03-15)
