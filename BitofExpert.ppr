@@ -19,75 +19,56 @@ Extensions=*.*
 BitofExpert
 	+BitofExpert
 		+bifeArduino
+			-byl-smartfon---stal-eshchyo-i-pult
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\byl-smartfon---stal-eshchyo-i-pult.md
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\chernovik.jpg
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\Galaxy+Universal+Remote+v4.1.3.apk
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\GalaxyS4-Pult.mp4
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\IR_ChrisTree.txt
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\poster-pult.jpg
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\shtory.jpg
+				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\yolkatv.jpg
 			-infrakrasnyj-pult-na-smartfone-dlya-vsego
 				-Blink-by-IR
 					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Blink-by-IR\Blink-by-IR.ino
 				-getCodeByIRremote352
 					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\getCodeByIRremote352\getCodeByIRremote352.ino
-				+MakeProntoHEX
+				-MakeProntoHEX
 					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
 					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\PinDefinitionsAndMore.h
-				-Strob600.ino
-					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob600.ino\Strob600.ino.ino
-				-Strob610-4.ino
-					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4.ino\Strob610-4.ino.ino
-				-Strob610-4v2.ino
-					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4v2.ino\Strob610-4v2.ino.ino
-				-vybor-kodov-universalnogo-pulta
-					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta\vybor-kodov-universalnogo-pulta.png
+				-Strob600
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob600\Strob600.ino.ino
+				-Strob610-4
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4\Strob610-4.ino.ino
+				-Strob610-4v2
+					bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\Strob610-4v2\Strob610-4v2.ino.ino
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\ik-datchik-vs1838b.jpg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md
-				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\infrakrasnyj-pult-na-smartfone-dlya-vsego.md.backup
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\IR_ChrisTree.txt
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\modul-ky-022-s-infrakrasnym-datchikom.jpg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\nec8-protocol.jpeg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\One-or-Zero.jpeg
+				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta.png
+			+obrabotka-preryvanij-ot-tajmerov
+				-simple012
+					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple012\simple012.ino
+				+simple1
+					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.html
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.md
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.md.backup
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\vyvody-po-preryvaniya-mikrokontrollera.jpeg
 			-pyat-kopeek-pro-ukazateli-v-arduino
 				-PointersAndLinks
 					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
 				bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\pyat-kopeek-pro-ukazateli-v-arduino.md
-			-Елка и реле
-				-Декодирование сигналов инфракрасного пульта дистанционного управления
-					-NEC
-						-.dep
-							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\bcd.o.d
-							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\lcd_lib.o.d
-							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\main.o.d
-							bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\.dep\timer.o.d
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.c
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.h
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.lst
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bcd.o
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\bits_macros.h
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.c
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.h
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.lst
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\lcd_lib.o
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.c
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.eep
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.elf
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.hex
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.lss
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.lst
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.map
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.o
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\main.sym
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\Makefile
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\nec.pnproj
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\nec.pnps
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.c
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.h
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.lst
-						bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\NEC\timer.o
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\A.Tores_Infrakrasnoe_distancionnoe_upravlenie.pdf
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-1.png
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-2.png
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-3.png
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-4.png
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\nec-protocol-5.png
-					bifeArduino\Елка и реле\Декодирование сигналов инфракрасного пульта дистанционного управления\Декодирование сигналов инфракрасного пульта дистанционного управления.doc
-				bifeArduino\Елка и реле\jolka i rele.md
-				bifeArduino\Елка и реле\jolka i rele.md.backup
+			-rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku
+				-ChrisTree
+					bifeArduino\rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku\ChrisTree\ChrisTree.ino
+				-Proverka-kodov-pulta-du
+					bifeArduino\rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku\Proverka-kodov-pulta-du\Proverka-kodov-pulta-du.ino
+				bifeArduino\rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku\razryv-dlya-upravleniya.jpg
+				bifeArduino\rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku\rele-imeem-i-nedolgo-izdaleka-vklyuchit-nam-yolku.md
 		-bifeFritzing
 			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
@@ -121,6 +102,15 @@ BitofExpert
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.icon.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_icon.svg
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.pcb.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_pcb.svg
 				bifeFritzing\predstavlenie-detali-komponenta-vo-fritzing\svg.schematic.LCD-FM-RX-V2.0_52aa9f163650adf1bd33aebd1592fa04_1_schematic.svg
+			-rabochie-komponenty-dlya-fritzing---tve-parts
+				-images
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\Battery3AA-A.jpg
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\CP2102-USB-UART.jpg
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\IRFZ24N.jpg
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\LCD-FM-RX-V2.0.jpg
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\USB-converer-CP2102.jpg
+					bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\images\USB-TTL_UART.jpg
+				bifeFritzing\rabochie-komponenty-dlya-fritzing---tve-parts\rabochie-komponenty-dlya-fritzing---tve-parts.md
 		-bifeGitHub
 			-kak-udalit-repozitarij-iz-github
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Dashboard.jpg
@@ -143,16 +133,21 @@ BitofExpert
 		BitofExpert.ppr
 		LICENSE
 		README.md
+		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
 1=bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
+2=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
 [Selected Project Files]
 Main=
-Selected=bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
+Selected=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
 [www\index.php]
-TopLine=26
+TopLine=24
 Caret=30,43
 [bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino]
-TopLine=1
-Caret=1,1
+TopLine=25
+Caret=1,64
+[bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino]
+TopLine=39
+Caret=53,77
