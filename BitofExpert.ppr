@@ -50,13 +50,14 @@ BitofExpert
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\One-or-Zero.jpeg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta.png
 			+obrabotka-preryvanij-ot-tajmerov
-				-simple012
-					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple012\simple012.ino
-				+simple1
+				-simple1
 					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
-				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.html
+				+simple2
+					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple2\simple2.ino
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.md
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\obrabotka-preryvanij-ot-tajmerov.md.backup
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\raschet-znacheniya-schetchika-dlya-preryvaniya.jpg
+				bifeArduino\obrabotka-preryvanij-ot-tajmerov\volatile_for_chainiks.pdf
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\vyvody-po-preryvaniya-mikrokontrollera.jpeg
 			-pyat-kopeek-pro-ukazateli-v-arduino
 				-PointersAndLinks
@@ -133,21 +134,24 @@ BitofExpert
 		BitofExpert.ppr
 		LICENSE
 		README.md
-		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
 1=bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino
 2=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
+3=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple2\simple2.ino
 [Selected Project Files]
 Main=
-Selected=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
+Selected=bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple2\simple2.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
 [bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\MakeProntoHEX\MakeProntoHEX.ino]
-TopLine=23
+TopLine=25
 Caret=1,64
 [bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino]
-TopLine=20
-Caret=73,26
+TopLine=45
+Caret=1,84
+[bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple2\simple2.ino]
+TopLine=1
+Caret=16,36
