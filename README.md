@@ -15,11 +15,15 @@
 
 #### [Был смартфон - стал ещё и пульт](bifeArduino/byl-smartfon---stal-eshchyo-i-pult/byl-smartfon---stal-eshchyo-i-pult.md) [2024-03-06]
 
+#### [Делаем программатор для ESP8266-ESP01](bifeArduino/delaem-programmator-dlya-esp8266-esp01/delaem-programmator-dlya-esp8266-esp01.md)  [2024-04-11]
+
 #### [Инфракрасный пульт на смартфоне для всего](bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md) [2024-01-08]
 
 #### [Как заменить драйвер на Windows](bifeWindows/kak-zamenit-drajver-na-windows/kak-zamenit-drajver-na-windows.md) [2024-01-23]
 
 #### [Обработка прерываний от таймеров](bifeArduino/obrabotka-preryvanij-ot-tajmerov/obrabotka-preryvanij-ot-tajmerov.md) [2024-03-20]
+
+#### [Строки в оперативной и в программной памяти](bifeArduino/stroki-v-operativnoj-i-v-programmnoj-pamyati/stroki-v-operativnoj-i-v-programmnoj-pamyati.md) [2024-03-28]
 
 <!--
 #### [Пять копеек про указатели в Arduino](bifeArduino/pyat-kopeek-pro-ukazateli-v-arduino/pyat-kopeek-pro-ukazateli-v-arduino.md)
