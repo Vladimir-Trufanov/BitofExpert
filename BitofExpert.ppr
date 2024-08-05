@@ -29,21 +29,26 @@ BitofExpert
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\shtory.jpg
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\yolkatv.jpg
 			+delaem-programmator-dlya-esp8266-esp01
-				-Blink-ESP8266
+				+Blink-ESP8266
 					bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266\Blink-ESP8266.ino
 				+Blink-ESP8266-IKD
 					bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
-				-PL2303_64bit
-					bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303_64bit\PL2303_64bit.exe
-				-ארה
+				-FotoNabor1
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\completing-setup.jpg
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\install-prolific.jpg
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\programmator-iznutri.jpg
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\razreshit-vnosit-izmeneniya.jpg
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\ready-to-install.jpg
+					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\welcome-to-installer.jpg
+				-PL2303-Drivers
+					-PL2303_64bit
+						bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303-Drivers\PL2303_64bit\PL2303_64bit.exe
 					-PL2303-Prolific-DriverInstaller-v1.5.0
-						bifeArduino\delaem-programmator-dlya-esp8266-esp01\ארה\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNote.txt
-						bifeArduino\delaem-programmator-dlya-esp8266-esp01\ארה\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNotes.pdf
-						bifeArduino\delaem-programmator-dlya-esp8266-esp01\ארה\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_Prolific_DriverInstaller_v1.5.0.exe
-						bifeArduino\delaem-programmator-dlya-esp8266-esp01\ארה\PL2303-Prolific-DriverInstaller-v1.5.0\um_pl2303_DriverInstallerManual_v1.5.0.pdf
-					bifeArduino\delaem-programmator-dlya-esp8266-esp01\ארה\PL2303-Prolific-DriverInstaller-v1.5.0.zip
+						bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303-Drivers\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNote.txt
+						bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303-Drivers\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNotes.pdf
+						bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303-Drivers\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_Prolific_DriverInstaller_v1.5.0.exe
+						bifeArduino\delaem-programmator-dlya-esp8266-esp01\PL2303-Drivers\PL2303-Prolific-DriverInstaller-v1.5.0\um_pl2303_DriverInstallerManual_v1.5.0.pdf
 				bifeArduino\delaem-programmator-dlya-esp8266-esp01\delaem-programmator-dlya-esp8266-esp01.md
-				bifeArduino\delaem-programmator-dlya-esp8266-esp01\delaem-programmator-dlya-esp8266-esp01.md.backup
 				bifeArduino\delaem-programmator-dlya-esp8266-esp01\FT232-to-ESP01.jpeg
 				bifeArduino\delaem-programmator-dlya-esp8266-esp01\konverter-usb-ttl-yp-01-NIZ.webp
 				bifeArduino\delaem-programmator-dlya-esp8266-esp01\konverter-usb-ttl-yp-01-VERH.webp
@@ -167,12 +172,16 @@ BitofExpert
 [Open project files]
 0=www\index.php
 1=bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino
+2=bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
 [Selected Project Files]
 Main=
-Selected=bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino
+Selected=bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
 [bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino]
 TopLine=3
 Caret=1,1
+[bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino]
+TopLine=1
+Caret=1,23

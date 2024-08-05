@@ -12,22 +12,23 @@
 */
 
 
-/** Arduino UNO                         *** proverka-komand-upravleniya.ino ***
+/** Arduino UNO ************************************* *** MakeProntoHex.ino ***
+ *  (this file is based on ReceiveDump.cpp by MIT License, Armin Joachimsmeyer)
  * 
- * ���������� ������ ������ �� ��� ��� ���������� ������� ����������
- * https://www.makerguides.com/ir-receiver-remote-arduino-tutorial/
+ * Вывести коды полученного инфракрасного сигнала в формате ProntoHEX
  * 
- * v1.1, 29.03.2024                                   �����:      �������� �.�.
- * Copyright � 2024 tve                               ���� ��������: 28.03.2024
+ * v2.1, 05.03.2024                                   Автор:      Труфанов В.Е.
+ * Copyright © 2023 tve                               Дата создания: 30.12.2023
 **/
 
 #include <IRremote.hpp>
-// #define LED_BUILTIN 2
 #define IR_RECEIVE_PIN 2
+#define buzPin 0
 
 void setup() 
 {
-   pinMode(LED_BUILTIN, OUTPUT);  // Initialize the LED_BUILTIN pin as an output
+   pinMode(buzPin, OUTPUT);  
+   digitalWrite(buzPin, LOW);
    Serial.begin(115200);
    IrReceiver.begin(IR_RECEIVE_PIN, DISABLE_LED_FEEDBACK);
 }
@@ -41,6 +42,14 @@ void loop()
       // Извлекаем код, отправленный пультом дистанционного управления 
       // в зависимости от того, какая клавиша была нажата из структуры IRData
       uint16_t command = IrReceiver.decodedIRData.command;
+      if (command==50)
+      {
+         digitalWrite(buzPin, HIGH);
+         Serial.println("до");
+         delay(100);  
+         Serial.println("после");
+         digitalWrite(buzPin, LOW);
+      }
       Serial.println(command);
       // Делаем задержку в 100 мс, чтобы замедлить печать при непрерывном 
       // нажатии клавиши, и устранить повторную распечатку
