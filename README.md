@@ -19,24 +19,24 @@
 
 #### [Был смартфон - стал ещё и пульт](bifeArduino/byl-smartfon---stal-eshchyo-i-pult/byl-smartfon---stal-eshchyo-i-pult.md) [2024-03-06]
 
-#### [Делаем программатор для ESP8266-ESP01](bifeArduino/delaem-programmator-dlya-esp8266-esp01/delaem-programmator-dlya-esp8266-esp01.md)  [2024-04-11]
-
 #### [Инфракрасный пульт на смартфоне для всего](bifeArduino/infrakrasnyj-pult-na-smartfone-dlya-vsego/infrakrasnyj-pult-na-smartfone-dlya-vsego.md) [2024-01-08]
 
 #### [Как заменить драйвер на Windows](bifeWindows/kak-zamenit-drajver-na-windows/kak-zamenit-drajver-na-windows.md) [2024-01-23]
 
 #### [Обработка прерываний от таймеров](bifeArduino/obrabotka-preryvanij-ot-tajmerov/obrabotka-preryvanij-ot-tajmerov.md) [2024-03-20]
 
-#### [Строки в оперативной и в программной памяти](bifeArduino/stroki-v-operativnoj-i-v-programmnoj-pamyati/stroki-v-operativnoj-i-v-programmnoj-pamyati.md) [2024-03-28]
-
 <!--
+#### [Делаем программатор для ESP8266-ESP01](bifeArduino/delaem-programmator-dlya-esp8266-esp01/delaem-programmator-dlya-esp8266-esp01.md)  [2024-04-11]
+
 #### [Пять копеек про указатели в Arduino](bifeArduino/pyat-kopeek-pro-ukazateli-v-arduino/pyat-kopeek-pro-ukazateli-v-arduino.md)
+
+#### [Строки в оперативной и в программной памяти](bifeArduino/stroki-v-operativnoj-i-v-programmnoj-pamyati/stroki-v-operativnoj-i-v-programmnoj-pamyati.md) [2024-03-28]
 -->
 ---
 
 ### Esp32 - маленькое сердце большого хозяйства
 
-#### [Как писать параллельные многозадачные приложения для ESP32 с использованием FreeRTOS в среде Arduino](bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-dlya-esp32-vo-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-dlya-esp32-vo-freertos.md) [2024-10-16]
+#### [Как писать параллельные многозадачные приложения ESP32 в Arduino с FreeRTOS](bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md) [2024-10-16]
 
 ---
 
@@ -73,11 +73,6 @@ Windows, как жизнь: никогда не знаешь что будет �
 
 ### Krutjak - паровозик под инфракрасным управлением
 
-#### [---Как собрать компонент Fritzing с помощью make-fzpz](bifeFritzing/kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz/kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz.md) [2024-02-25]
-
-#### [---Представление детали (компонента) во Fritzing](bifeFritzing/predstavlenie-detali-komponenta-vo-fritzing/predstavlenie-detali-komponenta-vo-fritzing.md) [2024-02-21]
-
-#### [---Рабочие компоненты для Fritzing - tve parts](bifeFritzing/rabochie-komponenty-dlya-fritzing---tve-parts/rabochie-komponenty-dlya-fritzing---tve-parts.md) [2024-03-15]
 -->
 
 ---
