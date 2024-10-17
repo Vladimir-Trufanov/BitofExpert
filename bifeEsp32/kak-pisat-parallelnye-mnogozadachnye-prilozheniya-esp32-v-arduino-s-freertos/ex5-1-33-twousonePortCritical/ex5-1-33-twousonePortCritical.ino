@@ -1,4 +1,4 @@
-/** Arduino-Esp32-CAM                 *** ex5-1-33_twousonePortCritical.ino ***
+/** Arduino-Esp32-CAM                 *** ex5-1-33-twousonePortCritical.ino ***
  *  
  *                 Пример использования критических секций в ESP32 board 5.1.33
  *                                        (на контроллере AI-Thinker ESP32-CAM)
@@ -96,4 +96,4 @@ void task2 (void *pvParameters)
    }
 }
 
-// ************************************** ex5-1-33_twousonePortCritical.ino ***
+// ************************************** ex5-1-33-twousonePortCritical.ino ***

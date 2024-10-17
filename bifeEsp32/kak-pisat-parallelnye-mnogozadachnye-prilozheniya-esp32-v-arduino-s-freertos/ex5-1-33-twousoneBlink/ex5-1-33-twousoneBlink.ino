@@ -1,4 +1,4 @@
-/** Arduino-Esp32-CAM                        *** ex5-1-33_twousoneBlink.ino ***
+/** Arduino-Esp32-CAM                        *** ex5-1-33-twousoneBlink.ino ***
  * 
  *           Базовый пример параллельной работы двух задач в ESP32 board 5.1.33
  *                                        (на контроллере AI-Thinker ESP32-CAM)
@@ -67,4 +67,4 @@ void loop2 (void* pvParameters)
   }
 }
 
-// ********************************************* ex5-1-33_twousoneBlink.ino ***
+// ********************************************* ex5-1-33-twousoneBlink.ino ***
