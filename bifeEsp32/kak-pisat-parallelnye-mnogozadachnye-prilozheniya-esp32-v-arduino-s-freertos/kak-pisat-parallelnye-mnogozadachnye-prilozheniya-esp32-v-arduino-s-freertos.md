@@ -1,4 +1,4 @@
-### [Как писать параллельные многозадачные приложения ESP32 в Arduino с FreeRTOS](bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md) [2024-10-16]
+### [Как писать параллельные многозадачные приложения ESP32 в Arduino с FreeRTOS](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md) [2024-10-16]
 
 ESP32 - это автономная электронная плата на двух процессорах от Espressif, выполняющая функции целого устройства (контроллера - SoC) и размещённая на одной интегральной схеме с установленной многозадачной операционной системой FreeRTOS. 
 
