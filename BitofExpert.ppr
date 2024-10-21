@@ -18,7 +18,25 @@ Extensions=*.*
 [Project tree]
 BitofExpert
 	+BitofExpert
-		+bifeArduino
+		-bifeArduino
+			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
+				-PL2303_Prolific_DriverInstaller_1025
+					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303_Prolific_DriverInstaller_1025\PL2303_Prolific_DriverInstaller_1025.exe
+				-PL2303-Prolific-DriverInstaller-v1.5.0
+					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNote.txt
+					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNotes.pdf
+					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_Prolific_DriverInstaller_v1.5.0.exe
+					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\um_pl2303_DriverInstallerManual_v1.5.0.pdf
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini Loading.md
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini.jpg
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\drajver-i-port-dlya-arduino-pro-mini.jpg
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\nastrojki-ide-pered-proshivkoj-platy.jpg
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\nazhat-klavishu-reset.jpg
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303_Prolific_DriverInstaller_1025.7z
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0.zip
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\proshivka-arduini-pro-mini-c-avtomaticheskim-sbrosom.jpg
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\zagruzka-v-arduino-pro-mini.fzz
+				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\zagruzka-v-arduino-pro-mini-sbros-knopkoj.jpg
 			-byl-smartfon---stal-eshchyo-i-pult
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\byl-smartfon---stal-eshchyo-i-pult.md
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\chernovik.jpg
@@ -28,10 +46,10 @@ BitofExpert
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\poster-pult.jpg
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\shtory.jpg
 				bifeArduino\byl-smartfon---stal-eshchyo-i-pult\yolkatv.jpg
-			+delaem-programmator-dlya-esp8266-esp01
-				+Blink-ESP8266
+			-delaem-programmator-dlya-esp8266-esp01
+				-Blink-ESP8266
 					bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266\Blink-ESP8266.ino
-				+Blink-ESP8266-IKD
+				-Blink-ESP8266-IKD
 					bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
 				-FotoNabor1
 					bifeArduino\delaem-programmator-dlya-esp8266-esp01\FotoNabor1\completing-setup.jpg
@@ -88,6 +106,18 @@ BitofExpert
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\raschet-znacheniya-schetchika-dlya-preryvaniya.jpg
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\volatile_for_chainiks.pdf
 				bifeArduino\obrabotka-preryvanij-ot-tajmerov\vyvody-po-preryvaniya-mikrokontrollera.jpeg
+			-oshibki-pri-programmirovanii-i-proshivke-arduino
+				bifeArduino\oshibki-pri-programmirovanii-i-proshivke-arduino\No serial data received.jpg
+				bifeArduino\oshibki-pri-programmirovanii-i-proshivke-arduino\oshibki-pri-programmirovanii-i-proshivke-arduino.md
+				bifeArduino\oshibki-pri-programmirovanii-i-proshivke-arduino\Possible serial noise or corruption.jpg
+			-pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\driver-USBASP.jpg
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\FUSE-bityi.jpg
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\izkontrollera-fusy.jpg
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\nachalnye-fusy.jpg
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\otkrytie-programmy.jpg
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera.md
+				bifeArduino\pereproshivka-zagruzchika-arduino-c-dobavleniem-storozhevogo-tajmera\raspinovka-USBASP.jpg
 			-pyat-kopeek-pro-ukazateli-v-arduino
 				-PointersAndLinks
 					bifeArduino\pyat-kopeek-pro-ukazateli-v-arduino\PointersAndLinks\PointersAndLinks.ino
@@ -104,6 +134,43 @@ BitofExpert
 					bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino
 				bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\stroki-v-operativnoj-i-v-programmnoj-pamyati.ino
 				bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\stroki-v-operativnoj-i-v-programmnoj-pamyati.md
+			-vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini
+				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
+		+bifeEsp32
+			+izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
+				+ArduinoNvs-master
+					-examples
+						-simpleFlashNVS
+							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\simpleFlashNVS\simpleFlashNVS.ino
+						-uart-controlled
+							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\uart-controlled\uart-controlled.ino
+					+src
+						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp
+						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\keywords.txt
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\library.json
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\library.properties
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\LICENSE.txt
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\README.md
+				+nvs-rw-value
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
+				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md
+				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md.backup
+				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\shema-hraneniya-dannyh-v-zapisi.png
+				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\struktura-stranicy.png
+			+kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
+				+ex5-1-33-twousoneBlink
+					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
+				-ex5-1-33-twousoneMutex
+					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneMutex\ex5-1-33-twousoneMutex.ino
+				-ex5-1-33-twousonePortCritical
+					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousonePortCritical\ex5-1-33-twousonePortCritical.ino
+				-ex5-1-33-twousoneSemaphore
+					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneSemaphore\ex5-1-33-twousoneSemaphore.ino
+				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01.png
+				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
+				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
+				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
 		-bifeFritzing
 			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
@@ -173,9 +240,13 @@ BitofExpert
 0=www\index.php
 1=bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino
 2=bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
+3=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp
+4=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h
+5=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
+6=bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
 [Selected Project Files]
 Main=
-Selected=bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
+Selected=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
@@ -183,5 +254,17 @@ Caret=30,43
 TopLine=3
 Caret=1,1
 [bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino]
+TopLine=21
+Caret=1,51
+[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp]
+TopLine=315
+Caret=1,1
+[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h]
+TopLine=28
+Caret=1,28
+[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino]
 TopLine=1
-Caret=1,23
+Caret=14,96
+[bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino]
+TopLine=31
+Caret=89,70
