@@ -204,6 +204,8 @@ ESP32 NVS хранит данные в виде пар «ключ-значени
 - строки с нулевым завершением;
 - двоичные данные переменной длины (blob).
 
+#### [Скетч3: Пример работы с библиотекой ArduinoNvs](simpleFlashNVS/simpleFlashNVS.ino)
+
 ### Библиография
 
 #### [Non-Volatile Storage Library](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/storage/nvs_flash.html)
