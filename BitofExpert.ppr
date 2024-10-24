@@ -18,7 +18,7 @@ Extensions=*.*
 [Project tree]
 BitofExpert
 	+BitofExpert
-		-bifeArduino
+		+bifeArduino
 			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
 				-PL2303_Prolific_DriverInstaller_1025
 					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303_Prolific_DriverInstaller_1025\PL2303_Prolific_DriverInstaller_1025.exe
@@ -97,8 +97,8 @@ BitofExpert
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\nec8-protocol.jpeg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\One-or-Zero.jpeg
 				bifeArduino\infrakrasnyj-pult-na-smartfone-dlya-vsego\vybor-kodov-universalnogo-pulta.png
-			-obrabotka-preryvanij-ot-tajmerov
-				-simple1
+			+obrabotka-preryvanij-ot-tajmerov
+				+simple1
 					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple1\simple1.ino
 				-simple2
 					bifeArduino\obrabotka-preryvanij-ot-tajmerov\simple2\simple2.ino
@@ -138,13 +138,13 @@ BitofExpert
 				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
 		+bifeEsp32
 			+izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
-				+ArduinoNvs-master
+				-ArduinoNvs-master
 					-examples
 						-simpleFlashNVS
 							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\simpleFlashNVS\simpleFlashNVS.ino
 						-uart-controlled
 							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\uart-controlled\uart-controlled.ino
-					+src
+					-src
 						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp
 						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\keywords.txt
@@ -152,14 +152,16 @@ BitofExpert
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\library.properties
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\LICENSE.txt
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\README.md
-				+nvs-rw-value
+				+nvs-rw-blob
+					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
+				-nvs-rw-value
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md.backup
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\shema-hraneniya-dannyh-v-zapisi.png
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\struktura-stranicy.png
-			+kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
-				+ex5-1-33-twousoneBlink
+			-kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
+				-ex5-1-33-twousoneBlink
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
 				-ex5-1-33-twousoneMutex
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneMutex\ex5-1-33-twousoneMutex.ino
@@ -238,33 +240,13 @@ BitofExpert
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
-1=bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino
-2=bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino
-3=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp
-4=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h
-5=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
-6=bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
+1=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
+Selected=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
-[bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\PersonInfo\PersonInfo.ino]
-TopLine=3
-Caret=1,1
-[bifeArduino\delaem-programmator-dlya-esp8266-esp01\Blink-ESP8266-IKD\Blink-ESP8266-IKD.ino]
-TopLine=21
-Caret=1,51
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp]
-TopLine=315
-Caret=1,1
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h]
-TopLine=28
-Caret=1,28
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino]
-TopLine=1
-Caret=14,96
-[bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino]
-TopLine=31
-Caret=89,70
+[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino]
+TopLine=203
+Caret=1,230
