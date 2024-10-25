@@ -38,6 +38,8 @@
 
 #### [Как писать параллельные многозадачные приложения ESP32 в Arduino с FreeRTOS](bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md) [2024-10-16]
 
+#### [Изучаем NVS - энергонезависимое хранилище параметров](bifeEsp32/izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov/izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md) [2024-10-25]
+
 ---
 
 ### GitHub - дорогу осилит идущий
@@ -76,41 +78,5 @@ Windows, как жизнь: никогда не знаешь что будет �
 -->
 
 ---
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-0
-
-ф
-
-a
-
-b
-
-c
-
-d
-
-e
-
-f
-
-
 
 ###### [в начало](#%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B8-%D0%BE%D0%BF%D1%8B%D1%82%D0%B0)
