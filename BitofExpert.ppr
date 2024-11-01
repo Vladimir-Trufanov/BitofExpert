@@ -137,26 +137,12 @@ BitofExpert
 			-vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini
 				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
 		+bifeEsp32
-			+izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
-				-ArduinoNvs-master
-					-examples
-						-simpleFlashNVS
-							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\simpleFlashNVS\simpleFlashNVS.ino
-						-uart-controlled
-							bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\examples\uart-controlled\uart-controlled.ino
-					-src
-						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.cpp
-						bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\src\ArduinoNvs.h
-					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\keywords.txt
-					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\library.json
-					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\library.properties
-					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\LICENSE.txt
-					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\ArduinoNvs-master\README.md
+			-izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
 				-nvs-rw-blob
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
-				+nvs-rw-value
+				-nvs-rw-value
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
-				+simpleFlashNVS
+				-simpleFlashNVS
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\simpleFlashNVS\ArduinoNvs.cpp
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\simpleFlashNVS\ArduinoNvs.h
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\simpleFlashNVS\simpleFlashNVS.ino
@@ -176,7 +162,10 @@ BitofExpert
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
-			bifeEsp32\Partition Scheme.jpg
+			+razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi
+				+high-watermark
+					bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
+				bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi.md
 		-bifeFritzing
 			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
@@ -245,21 +234,13 @@ BitofExpert
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
-1=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
-2=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\simpleFlashNVS\simpleFlashNVS.ino
-3=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
+1=bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino
+Selected=bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino]
-TopLine=175
-Caret=84,214
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\simpleFlashNVS\simpleFlashNVS.ino]
-TopLine=15
-Caret=1,33
-[bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-value\nvs-rw-value.ino]
-TopLine=15
-Caret=36,49
+[bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino]
+TopLine=35
+Caret=51,54
