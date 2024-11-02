@@ -1,90 +1,83 @@
-/** Arduino-Esp32-CAM                             *** RepeatTimer.ino ***
+/** Arduino-Esp32-CAM                                   *** RepeatTimer.ino ***
  * 
- *                ----Базовый пример сторожевого таймера задач в ESP32 board 5.1.33
+ *                                  Показать использование аппаратного таймера. 
+ * В скетче запускается таймерное прерывание каждую секунду. В последовательный 
+ *   порт выводится значение счётчика прерываний и время очередного прерывания.  
+ *                 Работу таймера можно остановить замкнув контакт IO0 на землю
  *                                        (на контроллере AI-Thinker ESP32-CAM)
  * 
- * v1.1, 12.10.2024                                   Автор:      Труфанов В.Е.
- * Copyright © 2024 tve                               Дата создания: 12.10.2024
- * 
- * Ключевой момент — установить задержку минимум в 1 мс после выполнения 
- * esp_task_wdt_reset:
+ * v1.0, 02.11.2024                                   Автор:      Труфанов В.Е.
+ * Copyright © 2024 tve                               Дата создания: 02.11.2024
 **/
-/*
- Repeat timer example
 
- This example shows how to use hardware timer in ESP32. The timer calls onTimer
- function every second. The timer can be stopped with button attached to PIN 0
- (IO0).
-
- This example code is in the public domain.
- */
-
-// Stop button is attached to PIN 0 (IO0)
+// Назначаем 0 пин на остановку таймера
 #define BTN_STOP_ALARM 0
-
+// Определяем заголовок для объекта таймера
 hw_timer_t *timer = NULL;
+// Определяем заголовок семафора, который будет указывать на срабатывание таймера
 volatile SemaphoreHandle_t timerSemaphore;
+// Инициируем спинлок критической секции в обработчике таймерного прерывания
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-
+// Определяем защищенные переменные: счетчик прерываний и время последнего
 volatile uint32_t isrCounter = 0;
 volatile uint32_t lastIsrAt = 0;
 
-void ARDUINO_ISR_ATTR onTimer() {
-  // Increment the counter and set the time of ISR
-  portENTER_CRITICAL_ISR(&timerMux);
-  isrCounter = isrCounter + 1;
-  lastIsrAt = millis();
-  portEXIT_CRITICAL_ISR(&timerMux);
-  // Give a semaphore that we can check in the loop
-  xSemaphoreGiveFromISR(timerSemaphore, NULL);
-  // It is safe to use digitalRead/Write here if you want to toggle an output
+void ARDUINO_ISR_ATTR onTimer() 
+{
+   // Инкрементируем счетчик прерываний и фиксируем время текущего прерывания
+   portENTER_CRITICAL_ISR(&timerMux);
+   isrCounter = isrCounter + 1;
+   lastIsrAt = millis();
+   portEXIT_CRITICAL_ISR(&timerMux);
+   // Освобождаем семафора, который будем проверять в основном цикле
+   xSemaphoreGiveFromISR(timerSemaphore, NULL);
 }
 
-void setup() {
-  Serial.begin(115200);
-
-  // Set BTN_STOP_ALARM to input mode
-  pinMode(BTN_STOP_ALARM, INPUT);
-
-  // Create semaphore to inform us when the timer has fired
-  timerSemaphore = xSemaphoreCreateBinary();
-
-  // Set timer frequency to 1Mhz
-  timer = timerBegin(1000000);
-
-  // Attach onTimer function to our timer.
-  timerAttachInterrupt(timer, &onTimer);
-
-  // Set alarm to call onTimer function every second (value in microseconds).
-  // Repeat the alarm (third parameter) with unlimited count = 0 (fourth parameter).
-  timerAlarm(timer, 1000000, true, 0);
+void setup() 
+{
+   Serial.begin(115200);
+   // Переводим нулевой пин в режим ввода
+   pinMode(BTN_STOP_ALARM, INPUT);
+   // Создаём бинарный семафор, сообщающий о срабатывании таймера
+   timerSemaphore = xSemaphoreCreateBinary();
+   // Создаём объект таймера, устанавливаем его частоту отсчёта (1Mhz)
+   timer = timerBegin(1000000);
+   // Подключаем функцию обработчика прерывания от таймера - onTimer
+   timerAttachInterrupt(timer, &onTimer);
+   // Настраиваем таймер: интервал перезапуска - 1 секунда (1000000 микросекунд),
+   // всегда повторяем перезапуск (третий параметр = true), неограниченное число 
+   // раз (четвертый параметр = 0) 
+   timerAlarm(timer, 1000000, true, 0);
 }
 
-void loop() {
-  // If Timer has fired
-  if (xSemaphoreTake(timerSemaphore, 0) == pdTRUE) {
-    uint32_t isrCount = 0, isrTime = 0;
-    // Read the interrupt count and time
-    portENTER_CRITICAL(&timerMux);
-    isrCount = isrCounter;
-    isrTime = lastIsrAt;
-    portEXIT_CRITICAL(&timerMux);
-    // Print it
-    Serial.print("onTimer no. ");
-    Serial.print(isrCount);
-    Serial.print(" at ");
-    Serial.print(isrTime);
-    Serial.println(" ms");
-  }
-  // If button is pressed
-  if (digitalRead(BTN_STOP_ALARM) == LOW) {
-    // If timer is still running
-    if (timer) {
-      // Stop and free timer
-      timerEnd(timer);
-      timer = NULL;
-    }
-  }
+void loop() 
+{
+   // Если семафор свободен, выполняем обработку ситуации
+   // (после завершения обработки семафор будет снова занят)
+   if (xSemaphoreTake(timerSemaphore, 0) == pdTRUE) 
+   {
+      uint32_t isrCount = 0, isrTime = 0;
+      // Выбираем "текущие" значения счетчика прерываний и времени прерывания
+      portENTER_CRITICAL(&timerMux);
+      isrCount = isrCounter;
+      isrTime = lastIsrAt;
+      portEXIT_CRITICAL(&timerMux);
+      // Распечатываем
+      Serial.print("Счетчик прерываний: ");
+      Serial.print(isrCount);
+      Serial.print(" Время: ");
+      Serial.print(isrTime);
+      Serial.println(" ms");
+   }
+   // Если IO0 замкнут GND, то останавливаем таймер
+   if (digitalRead(BTN_STOP_ALARM) == LOW) 
+   {
+      if (timer) 
+      {
+         timerEnd(timer);
+         timer = NULL;
+      }
+   }
 }
 
-// ************************************************** ex5-1-33_BasicWDT.ino ***
+// ******************************************************** RepeatTimer.ino ***

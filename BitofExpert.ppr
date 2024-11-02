@@ -137,6 +137,12 @@ BitofExpert
 			-vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini
 				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
 		+bifeEsp32
+			+ispolzovanie-tajmernyh-preryvanij-v-esp32
+				+RepeatTimer
+					bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
+				-WatchdogTimer
+					bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\WatchdogTimer\WatchdogTimer.ino
+				bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\ispolzovanie-tajmernyh-preryvanij-v-esp32.md
 			-izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
 				-nvs-rw-blob
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
@@ -162,12 +168,12 @@ BitofExpert
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
-			+obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
+			-obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
 				-ex5-1-33_BasicWDT
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_BasicWDT\ex5-1-33_BasicWDT.ino
 				-ex5-1-33_DeadLockWDT
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_DeadLockWDT\ex5-1-33_DeadLockWDT.ino
-				+ex5-1-33_GreatWDT
+				-ex5-1-33_GreatWDT
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_GreatWDT\ex5-1-33_GreatWDT.ino
 				-ex5-1-33_Watchdog
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_Watchdog\ex5-1-33_Watchdog.ino
@@ -186,7 +192,6 @@ BitofExpert
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\4.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\A-typical-Watchdog-setup.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md
-				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md.backup
 			-razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi
 				-high-watermark
 					bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
@@ -259,17 +264,13 @@ BitofExpert
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
-1=bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
-2=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_GreatWDT\ex5-1-33_GreatWDT.ino
+1=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_GreatWDT\ex5-1-33_GreatWDT.ino
+Selected=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
-[bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino]
-TopLine=35
-Caret=51,54
-[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_GreatWDT\ex5-1-33_GreatWDT.ino]
-TopLine=1
-Caret=13,7
+[bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino]
+TopLine=44
+Caret=18,6
