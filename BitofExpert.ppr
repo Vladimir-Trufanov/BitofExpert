@@ -138,11 +138,12 @@ BitofExpert
 				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
 		+bifeEsp32
 			+ispolzovanie-tajmernyh-preryvanij-v-esp32
-				+RepeatTimer
+				-RepeatTimer
 					bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
-				-WatchdogTimer
+				+WatchdogTimer
 					bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\WatchdogTimer\WatchdogTimer.ino
 				bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\ispolzovanie-tajmernyh-preryvanij-v-esp32.md
+				bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\ispolzovanie-tajmernyh-preryvanij-v-esp32.md.backup
 			-izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov
 				-nvs-rw-blob
 					bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\nvs-rw-blob\nvs-rw-blob.ino
@@ -265,12 +266,16 @@ BitofExpert
 [Open project files]
 0=www\index.php
 1=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
+2=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\WatchdogTimer\WatchdogTimer.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
+Selected=bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\WatchdogTimer\WatchdogTimer.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
 [bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino]
-TopLine=44
-Caret=18,6
+TopLine=1
+Caret=15,5
+[bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\WatchdogTimer\WatchdogTimer.ino]
+TopLine=1
+Caret=26,53
