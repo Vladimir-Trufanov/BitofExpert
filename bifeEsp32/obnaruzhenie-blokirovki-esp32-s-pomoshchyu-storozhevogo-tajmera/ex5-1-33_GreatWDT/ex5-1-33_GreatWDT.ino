@@ -23,17 +23,16 @@
 hw_timer_t *timer = NULL;
 // Инициируем спинлок критической секции в обработчике таймерного прерывания
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-
+// Определяем число, которое будет считываться в основном цикле
 volatile int inumber;
-
-
+// Определяем задачи и их флаги
 void vTask1(void *pvParameters);
 void vTask2(void *pvParameters);
 void vTask3(void *pvParameters);
 void vTask4(void *pvParameters);
-
 int flag[] = {0, 0, 0, 0};
 
+// Обработка прерывания от таймера
 void IRAM_ATTR onTimer() 
 {
    portENTER_CRITICAL_ISR(&timerMux);
@@ -57,6 +56,8 @@ void IRAM_ATTR onTimer()
    portEXIT_CRITICAL_ISR(&timerMux);
 }
 
+// Начальная настройка: выделяем четыре задачи (две на 0 процессоре, две на 1)
+// и обеспечиваем запуск прерывания от таймера периодически через 3 секунды
 void setup() 
 {
    Serial.begin(115200);
@@ -107,14 +108,26 @@ void setup()
    timerAlarm(timer, 3000000, true, 0);
 }
 
+// Основной цикл: считываем с последовательного порта целое число
+// (так как в зависимости от окружения за целым числом может следовать нулевое значение,
+// то отсекаем 0)
 void loop() 
 {
    if (Serial.available() > 0) 
    {
       int ii=Serial.parseInt();
       if (ii>0) inumber=ii;
-      //inumber=Serial.parseInt();
       delay(100);
+   }
+}
+
+// Имитируем событие зависания процессора
+void MimicMCUhangEvent(String NameTask)
+{
+   while (true)
+   {
+      Serial.print(NameTask);
+      Serial.println(": зависание процессора!!!");
    }
 }
 
@@ -122,100 +135,43 @@ void vTask1(void* pvParameters)
 {
    for (;;)
    {
-      Serial.println("Task1");
+      Serial.print("Task1 ");
       // В обычном режиме делаем паузу 500 мсек и выставляем бит задачи в 1
       vTaskDelay(500/portTICK_PERIOD_MS);
       flag[0] = 1;
-      // Имитируем зависание микроконтроллера с помощью последовательного порта
-      if (inumber == 1) 
-      {
-         while (true) 
-         {
-            Serial.println("MCU-Task1 hang event!!!");
-         }
-      }
-
-      /*
-      if (Serial.available() > 0) 
-      {
-         if (Serial.parseInt() == 1) 
-         {
-            while (true) 
-            {
-               Serial.println("MCU-Task1 hang event!!!");
-            }
-         }
-      }
-      */
-  }
+      // Имитируем зависание микроконтроллера с помощью опознанного числа,
+      // принятого в последовательном порту
+      if (inumber == 1) MimicMCUhangEvent("Task1");   
+   }
 }
-
 void vTask2(void* pvParameters) 
 {
    for ( ;; )
    {
-      Serial.println("Task2");
-      /*
-      // Mimic the MCU hang event using Serial port
-      if (Serial.available() > 0) 
-      {
-         if (Serial.parseInt() == 2) 
-         {
-            while (true) 
-            {
-               Serial.println("MCU-Task2 hang event!!!");
-            }
-         }
-      }
-      */
-      flag[1] = 1;
+      Serial.print("Task2 ");
       vTaskDelay(500/portTICK_PERIOD_MS);
+      flag[1] = 1;
+      if (inumber == 2) MimicMCUhangEvent("Task2");   
    }
 }
-
 void vTask3(void* pvParameters) 
 {
    for ( ;; )
    {
-      Serial.println("Task3");
-      /*
-      // Mimic the MCU hang event using Serial port
-      if (Serial.available() > 0) 
-      {
-         if (Serial.parseInt() == 1) 
-         {
-            while (true) 
-            {
-               Serial.println("MCU hang event!!!");
-           }
-         }
-      }
-      */
-      flag[2] = 1;
+      Serial.print("Task3 ");
       vTaskDelay(500/portTICK_PERIOD_MS);
+      flag[2] = 1;
+      if (inumber == 3) MimicMCUhangEvent("Task3");   
    }
 }
-
 void vTask4(void* pvParameters) 
 {
    for ( ;; )
    {
-      Serial.println("Task4");
-      /*
-      // Mimic the MCU hang event using Serial port
-      if (Serial.available() > 0) 
-      {
-         if (Serial.parseInt() == 1) 
-         {
-            while (true) 
-            {
-               Serial.println("MCU hang event!!!");
-           }
-         }
-      }
-      */
-      flag[3] = 1;
+      Serial.print("Task4 ");
       vTaskDelay(500/portTICK_PERIOD_MS);
+      flag[3] = 1;
+      if (inumber == 4) MimicMCUhangEvent("Task4");   
    }
 }
 
