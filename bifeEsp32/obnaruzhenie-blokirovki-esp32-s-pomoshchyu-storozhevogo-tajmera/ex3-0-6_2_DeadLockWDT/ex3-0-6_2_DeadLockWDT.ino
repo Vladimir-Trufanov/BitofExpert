@@ -1,6 +1,6 @@
-/** Arduino-Esp32-CAM                             *** ex5-1-33_BasicWDT.ino ***
+/** Arduino-Esp32-CAM                             *** ex3-0-6_2_DeadLockWDT.ino ***
  * 
- *                Базовый пример сторожевого таймера задач в ESP32 board 5.1.33
+ *                ---Базовый пример сторожевого таймера задач в ESP32 board 5.1.33
  *                                        (на контроллере AI-Thinker ESP32-CAM)
  * 
  * v1.0, 13.10.2024                                   Автор:      Труфанов В.Е.
@@ -16,18 +16,13 @@
  * остальные должны ждать своего шанса.
 **/
 
-#include <esp_task_wdt.h>
-#define WDT_TIMEOUT 10     // тайм-аут в секундах
-esp_err_t ESP32_ERROR;     // возвращенное значение при инициализации TWDT
-
 static SemaphoreHandle_t mutex_1;
 static SemaphoreHandle_t mutex_2;
 
 // Task A (high priority)
-void doTaskA(void *parameters) 
-{
-  while (1) 
-  {
+void doTaskA(void *parameters) {
+  while (1) {
+
     // Take mutex 1 (introduce wait to force deadlock)
     xSemaphoreTake(mutex_1, portMAX_DELAY);
     Serial.println("Task A took mutex 1");
@@ -52,10 +47,8 @@ void doTaskA(void *parameters)
 }
 
 // Task B (low priority)
-void doTaskB(void *parameters) 
-{
-  while (1) 
-  {
+void doTaskB(void *parameters) {
+  while (1) {
 
     // Take mutex 2 (introduce wait to force deadlock)
     xSemaphoreTake(mutex_2, portMAX_DELAY);
@@ -80,36 +73,23 @@ void doTaskB(void *parameters)
   }
 }
 
-void setup() 
-{
-   Serial.begin(115200);
+void setup() {
+  Serial.begin(115200);
 
-   /*
-   // Отменяем подписку на незанятые задачи и деинициализируем таймер отслеживания задач TWDT
-   esp_task_wdt_deinit();
-   // Конфигурируем структуру таймера контроля задач (TWDT):
-   esp_task_wdt_config_t wdt_config = 
-   {
-      .timeout_ms = WDT_TIMEOUT * 1000,                 // длительность тайм-аута в мс
-      .idle_core_mask = (1 << portNUM_PROCESSORS) - 1,  // битовая маска для всех ядер
-      .trigger_panic = true                             // включить перезагрузку ESP32
-   };
-   // Инициализируем таймер контроля задач (TWDT)
-   ESP32_ERROR = esp_task_wdt_init(&wdt_config);
-   // Подписываем текущую задачу под наблюдение TWDT
-   esp_task_wdt_add(NULL);  
-   */
-   
-   // Create mutexes before starting tasks
-   mutex_1 = xSemaphoreCreateMutex();
-   mutex_2 = xSemaphoreCreateMutex();
+  esp_task_wdt_init(WDT_TIMEOUT, true); // Initialize ESP32 Task WDT
+  esp_task_wdt_add(NULL);               // Subscribe to the Task WDT
 
-   // Create Task A (high priority), and Task B (low priority)
-   xTaskCreate(doTaskA, "Task A", 1024, NULL, 2, NULL);
-   xTaskCreate(doTaskB, "Task B", 1024, NULL, 1, NULL);
+  // Create mutexes before starting tasks
+  mutex_1 = xSemaphoreCreateMutex();
+  mutex_2 = xSemaphoreCreateMutex();
+
+  // Create Task A (high priority), and Task B (low priority)
+  xTaskCreate(doTaskA, "Task A", 1024, NULL, 2, NULL);
+  xTaskCreate(doTaskB, "Task B", 1024, NULL, 1, NULL);
 }
 
-void loop() 
-{
+void loop() {
   // Execution should never get here
 }
+
+// ************************************************* ex3-0-6_2_DeadLockWDT.ino ***

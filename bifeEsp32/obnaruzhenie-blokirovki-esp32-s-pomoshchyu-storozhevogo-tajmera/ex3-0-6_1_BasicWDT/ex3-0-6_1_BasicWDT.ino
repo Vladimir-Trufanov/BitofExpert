@@ -1,6 +1,7 @@
-/** Arduino-Esp32-CAM                             *** ex5-1-33_BasicWDT.ino ***
+/** Arduino-Esp32-CAM                             *** ex3-0-6_1_BasicWDT.ino ***
  * 
- *                Базовый пример сторожевого таймера задач в ESP32 board 5.1.33
+ *                                                    Базовый сторожевой таймер
+  *        для плат ESP32 в версии библиотеки от Espressif Systems версии 3.0.6
  *                                        (на контроллере AI-Thinker ESP32-CAM)
  * 
  * v1.1, 12.10.2024                                   Автор:      Труфанов В.Е.
@@ -9,35 +10,6 @@
  * Ключевой момент — установить задержку минимум в 1 мс после выполнения 
  * esp_task_wdt_reset:
 **/
-
-/* ========================================== Устаревшая реализация примера ===
-#include <esp_task_wdt.h>
-#define WDT_TIMEOUT 3                   // WDT Timeout in seconds
-void setup() 
-{
-   Serial.begin(115200);
-   Serial.println("Setup started.");
-   delay(2000);
-   esp_task_wdt_init(WDT_TIMEOUT, true); // Initialize ESP32 Task WDT
-   esp_task_wdt_add(NULL);               // Subscribe to the Task WDT
-}
-void loop() 
-{
-   Serial.println("LOOP started ! ");
-   for (int i = 0; i <= 10; i++) 
-   {
-      Serial.print("Task: ");
-      Serial.println(i);
-      delay(1000);
-      // Kick the dog
-      esp_task_wdt_reset();
-   }
-   while (1) 
-   { 
-      Serial.println("MCU hang event!!!");
-   }
-}
-*/
 
 #include <esp_task_wdt.h>
 #define WDT_TIMEOUT 3      // тайм-аут в секундах
@@ -86,4 +58,4 @@ void loop()
    }
 }
 
-// ************************************************** ex5-1-33_BasicWDT.ino ***
+// ************************************************** ex3-0-6_1_BasicWDT.ino ***
