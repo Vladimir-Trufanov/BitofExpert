@@ -1,4 +1,4 @@
-/** Arduino-Esp32-CAM               *** ex3-0-6_3_SanityCheckSingleLoop.ino ***
+/** Arduino-Esp32-CAM               *** ex3-0-6-3-SanityCheckSingleLoop.ino ***
  * 
  *                                     Проверка работоспособности в одном цикле
  *         для плат ESP32 в версии библиотеки от Espressif Systems версии 3.0.6
@@ -84,4 +84,4 @@ void loop()
    }
 }
 
-// ************************************ ex3-0-6_3_SanityCheckSingleLoop.ino ***
+// ************************************ ex3-0-6-3-SanityCheckSingleLoop.ino ***

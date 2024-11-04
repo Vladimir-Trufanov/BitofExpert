@@ -17,7 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 BitofExpert
-	-BitofExpert
+	+BitofExpert
 		-bifeArduino
 			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
 				-PL2303_Prolific_DriverInstaller_1025
@@ -136,7 +136,7 @@ BitofExpert
 				bifeArduino\stroki-v-operativnoj-i-v-programmnoj-pamyati\stroki-v-operativnoj-i-v-programmnoj-pamyati.md
 			-vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini
 				bifeArduino\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini\vosstanovlenie-programmatora-na-cp2102-dlya-arduino-pro-mini.md
-		-bifeEsp32
+		+bifeEsp32
 			-ispolzovanie-tajmernyh-preryvanij-v-esp32
 				-RepeatTimer
 					bifeEsp32\ispolzovanie-tajmernyh-preryvanij-v-esp32\RepeatTimer\RepeatTimer.ino
@@ -168,7 +168,7 @@ BitofExpert
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
-			-obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
+			+obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
 				-ex3-0-6_0_Watchdog
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_0_Watchdog\ex3-0-6_0_Watchdog.ino
 				-ex3-0-6_1_BasicWDT
@@ -177,18 +177,15 @@ BitofExpert
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino
 				-ex3-0-6_3_SanityCheckSingleLoop
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_3_SanityCheckSingleLoop\ex3-0-6_3_SanityCheckSingleLoop.ino
-				-ex5-1-33_GreatWDT
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex5-1-33_GreatWDT\ex5-1-33_GreatWDT.ino
-				-Listing4_SanityCheckRTOS
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\Listing4_SanityCheckRTOS\Listing4_SanityCheckRTOS.ino
-				-MakeException
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\MakeException\MakeException.ino
-				-UsesMutex
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\UsesMutex\UsesMutex.ino
-				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\4.jpg
+				-ex3-0-6_4_SanityCheckRTOS
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino
+				+ex3-0-6_5_GreatWDT
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\A-typical-Watchdog-setup.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md
+				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md.backup
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\prostaya-proverka-rabotosposobnosti.jpg
+				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-neskolkih-zadachah.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-odnom-cikle.jpg
 			-razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi
 				-high-watermark
@@ -263,16 +260,20 @@ BitofExpert
 [Open project files]
 0=www\index.php
 1=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino
-2=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_3_SanityCheckSingleLoop\ex3-0-6_3_SanityCheckSingleLoop.ino
+2=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino
+3=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_3_SanityCheckSingleLoop\ex3-0-6_3_SanityCheckSingleLoop.ino
+Selected=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
 [bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino]
-TopLine=59
-Caret=1,88
-[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_3_SanityCheckSingleLoop\ex3-0-6_3_SanityCheckSingleLoop.ino]
-TopLine=48
-Caret=1,17
+TopLine=61
+Caret=87,100
+[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino]
+TopLine=150
+Caret=4,187
+[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino]
+TopLine=150
+Caret=8,10

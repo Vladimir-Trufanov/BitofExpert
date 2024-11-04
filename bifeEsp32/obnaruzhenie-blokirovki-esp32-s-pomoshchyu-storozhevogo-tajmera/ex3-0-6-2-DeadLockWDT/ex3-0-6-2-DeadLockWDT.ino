@@ -1,4 +1,4 @@
-/** Arduino-Esp32-CAM                         *** ex3-0-6_2_DeadLockWDT.ino ***
+/** Arduino-Esp32-CAM                         *** ex3-0-6-2-DeadLockWDT.ino ***
  * 
  *                                               Потенциальная взаимоблокировка
  *         для плат ESP32 в версии библиотеки от Espressif Systems версии 3.0.6
@@ -97,4 +97,4 @@ void setup()
 
 void loop(){}
 
-// ********************************************** ex3-0-6_2_DeadLockWDT.ino ***
+// ********************************************** ex3-0-6-2-DeadLockWDT.ino ***
