@@ -155,6 +155,20 @@ BitofExpert
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\shema-hraneniya-dannyh-v-zapisi.png
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\struktura-stranicy.png
+			+kak-nastroit-datu-i-vremya-v-esp32
+				+Advanced
+					bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
+				-LwIPSNTPexample
+					bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\LwIPSNTPexample\LwIPSNTPexample.ino
+				-SynchronizingESP32clock
+					bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\SynchronizingESP32clock\SynchronizingESP32clock.ino
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\ActiveNTPservers.png
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\ide-arduino.jpg
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-18.png
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-8.png
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.html
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.md
+				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.md.backup
 			-kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
 				-ex5-1-33-twousoneBlink
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
@@ -168,22 +182,21 @@ BitofExpert
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
-			+obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
-				-ex3-0-6_0_Watchdog
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_0_Watchdog\ex3-0-6_0_Watchdog.ino
-				-ex3-0-6_1_BasicWDT
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_1_BasicWDT\ex3-0-6_1_BasicWDT.ino
-				-ex3-0-6_2_DeadLockWDT
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino
-				-ex3-0-6_3_SanityCheckSingleLoop
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_3_SanityCheckSingleLoop\ex3-0-6_3_SanityCheckSingleLoop.ino
-				-ex3-0-6_4_SanityCheckRTOS
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino
-				+ex3-0-6_5_GreatWDT
-					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
+			-obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
+				-ex3-0-6-0-Watchdog
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-0-Watchdog\ex3-0-6-0-Watchdog.ino
+				-ex3-0-6-1-BasicWDT
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-1-BasicWDT\ex3-0-6-1-BasicWDT.ino
+				-ex3-0-6-2-DeadLockWDT
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-2-DeadLockWDT\ex3-0-6-2-DeadLockWDT.ino
+				-ex3-0-6-3-SanityCheckSingleLoop
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-3-SanityCheckSingleLoop\ex3-0-6-3-SanityCheckSingleLoop.ino
+				-ex3-0-6-4-SanityCheckRTOS
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-4-SanityCheckRTOS\ex3-0-6-4-SanityCheckRTOS.ino
+				-ex3-0-6-5-GreatWDT
+					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-5-GreatWDT\ex3-0-6-5-GreatWDT.ino
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\A-typical-Watchdog-setup.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md
-				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md.backup
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\prostaya-proverka-rabotosposobnosti.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-neskolkih-zadachah.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-odnom-cikle.jpg
@@ -244,6 +257,7 @@ BitofExpert
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Setting.jpg
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Toconfirm.jpg
 		-bifeRaspberry
+			bifeRaspberry\README.md
 		-bifeWindows
 			-kak-zamenit-drajver-na-windows
 				bifeWindows\kak-zamenit-drajver-na-windows\kak-zamenit-drajver-na-windows.md
@@ -256,24 +270,17 @@ BitofExpert
 		LICENSE
 		protocol4.txt
 		README.md
+		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
-1=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino
-2=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino
-3=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
+1=bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino
+Selected=bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
 [www\index.php]
 TopLine=24
 Caret=30,43
-[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_2_DeadLockWDT\ex3-0-6_2_DeadLockWDT.ino]
-TopLine=61
-Caret=87,100
-[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_4_SanityCheckRTOS\ex3-0-6_4_SanityCheckRTOS.ino]
-TopLine=150
-Caret=4,187
-[bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6_5_GreatWDT\ex3-0-6_5_GreatWDT.ino]
-TopLine=150
-Caret=8,10
+[bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino]
+TopLine=2
+Caret=62,34

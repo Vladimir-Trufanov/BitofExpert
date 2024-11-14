@@ -1,4 +1,4 @@
-## [Как настроить дату и время в ESP32 IDE Arduino]()
+## [Как настроить дату и время в ESP32 IDE Arduino](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeEsp32/kak-nastroit-datu-i-vremya-v-esp32/kak-nastroit-datu-i-vremya-v-esp32.md) [2024-11-14]
 
 В состав ESP32 входит два аппаратных таймера, которые могут использоваться для отслеживания системного времени в зависимости от назначения приложения и требований к точности системного времени:
 

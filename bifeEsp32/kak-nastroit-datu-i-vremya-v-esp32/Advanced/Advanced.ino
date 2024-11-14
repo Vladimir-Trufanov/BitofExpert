@@ -8,11 +8,10 @@
 const char* ssid     = "OPPO A9 2020";
 const char* password = "b277a4ee84e8";
 
-// Инициируем объект NTPClient, указываем пул серверов времени и смещение 
-// (в секундах, может быть изменено позже с помощью setTimeOffset()). 
-// Дополнительно указываем интервал обновления (в миллисекундах, может быть 
-// изменен с помощью setUpdateInterval()).
-// NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
+// Инициируем объект NTPClient, указываем российский публичный пул серверов 
+// точного времени и смещение (в секундах, может быть изменено позже 
+// с помощью setTimeOffset()). Дополнительно указываем интервал обновления 
+// (в миллисекундах, может быть изменен с помощью setUpdateInterval()).
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "ntp.msk-ix.ru", 3600, 60000);
 
@@ -26,6 +25,7 @@ void setup()
     delay (500);
     Serial.print (".");
   }
+  Serial.println("");
   // Переопределяем смещение на 3 часа от "Гринвича"
   timeClient.setTimeOffset(3*60*60);
   // Запускаем NTPClient
@@ -36,6 +36,7 @@ void setup()
 void loop() 
 {
   timeClient.update();
+  Serial.print("Время в Петрозаводске: ");
   Serial.println(timeClient.getFormattedTime());
   delay(1000);
 }
