@@ -12,8 +12,9 @@ const char* password = "b277a4ee84e8";
 // (в секундах, может быть изменено позже с помощью setTimeOffset()). 
 // Дополнительно указываем интервал обновления (в миллисекундах, может быть 
 // изменен с помощью setUpdateInterval()).
+// NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
+NTPClient timeClient(ntpUDP, "ntp.msk-ix.ru", 3600, 60000);
 
 void setup()
 {
