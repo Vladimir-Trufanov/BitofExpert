@@ -147,18 +147,15 @@ SNTP был специально разработан для небольших 
  
 В первом примере происходит подключение к пулу серверов, выполняется синхронизация точного времени с внутренними часами контроллера, затем с интервалом в 10 секунд воспроизводится время с внутреннего таймера платы. Кроме этого в фоновом режиме, автоматически, при подключенном WiFi выполняются повторные синхронизации системного времени Esp32 с точным временем по SNTP. 
 
-#### [Синхронизировать дату и время ESP32 с сервером NTP по протоколу SNTP](SynchronizingESP32clock/SynchronizingESP32clock.ino)
+#### [Скетч "Синхронизировать дату и время ESP32 с сервером NTP по протоколу SNTP"](SynchronizingESP32clock/SynchronizingESP32clock.ino)
 
+В следующем скетче при запуске контроллера проверяется системное время, если время еще не установлено, производится его синхронизация по протоколу SNTP с серверами точного времени, затем контроллер переводится в глубокий сон на несколько секунд, потом просыпается, показывает текущее время и повторяется перевод в глубокий сон.
 
+Кроме этого контроллер использует память  таймера RTC для хранения переменной, которая содержит количество перезагрузок ESP32. После каждого "просыпания" значение этого счетчика увеличивается на 1.
 
+> Размер памяти RTC в ESP32 составляет 8 кбайт.
 
- 
-
-
-
-
-
-
+#### [Скетч "Cинхронизировать системное время, перевести устройство в "глубокий сон" и хранить счетчик запусков в памяти RTC"](LwIPSNTPexample/LwIPSNTPexample.ino)
 
 ### Библиография
 
@@ -166,60 +163,4 @@ SNTP был специально разработан для небольших 
 
 #### [How to synchronize ESP32 clock with SNTP server](https://www.makerguides.com/how-to-synchronize-esp32-clock-with-sntp-server/)
 
-
-
-
-
-
-
-### [System Time](https://docs.espressif.com/projects/esp-idf/en/v5.3.1/esp32/api-reference/system/system_time.html)
-
-### [ESP-IDF System Time](https://microsin.net/programming/arm/esp-idf-system-time.html)
-
-### [Deep Sleep Wake Stubs - заглушки для пробуждения в режиме глубокого сна](https://docs.espressif.com/projects/esp-idf/en/v5.3.1/esp32/api-guides/deep-sleep-stub.html)
-
-### [Настенные часы с синхронизацией через интернет](https://lesson.iarduino.ru/page/ntp_esp32/)
-
-#### [ Получение даты и времени от ESP32 в Arduino IDE (NTP-клиент)](https://diytech.ru/projects/poluchenie-daty-i-vremeni-ot-esp32-v-arduino-ide-ntp-klient)
-
-#### [ESP32 SNTP Module using ESP-IDF – Synchronize Time with NTP](https://esp32tutorials.com/esp32-sntp-esp-idf-synchronize-time-ntp/)
-
-Яндекс-запрос: "пример использования esp_sntp_config_t для esp32"
-
-###### [в начало](#kvizzy)
-
-0
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-0
-
-1
-
-2
-
-3
-
-4
-
-5
-
-
-
-
+#### [Настенные часы с синхронизацией через интернет](https://lesson.iarduino.ru/page/ntp_esp32/)
