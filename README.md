@@ -36,6 +36,8 @@
 
 ### Esp32 - маленькое сердце большого хозяйства
 
+#### [Все прo память Esp32](bifeEsp32/vse-pro-pamyat-esp32/vse-pro-pamyat-esp32.md) [2024-11-20]
+
 #### [Изучаем NVS - энергонезависимое хранилище параметров](bifeEsp32/izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov/izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md) [2024-10-25]
 
 #### [Использование таймерных прерываний в Esp32](bifeEsp32/ispolzovanie-tajmernyh-preryvanij-v-esp32/ispolzovanie-tajmernyh-preryvanij-v-esp32.md) [2024-11-03]

@@ -155,8 +155,8 @@ BitofExpert
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov.md
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\shema-hraneniya-dannyh-v-zapisi.png
 				bifeEsp32\izuchaem-nvs-ehnergonezavisimoe-hranilishche-parametrov\struktura-stranicy.png
-			+kak-nastroit-datu-i-vremya-v-esp32
-				+Advanced
+			-kak-nastroit-datu-i-vremya-v-esp32
+				-Advanced
 					bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
 				-LwIPSNTPexample
 					bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\LwIPSNTPexample\LwIPSNTPexample.ino
@@ -166,9 +166,7 @@ BitofExpert
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\ide-arduino.jpg
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-18.png
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-8.png
-				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.html
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.md
-				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.md.backup
 			-kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
 				-ex5-1-33-twousoneBlink
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
@@ -204,6 +202,34 @@ BitofExpert
 				-high-watermark
 					bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\high-watermark\high-watermark.ino
 				bifeEsp32\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi\razbiraemsya-s-vydelennoj-pamyatyu-dlya-zadachi.md
+			-raznye-sistemnye-api-dlya-esp32
+				bifeEsp32\raznye-sistemnye-api-dlya-esp32\raznye-sistemnye-api-dlya-esp32.md
+				bifeEsp32\raznye-sistemnye-api-dlya-esp32\Обработчик завершения работы.md
+			+vse-pro-pamyat-esp32
+				+ControllerMemory
+					bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino
+				bifeEsp32\vse-pro-pamyat-esp32\Cache-Block-Diagram.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\Cache-memory-mode.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\module-with-dma.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\PeripheralAddressMapping1.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\PeripheralAddressMapping2.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
+				bifeEsp32\vse-pro-pamyat-esp32\vse-pro-pamyat-esp32.md
+				bifeEsp32\vse-pro-pamyat-esp32\vse-pro-pamyat-esp32.md.backup
+				bifeEsp32\vse-pro-pamyat-esp32\Win10ChDe352k.png
+				bifeEsp32\vse-pro-pamyat-esp32\Настройки.jpg
+			-vse-pro-spi-flash-pamyat
+				bifeEsp32\vse-pro-spi-flash-pamyat\vse-pro-spi-flash-pamyat.md
+			-vse-pro-spi-sram-pamyat
+				bifeEsp32\vse-pro-spi-sram-pamyat\vse-pro-spi-sram-pamyat.md
+				bifeEsp32\vse-pro-spi-sram-pamyat\Работа с EEPROM памятью.md
+			-vse-pro-sram-pamyat
+				bifeEsp32\vse-pro-sram-pamyat\obychnaya-shema-deleniya-pamyati-mezhdu-shinami.jpg
+				bifeEsp32\vse-pro-sram-pamyat\organizaciya-dram.jpg
+				bifeEsp32\vse-pro-sram-pamyat\organizaciya-iram.jpg
+				bifeEsp32\vse-pro-sram-pamyat\shema-vnutrennej-operativnoj-pamyati.jpg
+				bifeEsp32\vse-pro-sram-pamyat\vse-pro-sram-pamyat.jpg
+				bifeEsp32\vse-pro-sram-pamyat\vse-pro-sram-pamyat.md
 		-bifeFritzing
 			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
@@ -270,17 +296,24 @@ BitofExpert
 		LICENSE
 		protocol4.txt
 		README.md
-		README.md.backup
 		Прозрачный разрыв страницы.png
 [Open project files]
 0=www\index.php
 1=bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
+2=bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino
+3=bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
+Selected=bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
 [www\index.php]
 TopLine=24
 Caret=30,43
 [bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino]
-TopLine=2
+TopLine=1
 Caret=62,34
+[bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino]
+TopLine=13
+Caret=72,1
+[bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt]
+TopLine=79
+Caret=52,118
