@@ -205,25 +205,26 @@ BitofExpert
 			-raznye-sistemnye-api-dlya-esp32
 				bifeEsp32\raznye-sistemnye-api-dlya-esp32\raznye-sistemnye-api-dlya-esp32.md
 				bifeEsp32\raznye-sistemnye-api-dlya-esp32\Обработчик завершения работы.md
-			+vse-pro-pamyat-esp32
-				+ControllerMemory
+			-vse-pro-pamyat-esp32
+				-ControllerMemory
 					bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino
 				bifeEsp32\vse-pro-pamyat-esp32\Cache-Block-Diagram.jpg
 				bifeEsp32\vse-pro-pamyat-esp32\Cache-memory-mode.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\esp32_technical_reference_manual_en.pdf
 				bifeEsp32\vse-pro-pamyat-esp32\module-with-dma.jpg
+				bifeEsp32\vse-pro-pamyat-esp32\nastrsketcha.jpg
 				bifeEsp32\vse-pro-pamyat-esp32\PeripheralAddressMapping1.jpg
 				bifeEsp32\vse-pro-pamyat-esp32\PeripheralAddressMapping2.jpg
-				bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
 				bifeEsp32\vse-pro-pamyat-esp32\vse-pro-pamyat-esp32.md
-				bifeEsp32\vse-pro-pamyat-esp32\vse-pro-pamyat-esp32.md.backup
 				bifeEsp32\vse-pro-pamyat-esp32\Win10ChDe352k.png
-				bifeEsp32\vse-pro-pamyat-esp32\Настройки.jpg
 			-vse-pro-spi-flash-pamyat
 				bifeEsp32\vse-pro-spi-flash-pamyat\vse-pro-spi-flash-pamyat.md
 			-vse-pro-spi-sram-pamyat
 				bifeEsp32\vse-pro-spi-sram-pamyat\vse-pro-spi-sram-pamyat.md
 				bifeEsp32\vse-pro-spi-sram-pamyat\Работа с EEPROM памятью.md
-			-vse-pro-sram-pamyat
+			+vse-pro-sram-pamyat
+				+StackFiller
+					bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
 				bifeEsp32\vse-pro-sram-pamyat\obychnaya-shema-deleniya-pamyati-mezhdu-shinami.jpg
 				bifeEsp32\vse-pro-sram-pamyat\organizaciya-dram.jpg
 				bifeEsp32\vse-pro-sram-pamyat\organizaciya-iram.jpg
@@ -298,22 +299,14 @@ BitofExpert
 		README.md
 		Прозрачный разрыв страницы.png
 [Open project files]
-0=www\index.php
-1=bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino
-2=bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino
-3=bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
+0=FillerString.txt
+1=bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt
-[www\index.php]
-TopLine=24
-Caret=30,43
-[bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\Advanced\Advanced.ino]
+Selected=bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
+[FillerString.txt]
 TopLine=1
-Caret=62,34
-[bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino]
-TopLine=13
-Caret=72,1
-[bifeEsp32\vse-pro-pamyat-esp32\SvedenijaPlaty.txt]
-TopLine=79
-Caret=52,118
+Caret=1,1
+[bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino]
+TopLine=1
+Caret=81,3
