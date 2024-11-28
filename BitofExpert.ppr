@@ -180,6 +180,14 @@ BitofExpert
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
+			+kak-rabotat-s-ocheredyami-vo-freertos
+				-QueueHandleOne
+					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandleOne\QueueHandleOne.ino
+				-QueueHandlMulti
+					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti\QueueHandlMulti.ino
+				+QueueHandlMulti2
+					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
+				bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\kak-rabotat-s-ocheredyami-vo-freertos.md
 			-obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
 				-ex3-0-6-0-Watchdog
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-0-Watchdog\ex3-0-6-0-Watchdog.ino
@@ -222,8 +230,8 @@ BitofExpert
 			-vse-pro-spi-sram-pamyat
 				bifeEsp32\vse-pro-spi-sram-pamyat\vse-pro-spi-sram-pamyat.md
 				bifeEsp32\vse-pro-spi-sram-pamyat\Работа с EEPROM памятью.md
-			+vse-pro-sram-pamyat
-				+StackFiller
+			-vse-pro-sram-pamyat
+				-StackFiller
 					bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
 				bifeEsp32\vse-pro-sram-pamyat\obychnaya-shema-deleniya-pamyati-mezhdu-shinami.jpg
 				bifeEsp32\vse-pro-sram-pamyat\organizaciya-dram.jpg
@@ -292,21 +300,14 @@ BitofExpert
 			www\BitofExpert.css
 			www\index.php
 			www\iniWorkSpace.php
-			www\log.txt
 		BitofExpert.ppr
 		LICENSE
-		protocol4.txt
 		README.md
-		Прозрачный разрыв страницы.png
 [Open project files]
-0=FillerString.txt
-1=bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
+0=bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino
-[FillerString.txt]
-TopLine=1
-Caret=1,1
-[bifeEsp32\vse-pro-sram-pamyat\StackFiller\StackFiller.ino]
-TopLine=1
-Caret=81,3
+Selected=bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
+[bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino]
+TopLine=11
+Caret=1,40
