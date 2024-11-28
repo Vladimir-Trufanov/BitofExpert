@@ -1,13 +1,13 @@
 // QueueHandlMulti2.ino
 
 char buffer[1024];
+// Определяем структуру передаваемого сообщения
 struct AMessage
 {
-   int  ucSize;
-   char ucData[256];
+   int  ucSize;        // Длина сообщения (максимально 256 байт)
+   char ucData[256];   // Текст сообщения
 };  
 struct AMessage xMessage, *pxMessage;
-struct AMessage xiMessage, *pxiMessage;
 struct AMessage xRxedStructure;
 QueueHandle_t xQueue;
 
@@ -18,97 +18,62 @@ unsigned long nLoop = 0UL;
 String types(String a) {return str;}
 String types(char *a)  {return chr;}
 
+// ****************************************************************************
+// *  Сформировать сообщение о прошедшем времени с начала запуска приложения  *
+// ****************************************************************************
 // Определяем заголовок для объекта таймера
 hw_timer_t *timer = NULL;
-//
+// Выделяем и инициируем переменную для прошлого момента времени
+int lastMillis = millis(); 
+
 void ARDUINO_ISR_ATTR onTimer() 
 {
-   int i=1958;
-
+   // Размещаем структуру для сообщения в статической памяти для того,
+   // чтобы уменьшить фрагментацию кучи 
+   static DRAM_ATTR struct AMessage xiMessage;
+   // Выделяем переменную планировщикe задач FreeRTOS для указания
+   // необходимости переключения после прерывания на более приоритетную 
+   // задачу, связанную с очередью
+   static DRAM_ATTR BaseType_t xHigherPriorityTaskWoken;
+   // Выделяем переменную для текущего момента времени
+   static DRAM_ATTR int currMillis;
+   // Выделяем переменную для прошедшего времени с начала запуска приложения
+   static DRAM_ATTR int timeMillis;
+    
+   // Если в очереди есть место, будем размещать сообщение
    if (xQueue!=0)
    {
-      //char cIn;
-      BaseType_t xHigherPriorityTaskWoken;
-      /* We have not woken a task at the start of the ISR. */
+      // Сбрасываем признак переключения на более приоритетную задачу
+      // после прерывания 
       xHigherPriorityTaskWoken = pdFALSE;
-      /* Loop until the buffer is empty. */
-      //do
-      //{
-         /* Obtain a byte from the buffer. */
-         // cIn = portINPUT_BYTE( RX_REGISTER_ADDRESS );
-         /* Post the byte. */
-      // Отправляем указатель на структуру AMessage 
-      sprintf(buffer, "Take:(%d)",21);
+      // Определяем время, прошедшее с начала запуска приложения
+      currMillis = millis(); 
+      if (currMillis < lastMillis) lastMillis=0;
+      timeMillis=currMillis-lastMillis;
+      // Формируем сообщение для передачи в очередь
+      sprintf(xiMessage.ucData, "Прошло (%d) миллисекунд",timeMillis);
       xiMessage.ucSize = 0;
-      while (buffer[xiMessage.ucSize]>0) 
+      while (xiMessage.ucData[xiMessage.ucSize]>0) 
       {
-         xiMessage.ucData[xiMessage.ucSize]=buffer[xiMessage.ucSize];
          xiMessage.ucSize++;
       }
-      pxiMessage = &xiMessage;
-      if (xQueueSendFromISR(xQueue, pxiMessage, &xHigherPriorityTaskWoken) != pdPASS)
-      //if (xQueueSendFromISR(xQueue,pxiMessage,2) != pdPASS)
+      // Отправляем сообщение в структуре AMessage 
+      if (xQueueSendFromISR(xQueue, &xiMessage, &xHigherPriorityTaskWoken) != pdPASS)
       {
-         Serial.println("ОПЯТЬ не!");
+         Serial.println("ISR: Не удалось отправить структуру!");
       }
-      else 
-      {
-         //Serial.print ("tt: "); Serial.println (xiMessage.ucSize);
-      }
-
-      
-      //} 
-      //while( portINPUT_BYTE( BUFFER_COUNT ) );
-
-      /* Now the buffer is empty we can switch context if necessary. */
-      if( xHigherPriorityTaskWoken )
-      {
-         /* Actual macro used here is port specific. */
-         //taskYIELD_FROM_ISR ();
-      }
-
-
-    
-
-      /*
-      // Отправляем указатель на структуру AMessage 
-      sprintf(buffer, "Take:(%d)",21);
-      xiMessage.ucSize = 0;
-      while (buffer[xiMessage.ucSize]>0) 
-      {
-         xiMessage.ucData[xiMessage.ucSize]=buffer[xiMessage.ucSize];
-         xiMessage.ucSize++;
-      }
-      pxiMessage = &xiMessage;
-      //if (xQueueSend(xQueue,pxiMessage,2) != pdPASS)
-      if (xQueueSendFromISR(xQueue,pxiMessage,2) != pdPASS)
- 
-      BaseType_t xQueueSend       (QueueHandle_t xQueue,const void *pvItemToQueue,TickType_t xTicksToWait);
-      BaseType_t xQueueSendFromISR(QueueHandle_t xQueue,const void *pvItemToQueue,BaseType_t *pxHigherPriorityTaskWoken);
-
-      {
-         Serial.println("Не удалось отправить структуру даже после 10 тиков!");
-      }
-      else 
-      {
-         Serial.print ("tt: "); Serial.println (xiMessage.ucSize);
-         //Serial.print ("=>");
-         //Serial.println (xMessage.ucData);
-      }
-      */
-      
    }
    else 
    {
       Serial.println("ISR: Очередь для структур не создана!");
    }
-   // Инкрементируем счетчик прерываний и фиксируем время текущего прерывания
-   //portENTER_CRITICAL_ISR(&timerMux);
-   //isrCounter = isrCounter + 1;
-   //lastIsrAt = millis();
-   //portEXIT_CRITICAL_ISR(&timerMux);
-   // Освобождаем семафора, который будем проверять в основном цикле
-   //xSemaphoreGiveFromISR(timerSemaphore, NULL);
+   // Если требуется отдать управление планировщику на переключение 
+   // после прерывания на более приоритетную задачу, делаем это 
+   if (xHigherPriorityTaskWoken)
+   {
+      Serial.println("ISR: Управление передаётся планировщику!");
+      portYIELD_FROM_ISR();
+   }
 }
 
 void setup() 

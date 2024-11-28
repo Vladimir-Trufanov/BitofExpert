@@ -309,5 +309,5 @@ BitofExpert
 Main=
 Selected=bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
 [bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino]
-TopLine=11
-Caret=1,40
+TopLine=64
+Caret=7,76
