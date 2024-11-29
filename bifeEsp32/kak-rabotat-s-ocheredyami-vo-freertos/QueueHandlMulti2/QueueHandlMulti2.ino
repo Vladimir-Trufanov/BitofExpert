@@ -1,25 +1,29 @@
-// QueueHandlMulti2.ino
+/** Arduino-Esp32-CAM                              *** QueueHandlMulti2.ino ***
+ * 
+ *                        Пример передачи сообщения из задачи и из прерывания с
+ *                                                     приемом в основном цикле
+ * 
+ * v1.1, 29.11.2024                                   Автор:      Труфанов В.Е.
+ * Copyright © 2024 tve                               Дата создания: 21.11.2024
+**/
 
-char buffer[1024];
 // Определяем структуру передаваемого сообщения
 struct AMessage
 {
    int  ucSize;        // Длина сообщения (максимально 256 байт)
    char ucData[256];   // Текст сообщения
-};  
+};
+// Создаем структуру для передачи сообщения из задачи и указатель на нее   
 struct AMessage xMessage, *pxMessage;
+// Создаем структуру для приёма сообщений   
 struct AMessage xRxedStructure;
+// Определяем очередь сообщений
 QueueHandle_t xQueue;
-
+// Инициируем счетчик циклов дополнительной задачи
 unsigned long nLoop = 0UL;
-
-#define str "str"
-#define chr "chr"
-String types(String a) {return str;}
-String types(char *a)  {return chr;}
-
 // ****************************************************************************
 // *  Сформировать сообщение о прошедшем времени с начала запуска приложения  *
+// *                        И ПЕРЕДАТЬ ЧЕРЕЗ ПРЕРЫВАНИЕ                       *
 // ****************************************************************************
 // Определяем заголовок для объекта таймера
 hw_timer_t *timer = NULL;
@@ -51,7 +55,7 @@ void ARDUINO_ISR_ATTR onTimer()
       if (currMillis < lastMillis) lastMillis=0;
       timeMillis=currMillis-lastMillis;
       // Формируем сообщение для передачи в очередь
-      sprintf(xiMessage.ucData, "Прошло (%d) миллисекунд",timeMillis);
+      sprintf(xiMessage.ucData, "Прошло %d миллисекунд",timeMillis);
       xiMessage.ucSize = 0;
       while (xiMessage.ucData[xiMessage.ucSize]>0) 
       {
@@ -75,7 +79,9 @@ void ARDUINO_ISR_ATTR onTimer()
       portYIELD_FROM_ISR();
    }
 }
-
+// ****************************************************************************
+// *                          Инициировать приложение                         *
+// ****************************************************************************
 void setup() 
 {
    Serial.begin(115200);
@@ -90,7 +96,6 @@ void setup()
       NULL,           // дескриптор или указатель на задачу
       0               // ядро процессора, на котором требуется запустить задачу 
    );
-
    // Создаём объект таймера, устанавливаем его частоту отсчёта (1Mhz)
    timer = timerBegin(1000000);
    // Подключаем функцию обработчика прерывания от таймера - onTimer
@@ -99,46 +104,36 @@ void setup()
    // всегда повторяем перезапуск (третий параметр = true), неограниченное число 
    // раз (четвертый параметр = 0) 
    timerAlarm(timer, 1400000, true, 0);
-
-   
    // Создаем очередь из 10 структур
    xQueue = xQueueCreate(10, sizeof(struct AMessage));
    if(xQueue==NULL)
    {
-      Serial.println("Очередь не была создана и не может использоваться!");
+      Serial.println("SETUP: Очередь не была создана и не может использоваться!");
    }
-   Serial.println("Очередь сформирована!");
+   Serial.println("SETUP: Очередь сформирована!");
 }
-
 // ****************************************************************************
-// *             Выполнять передачу сообщения в бесконечном цикле,            *
-// * если задача завершится - не будет циклится, то контроллер перезагрузится *
+// *           Выполнять ПЕРЕДАЧУ СООБЩЕНИЯ ИЗ ЗАДАЧИ в бесконечном цикле     *
+//  (если задача завершится - не будет циклится, то контроллер перезагрузится)
 // ****************************************************************************
 void vATask (void* pvParameters) 
 {
    while (1) 
    {
+      nLoop++;
       if (xQueue!=0)
       {
-         // Отправляем указатель на структуру AMessage 
-         sprintf(buffer, "Передан номер цикла: (%d)", 18);
+         // Формируем сообщение для передачи в очередь
+         sprintf(xMessage.ucData, "Передано %d сообщение из задачи", nLoop);
          xMessage.ucSize = 0;
-         while (buffer[xMessage.ucSize]>0) 
+         while (xMessage.ucData[xMessage.ucSize]>0) 
          {
-            xMessage.ucData[xMessage.ucSize]=buffer[xMessage.ucSize];
             xMessage.ucSize++;
          }
          pxMessage = &xMessage;
-         if (xQueueSend(xQueue,pxMessage,2) != pdPASS)
+         if (xQueueSend(xQueue,pxMessage,5) != pdPASS)
          {
-            Serial.println(" Task Не удалось отправить структуру даже после 10 тиков!");
-         }
-            else 
-         {
-            //Serial.print ("Передано: ");
-            //Serial.print (xMessage.ucSize);
-            //Serial.print ("=>");
-            //Serial.println (xMessage.ucData);
+            Serial.println("TASK: Не удалось отправить структуру даже после 5 тиков!");
          }
       }
       else 
@@ -148,96 +143,34 @@ void vATask (void* pvParameters)
       delay (1600); 
    }
 }
- 
+// ****************************************************************************
+// *                    Выполнить основной цикл приложения                    *
+// ****************************************************************************
 void loop() 
 {
-
-   /*
-   String temp = "cat123456 Всем привет!";
-   char tab2[1024];
-   strcpy(tab2, temp.c_str());
-   String temp1=String(tab2);
-  
-   Serial.println(temp);
-   Serial.println(types(temp));
-   
-   Serial.println(tab2);
-   Serial.println(types(tab2));
-
-   Serial.println(temp1);
-   Serial.println(types(temp1));
-   
-   Serial.println(temp1.length());
-   Serial.println("----");
-   */
-  
-  nLoop++;
-  Serial.print("Цикл: ");
-  Serial.println(nLoop);
-
-  /*
-  if (xQueue != 0)
-  {
-    // Отправляем указатель на структуру AMessage 
-    sprintf(buffer, "Передан номер цикла: (%d)", nLoop);
-    xMessage.ucSize = 0;
-    while (buffer[xMessage.ucSize]>0) 
-    {
-       xMessage.ucData[xMessage.ucSize]=buffer[xMessage.ucSize];
-       xMessage.ucSize++;
-    }
-    pxMessage = &xMessage;
-    if (xQueueSend(xQueue,pxMessage,10) != pdPASS)
-    {
-      Serial.println("Не удалось отправить структуру даже после 10 тиков!");
-    }
-    else 
-    {
-      Serial.print ("Передано: ");
-      Serial.print (xMessage.ucSize);
-      Serial.print ("=>");
-      Serial.println (xMessage.ucData);
-    }
-  }
-  else 
-  {
-    Serial.println("Очередь для структур не создана!");
-  }
-  */
-  
-  if (xQueue != NULL)
-  {
-    // Получаем сообщение из созданной очереди для хранения сложного
-    // структурного сообщения. Блокировка на 10 тиков, если сообщение
-    // недоступно немедленно. Значение считывается в структурную
-    // переменную AMessage, поэтому после вызова xQueueReceive()  
-    // xRxedStructure будет содержать копию сообщения
-      
-    if (xQueueReceive(xQueue,&xRxedStructure,10) != pdPASS)
-    {
-      Serial.println("Не удалось принять структуру даже после 10 тиков!");
-    }
-    else
-    {
-      Serial.print("Выбрано: ");
-      Serial.print(xRxedStructure.ucSize);
-      Serial.print("==>");
-      Serial.println(xRxedStructure.ucData);
-      /*
-      //Serial.println(String(xRxedStructure.ucData));
-      Serial.print(xRxedStructure.ucData[0]);
-      Serial.print(xRxedStructure.ucData[1]);
-      Serial.print(xRxedStructure.ucData[2]);
-      Serial.print(xRxedStructure.ucData[3]);
-      Serial.print(xRxedStructure.ucData[4]);
-      Serial.print(xRxedStructure.ucData[5]);
-      Serial.println("---------------------");
-      */
-    }
-  }
-  else
-  {
-    Serial.println("Нет очереди!");
-  }
-  delay(1300);
+   if (xQueue != NULL)
+   {
+      // Получаем сообщение из созданной очереди для хранения сложного
+      // структурного сообщения. Блокировка на 10 тиков, если сообщение
+      // недоступно немедленно. Значение считывается в структурную
+      // переменную AMessage, поэтому после вызова xQueueReceive()  
+      // xRxedStructure будет содержать копию сообщения
+      if (xQueueReceive(xQueue,&xRxedStructure,10) != pdPASS)
+      {
+         Serial.println("LOOP: Не удалось принять структуру даже после 10 тиков!");
+      }
+      else
+      {
+         Serial.print(xRxedStructure.ucSize);
+         Serial.print(": ");
+         Serial.println(xRxedStructure.ucData);
+      }
+   }
+   else
+   {
+      Serial.println("LOOP: Нет очереди!");
+   }
+   delay(1300);
 }
+
+// *************************************************** QueueHandlMulti2.ino ***

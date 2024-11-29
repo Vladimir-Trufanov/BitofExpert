@@ -48,6 +48,8 @@
 
 #### [Как писать параллельные многозадачные приложения ESP32 в Arduino с FreeRTOS](bifeEsp32/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos/kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md) [2024-10-16]
 
+#### [Как работать с очередями во FreeRTOS](bifeEsp32/kak-rabotat-s-ocheredyami-vo-freertos/kak-rabotat-s-ocheredyami-vo-freertos.md) [2024-11-29]
+
 #### [Обнаружение блокировки ESP32 с помощью внутреннего сторожевого таймера](bifeEsp32/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md) [2024-11-04]
 
 ---

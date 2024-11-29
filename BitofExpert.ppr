@@ -183,12 +183,10 @@ BitofExpert
 			+kak-rabotat-s-ocheredyami-vo-freertos
 				-QueueHandleOne
 					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandleOne\QueueHandleOne.ino
-				-QueueHandlMulti
-					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti\QueueHandlMulti.ino
 				+QueueHandlMulti2
 					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
 				bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\kak-rabotat-s-ocheredyami-vo-freertos.md
-			-obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
+			+obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera
 				-ex3-0-6-0-Watchdog
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-0-Watchdog\ex3-0-6-0-Watchdog.ino
 				-ex3-0-6-1-BasicWDT
@@ -199,7 +197,7 @@ BitofExpert
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-3-SanityCheckSingleLoop\ex3-0-6-3-SanityCheckSingleLoop.ino
 				-ex3-0-6-4-SanityCheckRTOS
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-4-SanityCheckRTOS\ex3-0-6-4-SanityCheckRTOS.ino
-				-ex3-0-6-5-GreatWDT
+				+ex3-0-6-5-GreatWDT
 					bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\ex3-0-6-5-GreatWDT\ex3-0-6-5-GreatWDT.ino
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\A-typical-Watchdog-setup.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md
@@ -309,5 +307,5 @@ BitofExpert
 Main=
 Selected=bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino
 [bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandlMulti2\QueueHandlMulti2.ino]
-TopLine=64
-Caret=7,76
+TopLine=1
+Caret=12,6

@@ -1,7 +1,5 @@
-// QueueHandleOne.ino
-
 QueueHandle_t queue;
- 
+
 void setup() 
 {
   Serial.begin(115200);
