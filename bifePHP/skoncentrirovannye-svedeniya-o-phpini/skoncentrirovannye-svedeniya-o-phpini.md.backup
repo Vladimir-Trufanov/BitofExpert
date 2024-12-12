@@ -44,7 +44,7 @@ lsapi_phpini     /home/user/public_html
 ```
 Имя	         По умолчанию   Место изменения	Список изменений
 ---------------------------------------------------------------------------------------------------------
-allow_url_fopen	         "1"    INI_SYSTEM	 
+allow_url_fopen	        "1"   INI_SYSTEM	 
 allow_url_include	     "0"	INI_SYSTEM	Объявлено устаревшим в PHP 7.4.0.
 arg_separator.input      "&"	INI_PERDIR	 
 arg_separator.output     "&"	INI_ALL	 

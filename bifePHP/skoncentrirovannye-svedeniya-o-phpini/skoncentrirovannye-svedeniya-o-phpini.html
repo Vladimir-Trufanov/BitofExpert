@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="сконцентрированные-сведения-о-php.ini"><a href="#">Сконцентрированные сведения о PHP.INI</a></h2>
+<h2 id="как-настроить-дату-и-время-в-esp32-ide-arduino-2024-11-14"><a href="https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeEsp32/kak-nastroit-datu-i-vremya-v-esp32/kak-nastroit-datu-i-vremya-v-esp32.md">Как настроить дату и время в ESP32 IDE Arduino</a> [2024-11-14]</h2>
+<blockquote>
+<p>Каждый пользователь может создать собственный файл php.ini и разместить его в папке вызываемого скрипта. Это удобно для самостоятельного редактирования своих настроек без обращения в службу тех.поддержки.</p>
+</blockquote>
+<p>Если решено разместить в каталоге сайта php.ini, то рекомендуется в .htaccess внести директивы запрета просмотра файла php.ini посторонними:</p>
+<pre><code>&lt;Files php.ini&gt;  
+order allow,deny  
+deny from all  
+&lt;/Files&gt;</code></pre>
+<p>При такой установке PHP, в виде обработчика CGI, невозможно будет использовать в файле .htaccess следующие директивы: php_flag, php_admin_flag, php_value и прочие, которые изменяют какие-либо параметры PHP-окружения. Это вызовет ошибку с кодом 500, Internal Server Error.</p>
+<p>Внимание: <strong><em>собственный файл php.ini действителен только в пределах директории</em></strong>, в которой размещён, если не указаны специальные опция, см. ниже (public_html - это собственный сайт):</p>
+<pre><code>suPHP_ConfigPath /home/user/public_html 
+// для серверов hostde6 и hostde15
+lsapi_phpini     /home/user/public_html</code></pre>
+<p>Следует вписать эти строки в файл .htaccess перед запретом просмотра файла php.ini.</p>
+<h4 id="права-доступа-на-файлы-и-папки">Права доступа на файлы и папки:</h4>
+<p>644 - запись в файл разрешена (по умолчанию) 444 - запись в файл запрещена (только чтение и исполнение) 755 - права доступа на папки (по умолчанию, менять не требуется)</p>
+<p>Обратите внимание - при правах доступа 644 запись разрешена только для скриптов которые запускаются в среде Вашего аккаунта. Никто другой запись произвести не сможет. Для ещё большего увлечения безопасности Вы можете сменить права доступа у файлов на 444 - в этом случае даже Ваши скрипты не смогут ничего записать в файлы, но это не обязательно.</p>
+<p>Таким образом при установке скриптов не требуется менять права доступа, даже если в инструкции к скрипту написано что их нужно изменить. Просто пропускайте пункт смены прав доступа CHMOD.</p>
+<h4 id="пример-файла-php.ini-и-описание-некоторых-его-параметров">Пример файла php.ini и описание некоторых его параметров:</h4>
+<p>Синтаксис файла: “директива = значение”; Знак комментария в php.ini - “;” (точка с запятой). Все, что находится в строке после “;” не воспринимается PHP.</p>
+<pre><code>Имя По умолчанию    Место изменения Список изменений
+allow_url_fopen &quot;1&quot; INI_SYSTEM   
+allow_url_include   &quot;0&quot; INI_SYSTEM  Объявлено устаревшим в PHP 7.4.0.
+arg_separator.input &quot;&amp;&quot; INI_PERDIR   
+arg_separator.output    &quot;&amp;&quot; INI_ALL  
+assert.active   &quot;1&quot; INI_ALL  
+assert.bail &quot;0&quot; INI_ALL  
+assert.callback null    INI_ALL  
+assert.exception    &quot;0&quot; INI_ALL  
+assert.quiet_eval   &quot;0&quot; INI_ALL Удалено в PHP 8.0.0
+assert.warning  &quot;1&quot; INI_ALL  
+auto_append_file    null    INI_PERDIR   
+auto_detect_line_endings    &quot;0&quot; INI_ALL  
+auto_globals_jit    &quot;1&quot; INI_PERDIR   
+auto_prepend_file   null    INI_PERDIR   
+bcmath.scale    &quot;0&quot; INI_ALL  
+browscap    null    INI_SYSTEM   
+cgi.check_shebang_line  &quot;1&quot; INI_SYSTEM   
+cgi.discard_path    &quot;0&quot; INI_SYSTEM   
+cgi.fix_pathinfo    &quot;1&quot; INI_SYSTEM   
+cgi.force_redirect  &quot;1&quot; INI_SYSTEM   
+cgi.nph &quot;0&quot; INI_ALL  
+cgi.redirect_status_env null    INI_SYSTEM   
+cgi.rfc2616_headers &quot;0&quot; INI_ALL  
+child_terminate &quot;0&quot; INI_ALL  
+cli.pager   &quot;&quot;  INI_ALL  
+cli.prompt  &quot;\\b \\&gt; &quot;  INI_ALL  
+cli_server.color    &quot;0&quot; INI_ALL  
+com.allow_dcom  &quot;0&quot; INI_SYSTEM   
+com.autoregister_typelib    &quot;0&quot; INI_ALL  
+com.autoregister_verbose    &quot;0&quot; INI_ALL  
+com.autoregister_casesensitive  &quot;1&quot; INI_ALL  
+com.code_page   &quot;&quot;  INI_ALL  
+com.dotnet_version  &quot;&quot;  INI_SYSTEM  Начиная с PHP 8.0.0
+com.typelib_file    &quot;&quot;  INI_SYSTEM   
+curl.cainfo NULL    INI_SYSTEM   
+date.default_latitude   &quot;31.7667&quot;   INI_ALL  
+date.default_longitude  &quot;35.2333&quot;   INI_ALL  
+date.sunrise_zenith &quot;90.833333&quot; INI_ALL До PHP 8.0.0 значение по умолчанию было &quot;90.583333&quot;.
+date.sunset_zenith  &quot;90.833333&quot; INI_ALL До PHP 8.0.0 значение по умолчанию было &quot;90.583333&quot;.
+date.timezone   &quot;UTC&quot;   INI_ALL Начиная с PHP 8.2, при установке недопустимого значения или пустой строки выдаётся предупреждение.
+dba.default_handler DBA_DEFAULT INI_ALL 
+default_charset &quot;UTF-8&quot; INI_ALL По умолчанию &quot;UTF-8&quot;.
+input_encoding  &quot;&quot;  INI_ALL  
+output_encoding &quot;&quot;  INI_ALL  
+internal_encoding   &quot;&quot;  INI_ALL  
+default_mimetype    &quot;text/html&quot; INI_ALL  
+default_socket_timeout  &quot;60&quot;    INI_ALL  
+disable_classes &quot;&quot;  Только php.ini   
+disable_functions   &quot;&quot;  Только php.ini   
+display_errors  &quot;1&quot; INI_ALL  
+display_startup_errors  &quot;1&quot; INI_ALL До PHP 8.0.0 значение по умолчанию было &quot;0&quot;.
+docref_ext  &quot;&quot;  INI_ALL  
+docref_root &quot;&quot;  INI_ALL  
+doc_root    null    INI_SYSTEM   
+enable_dl   &quot;1&quot; INI_SYSTEM  Функция устарела и ее удалят в будущем.
+enable_post_data_reading    &quot;On&quot;    INI_PERDIR   
+engine  &quot;1&quot; INI_ALL  
+error_append_string null    INI_ALL  
+error_log   null    INI_ALL  
+error_log_mode  0o644   INI_ALL Доступно с PHP 8.2.0
+error_prepend_string    null    INI_ALL  
+error_reporting null    INI_ALL  
+exif.encode_unicode &quot;ISO-8859-15&quot;   INI_ALL  
+exif.decode_unicode_motorola    &quot;UCS-2BE&quot;   INI_ALL  
+exif.decode_unicode_intel   &quot;UCS-2LE&quot;   INI_ALL  
+exif.encode_jis &quot;&quot;  INI_ALL  
+exif.decode_jis_motorola    &quot;JIS&quot;   INI_ALL  
+exif.decode_jis_intel   &quot;JIS&quot;   INI_ALL  
+exit_on_timeout &quot;&quot;  INI_ALL  
+expect.timeout  &quot;10&quot;    INI_ALL  
+expect.loguser  &quot;1&quot; INI_ALL  
+expect.logfile  &quot;&quot;  INI_ALL  
+expect.match_max    &quot;&quot;  INI_ALL  
+expose_php  &quot;1&quot; Только php.ini   
+extension   null    Только php.ini   
+extension_dir   &quot;/path/to/php&quot;  INI_SYSTEM   
+fastcgi.impersonate &quot;0&quot; INI_SYSTEM   
+fastcgi.logging &quot;1&quot; INI_SYSTEM   
+file_uploads    &quot;1&quot; INI_SYSTEM   
+filter.default  &quot;unsafe_raw&quot;    INI_PERDIR  Параметр устарел, начиная с PHP 8.1.0.
+filter.default_flags    NULL    INI_PERDIR   
+from    &quot;&quot;  INI_ALL  
+gd.jpeg_ignore_warning  &quot;1&quot; INI_ALL  
+geoip.custom_directory  &quot;&quot;  INI_ALL 
+hard_timeout    &quot;2&quot; INI_SYSTEM  Доступно с PHP 7.1.0.
+highlight.comment   &quot;#FF8000&quot;   INI_ALL  
+highlight.default   &quot;#0000BB&quot;   INI_ALL  
+highlight.html  &quot;#000000&quot;   INI_ALL  
+highlight.keyword   &quot;#007700&quot;   INI_ALL  
+highlight.string    &quot;#DD0000&quot;   INI_ALL  
+html_errors &quot;1&quot; INI_ALL  
+ibase.allow_persistent  &quot;1&quot; INI_SYSTEM   
+ibase.max_persistent    &quot;-1&quot;    INI_SYSTEM   
+ibase.max_links &quot;-1&quot;    INI_SYSTEM   
+ibase.default_db    NULL    INI_SYSTEM   
+ibase.default_user  NULL    INI_ALL  
+ibase.default_password  NULL    INI_ALL  
+ibase.default_charset   NULL    INI_ALL  
+ibase.timestampformat   &quot;%Y-%m-%d %H:%M:%S&quot; INI_ALL  
+ibase.dateformat    &quot;%Y-%m-%d&quot;  INI_ALL  
+ibase.timeformat    &quot;%H:%M:%S&quot;  INI_ALL  
+ibm_db2.binmode &quot;1&quot; INI_ALL  
+ibm_db2.i5_all_pconnect &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.6.5.
+ibm_db2.i5_allow_commit &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.4.9.
+ibm_db2.i5_blank_userid &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_char_trim    &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 2.1.0.
+ibm_db2.i5_dbcs_alloc   &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.5.0.
+ibm_db2.i5_guard_profile    &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_ignore_userid    &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.8.0.
+ibm_db2.i5_job_sort &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.8.4.
+ibm_db2.i5_log_verbose  &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_max_pconnect &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_override_ccsid   &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_servermode_subsystem NULL    INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.i5_sys_naming   &quot;0&quot; INI_SYSTEM  Доступно с ibm_db2 1.9.7.
+ibm_db2.instance_name   NULL    INI_SYSTEM  Доступно с ibm_db2 1.0.2.
+iconv.input_encoding    &quot;&quot;  INI_ALL Устарело с PHP 5.6.0.
+iconv.output_encoding   &quot;&quot;  INI_ALL Устарело с PHP 5.6.0.
+iconv.internal_encoding &quot;&quot;  INI_ALL Устарело с PHP 5.6.0.
+ignore_repeated_errors  &quot;0&quot; INI_ALL  
+ignore_repeated_source  &quot;0&quot; INI_ALL  
+ignore_user_abort   &quot;0&quot; INI_ALL  
+implicit_flush  &quot;0&quot; INI_ALL  
+include_path    &quot;.:/path/to/php/pear&quot;   INI_ALL  
+intl.default_locale     INI_ALL  
+intl.error_level    0   INI_ALL  
+intl.use_exceptions 0   INI_ALL Доступно с PECL 3.0.0a1
+last_modified   &quot;0&quot; INI_ALL  
+ldap.max_links  &quot;-1&quot;    INI_SYSTEM   
+log_errors  &quot;0&quot; INI_ALL  
+log_errors_max_len  &quot;1024&quot;  INI_ALL  
+mail.add_x_header   &quot;0&quot; INI_PERDIR   
+mail.force_extra_parameters null    Только php.ini   
+mail.log    &quot;&quot;  INI_PERDIR   
+max_execution_time  &quot;30&quot;    INI_ALL  
+max_input_nesting_level &quot;64&quot;    INI_PERDIR   
+max_input_vars  1000    INI_PERDIR   
+max_input_time  -1  INI_PERDIR   
+mbstring.language   &quot;neutral&quot;   INI_ALL  
+mbstring.detect_order   NULL    INI_ALL  
+mbstring.http_input &quot;pass&quot;  INI_ALL Устарела
+mbstring.http_output    &quot;pass&quot;  INI_ALL Устарела
+mbstring.internal_encoding  NULL    INI_ALL Устарела
+mbstring.substitute_character   NULL    INI_ALL  
+mbstring.func_overload  &quot;0&quot; INI_SYSTEM  Объявлено устаревшим в PHP 7.2.0; удалено с PHP 8.0.0.
+mbstring.encoding_translation   &quot;0&quot; INI_PERDIR   
+mbstring.http_output_conv_mimetypes &quot;^(text/|application/xhtml\+xml)&quot;   INI_ALL  
+mbstring.strict_detection   &quot;0&quot; INI_ALL  
+mbstring.regex_retry_limit  &quot;1000000&quot;   INI_ALL Доступно, начиная с PHP 7.4.0.
+mbstring.regex_stack_limit  &quot;100000&quot;    INI_ALL Доступно, начиная с PHP 7.3.5.
+mcrypt.algorithms_dir   null    INI_ALL  
+mcrypt.modes_dir    null    INI_ALL  
+memcache.allow_failover &quot;1&quot; INI_ALL Доступно с memcache 2.0.2.
+memcache.max_failover_attempts  &quot;20&quot;    INI_ALL Доступно с memcache 2.1.0.
+memcache.chunk_size &quot;8192&quot;  INI_ALL Доступно с memcache 2.0.2.
+memcache.default_port   &quot;11211&quot; INI_ALL Доступно с memcache 2.0.2.
+memcache.hash_strategy  &quot;standard&quot;  INI_ALL Доступно с memcache 2.2.0.
+memcache.hash_function  &quot;crc32&quot; INI_ALL Доступно с memcache 2.2.0.
+memcache.protocol   ascii   INI_ALL Поддерживается с memcache 3.0.0
+memcache.redundancy 1   INI_ALL Поддерживается с memcache 3.0.0
+memcache.session_redundancy 2   INI_ALL Поддерживается с memcache 3.0.0
+memcache.compress_threshold 20000   INI_ALL Поддерживается с memcache 3.0.3
+memcache.lock_timeout   15  INI_ALL Поддерживается с memcache 3.0.4
+memory_limit    &quot;128M&quot;  INI_ALL  
+mysql.allow_local_infile    &quot;1&quot; INI_SYSTEM   
+mysql.allow_persistent  &quot;1&quot; INI_SYSTEM   
+mysql.max_persistent    &quot;-1&quot;    INI_SYSTEM   
+mysql.max_links &quot;-1&quot;    INI_SYSTEM   
+mysql.trace_mode    &quot;0&quot; INI_ALL  
+mysql.default_port  NULL    INI_ALL  
+mysql.default_socket    NULL    INI_ALL  
+mysql.default_host  NULL    INI_ALL  
+mysql.default_user  NULL    INI_ALL  
+mysql.default_password  NULL    INI_ALL  
+mysql.connect_timeout   &quot;60&quot;    INI_ALL  
+mysqli.allow_local_infile   &quot;0&quot; INI_SYSTEM  До PHP 7.2.16 и 7.3.3 значением по умолчанию было &quot;1&quot;.
+mysqli.local_infile_directory       INI_SYSTEM  Доступно, начиная с PHP 8.1.0.
+mysqli.allow_persistent &quot;1&quot; INI_SYSTEM   
+mysqli.max_persistent   &quot;-1&quot;    INI_SYSTEM   
+mysqli.max_links    &quot;-1&quot;    INI_SYSTEM   
+mysqli.default_port &quot;3306&quot;  INI_ALL  
+mysqli.default_socket   NULL    INI_ALL  
+mysqli.default_host NULL    INI_ALL  
+mysqli.default_user NULL    INI_ALL  
+mysqli.default_pw   NULL    INI_ALL  
+mysqli.reconnect    &quot;0&quot; INI_SYSTEM  Удалено, начиная с PHP 8.2.0
+mysqli.rollback_on_cached_plink &quot;0&quot; INI_SYSTEM   
+mysqlnd.collect_statistics  &quot;1&quot; INI_SYSTEM   
+mysqlnd.collect_memory_statistics   &quot;0&quot; INI_SYSTEM   
+mysqlnd.debug   &quot;&quot;  INI_SYSTEM   
+mysqlnd.log_mask    0   INI_ALL  
+mysqlnd.mempool_default_size    16000   INI_ALL  
+mysqlnd.net_read_timeout    &quot;&quot;86400&quot;&quot;   INI_ALL До PHP 7.2.0 значением по умолчанию &quot;31536000&quot;, а местом изменения было INI_SYSTEM
+mysqlnd.net_cmd_buffer_size 5.3.0 — &quot;2048&quot;, 5.3.1 — &quot;4096&quot;  INI_SYSTEM   
+mysqlnd.net_read_buffer_size    &quot;32768&quot; INI_SYSTEM   
+mysqlnd.sha256_server_public_key    &quot;&quot;  INI_PERDIR   
+mysqlnd.trace_alloc &quot;&quot;  INI_SYSTEM   
+mysqlnd.fetch_data_copy 0   INI_ALL Удалено с PHP 8.1.0
+oci8.connection_class   &quot;&quot;  INI_ALL  
+oci8.default_prefetch   &quot;100&quot;   INI_SYSTEM   
+oci8.events Off INI_SYSTEM   
+oci8.max_persistent &quot;-1&quot;    INI_SYSTEM  Объявлена устаревшей, начиная с PHP 8.1.0.
+oci8.old_oci_close_semantics    Off INI_SYSTEM   
+oci8.persistent_timeout &quot;-1&quot;    INI_SYSTEM   
+oci8.ping_interval  &quot;60&quot;    INI_SYSTEM   
+oci8.prefetch_lob_size  &quot;0&quot; INI_SYSTEM  Доступна начиная с версии PECL OCI8 3.2.
+oci8.privileged_connect Off INI_SYSTEM   
+oci8.statement_cache_size   &quot;20&quot;    INI_SYSTEM   
+odbc.allow_persistent   &quot;1&quot; INI_SYSTEM   
+odbc.check_persistent   &quot;1&quot; INI_SYSTEM   
+odbc.max_persistent &quot;-1&quot;    INI_SYSTEM   
+odbc.max_links  &quot;-1&quot;    INI_SYSTEM   
+odbc.defaultlrl &quot;4096&quot;  INI_ALL  
+odbc.defaultbinmode &quot;1&quot; INI_ALL  
+odbc.default_cursortype &quot;3&quot; INI_ALL  
+opcache.enable  1   INI_ALL  
+opcache.enable_cli  0   INI_SYSTEM  Между PHP 7.1.2 и 7.1.6 включительно значение по умолчанию было равно 1
+opcache.memory_consumption  128 INI_SYSTEM   
+opcache.interned_strings_buffer 8   INI_SYSTEM   
+opcache.max_accelerated_files   10000   INI_SYSTEM   
+opcache.max_wasted_percentage   5   INI_SYSTEM   
+opcache.use_cwd 1   INI_SYSTEM   
+opcache.validate_timestamps 1   INI_ALL  
+opcache.revalidate_freq 2   INI_ALL  
+opcache.revalidate_path 0   INI_ALL  
+opcache.save_comments   1   INI_SYSTEM   
+opcache.fast_shutdown   0   INI_SYSTEM   
+opcache.enable_file_override    0   INI_SYSTEM   
+opcache.optimization_level  0x7FFEBFFF  INI_SYSTEM  До PHP 7.3.0 значение равнялось 0x7FFFBFFF
+opcache.inherited_hack  1   INI_SYSTEM  Удалили в PHP 7.3.0
+opcache.dups_fix    0   INI_ALL  
+opcache.blacklist_filename  &quot;&quot;  INI_SYSTEM   
+opcache.max_file_size   0   INI_SYSTEM   
+opcache.consistency_checks  0   INI_ALL Опцию отключили с PHP 8.1.18 и 8.2.5 и удалили в PHP 8.3.0
+opcache.force_restart_timeout   180 INI_SYSTEM   
+opcache.error_log   &quot;&quot;  INI_SYSTEM   
+opcache.log_verbosity_level &quot;1&quot; INI_SYSTEM   
+opcache.record_warnings 0   INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.preferred_memory_model  &quot;&quot;  INI_SYSTEM   
+opcache.protect_memory  0   INI_SYSTEM   
+opcache.mmap_base   null    INI_SYSTEM  Опция доступна только на ОС Windows
+opcache.restrict_api    &quot;&quot;  INI_SYSTEM   
+opcache.file_update_protection  2   INI_ALL  
+opcache.huge_code_pages 0   INI_SYSTEM   
+opcache.lockfile_path   &quot;/tmp&quot;  INI_SYSTEM   
+opcache.opt_debug_level 0   INI_SYSTEM  Опция доступна с PHP 7.1.0
+opcache.file_cache  null    INI_SYSTEM   
+opcache.file_cache_only 0   INI_SYSTEM   
+opcache.file_cache_consistency_checks   1   INI_SYSTEM   
+opcache.file_cache_fallback 1   INI_SYSTEM   
+opcache.validate_permission 0   INI_SYSTEM  Опция доступна с PHP 7.0.14
+opcache.validate_root   0   INI_SYSTEM  Опция доступна с PHP 7.0.14
+opcache.preload &quot;&quot;  INI_SYSTEM  Опция доступна с PHP 7.4.0
+opcache.preload_user    &quot;&quot;  INI_SYSTEM  Опция доступна с PHP 7.4.0
+opcache.cache_id    &quot;&quot;  INI_SYSTEM  Опция доступна с PHP 7.4.0 только на ОС Windows
+opcache.jit &quot;tracing&quot;   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_buffer_size 0   INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_debug   0   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_bisect_limit    0   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_prof_threshold  0.005   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_max_root_traces 1024    INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_max_side_traces 128 INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_max_exit_counters   8192    INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_hot_loop    64  INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_hot_func    127 INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_hot_return  8   INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_hot_side_exit   8   INI_SYSTEM  Опция доступна с PHP 8.0.0
+opcache.jit_blacklist_root_trace    16  INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_blacklist_side_trace    8   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_max_loop_unrolls    8   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_max_recursive_calls 2   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_max_recursive_returns   2   INI_ALL Опция доступна с PHP 8.0.0
+opcache.jit_max_polymorphic_calls   2   INI_ALL Опция доступна с PHP 8.0.0
+open_basedir    null    INI_ALL  
+output_buffering    &quot;0&quot; INI_PERDIR   
+output_handler  null    INI_PERDIR   
+pcre.backtrack_limit    &quot;1000000&quot;   INI_ALL  
+pcre.recursion_limit    &quot;100000&quot;    INI_ALL  
+pcre.jit    &quot;1&quot; INI_ALL  
+pdo.dsn.*       только php.ini   
+pdo_odbc.connection_pooling &quot;strict&quot;    INI_ALL  
+pdo_odbc.db2_instance_name  NULL    INI_SYSTEM  Функция устарела и ее удалят в будущем.
+pgsql.allow_persistent  &quot;1&quot; INI_SYSTEM   
+pgsql.max_persistent    &quot;-1&quot;    INI_SYSTEM   
+pgsql.max_links &quot;-1&quot;    INI_SYSTEM   
+pgsql.auto_reset_persistent &quot;0&quot; INI_SYSTEM   
+pgsql.ignore_notice &quot;0&quot; INI_ALL  
+pgsql.log_notice    &quot;0&quot; INI_ALL  
+phar.readonly   &quot;1&quot; INI_ALL  
+phar.require_hash   &quot;1&quot; INI_ALL  
+phar.cache_list &quot;&quot;  INI_SYSTEM   
+post_max_size   &quot;8M&quot;    INI_PERDIR   
+precision   &quot;14&quot;    INI_ALL  
+realpath_cache_size &quot;16K&quot;   INI_SYSTEM   
+realpath_cache_ttl  &quot;120&quot;   INI_SYSTEM   
+register_argc_argv  &quot;1&quot; INI_PERDIR   
+report_memleaks &quot;1&quot; INI_ALL  
+report_zend_debug   &quot;1&quot; INI_ALL  
+request_order   &quot;&quot;  INI_PERDIR   
+runkit.superglobal  &quot;&quot;  INI_PERDIR   
+runkit.internal_override    &quot;0&quot; INI_SYSTEM   
+sendmail_from   null    INI_ALL  
+sendmail_path   &quot;/usr/sbin/sendmail -t -i&quot;  INI_SYSTEM   
+serialize_precision &quot;-1&quot;    INI_ALL До PHP 7.1.0 значением по умолчанию было 17.
+session.save_path   &quot;&quot;  INI_ALL  
+session.name    &quot;PHPSESSID&quot; INI_ALL  
+session.save_handler    &quot;files&quot; INI_ALL  
+session.auto_start  &quot;0&quot; INI_PERDIR   
+session.gc_probability  &quot;1&quot; INI_ALL  
+session.gc_divisor  &quot;100&quot;   INI_ALL  
+session.gc_maxlifetime  &quot;1440&quot;  INI_ALL  
+session.serialize_handler   &quot;php&quot;   INI_ALL  
+session.cookie_lifetime &quot;0&quot; INI_ALL  
+session.cookie_path &quot;/&quot; INI_ALL  
+session.cookie_domain   &quot;&quot;  INI_ALL  
+session.cookie_secure   &quot;0&quot; INI_ALL До PHP 7.2.0 значение по умолчанию было &quot;&quot;.
+session.cookie_httponly &quot;0&quot; INI_ALL До PHP 7.2.0 значение по умолчанию было &quot;&quot;.
+session.cookie_samesite &quot;&quot;  INI_ALL Директива доступна с PHP 7.3.0.
+session.use_strict_mode &quot;0&quot; INI_ALL  
+session.use_cookies &quot;1&quot; INI_ALL  
+session.use_only_cookies    &quot;1&quot; INI_ALL  
+session.referer_check   &quot;&quot;  INI_ALL  
+session.cache_limiter   &quot;nocache&quot;   INI_ALL  
+session.cache_expire    &quot;180&quot;   INI_ALL  
+session.use_trans_sid   &quot;0&quot; INI_ALL  
+session.trans_sid_tags  &quot;a=href,area=href,frame=src,form=&quot;  INI_ALL Директива доступна с PHP 7.1.0.
+session.trans_sid_hosts $_SERVER[&#39;HTTP_HOST&#39;]   INI_ALL Директива доступна с PHP 7.1.0.
+session.sid_length  &quot;32&quot;    INI_ALL Директива была доступна с PHP 7.1.0 и устарела с PHP 8.4.0.
+session.sid_bits_per_character  &quot;4&quot; INI_ALL Директива была доступна с PHP 7.1.0 и устарела с PHP 8.4.0.
+session.upload_progress.enabled &quot;1&quot; INI_PERDIR   
+session.upload_progress.cleanup &quot;1&quot; INI_PERDIR   
+session.upload_progress.prefix  &quot;upload_progress_&quot;  INI_PERDIR   
+session.upload_progress.name    &quot;PHP_SESSION_UPLOAD_PROGRESS&quot;   INI_PERDIR   
+session.upload_progress.freq    &quot;1%&quot;    INI_PERDIR   
+session.upload_progress.min_freq    &quot;1&quot; INI_PERDIR   
+session.lazy_write  &quot;1&quot; INI_ALL  
+session.hash_function   &quot;0&quot; INI_ALL Удалена в PHP 7.1.0.
+session.hash_bits_per_character &quot;4&quot; INI_ALL Удалена в PHP 7.1.0.
+session.entropy_file    &quot;&quot;  INI_ALL Удалена в PHP 7.1.0.
+session.entropy_length  &quot;0&quot; INI_ALL Удалена в PHP 7.1.0
+short_open_tag  &quot;1&quot; INI_PERDIR   
+SMTP    &quot;localhost&quot; INI_ALL  
+smtp_port   &quot;25&quot;    INI_ALL  
+soap.wsdl_cache_enabled 1   INI_ALL 
+soap.wsdl_cache_dir /tmp    INI_ALL 
+soap.wsdl_cache_ttl 86400   INI_ALL 
+soap.wsdl_cache 1   INI_ALL 
+soap.wsdl_cache_limit   5   INI_ALL 
+sql.safe_mode   &quot;0&quot; INI_SYSTEM  Удалено в PHP 7.2.0
+sqlite3.extension_dir   &quot;&quot;  INI_SYSTEM   
+sqlite3.defensive   1   INI_USER    Доступно, начиная с PHP 7.2.17 и 7.3.4 для libsqlite ≥ 3.26.0. До PHP 8.2.0 этот параметр можно было изменить только как INI_SYSTEM.
+syslog.facility &quot;LOG_USER&quot;  INI_SYSTEM  Доступно с PHP 7.3.0.
+syslog.filter   &quot;no-ctrl&quot;   INI_ALL Доступно с PHP 7.3.0.
+syslog.ident    &quot;php&quot;   INI_SYSTEM  Доступно с PHP 7.3.0.
+sys_temp_dir    &quot;&quot;  INI_SYSTEM   
+sysvshm.init_mem    10000   INI_SYSTEM   
+tidy.default_config &quot;&quot;  INI_SYSTEM   
+tidy.clean_output   &quot;0&quot; INI_USER     
+track_errors    &quot;0&quot; INI_ALL Объявлено устаревшим в PHP 7.2.0, удалено в PHP 8.0.0.
+unserialize_callback_func   null    INI_ALL  
+unserialize_max_depth   &quot;4096&quot;  INI_ALL Доступно, начиная с PHP 7.4.0.
+uploadprogress.file.filename_template   &quot;/tmp/upt_%s.txt&quot;   INI_ALL  
+upload_max_filesize &quot;2M&quot;    INI_PERDIR   
+max_file_uploads    &quot;20&quot;    INI_SYSTEM   
+upload_tmp_dir  null    INI_SYSTEM   
+url_rewriter.hosts  &quot;&quot;  INI_ALL Доступна с PHP 7.1.0.
+url_rewriter.tags   &quot;form=&quot; INI_ALL До PHP 7.1.0 значением по умолчанию было &quot;a=href,area=href,frame=src,form=,fieldset=&quot;.
+user_agent  null    INI_ALL  
+user_dir    null    INI_SYSTEM   
+user_ini.cache_ttl  &quot;300&quot;   INI_SYSTEM   
+user_ini.filename   &quot;.user.ini&quot; INI_SYSTEM   
+uopz.disable    &quot;0&quot; INI_SYSTEM  Доступна с uopz 5.0.2
+uopz.exit   &quot;0&quot; INI_SYSTEM  Доступна с uopz 6.0.1
+uopz.overloads  &quot;1&quot; INI_SYSTEM  Доступна с uopz 2.0.2. Удалили с uopz 5.0.0.
+variables_order &quot;EGPCS&quot; INI_PERDIR   
+windows.show_crt_warning    &quot;0&quot; INI_ALL  
+xbithack    &quot;0&quot; INI_ALL  
+xmlrpc_errors   &quot;0&quot; INI_SYSTEM   
+xmlrpc_error_number &quot;0&quot; INI_ALL  
+yaz.keepalive   &quot;120&quot;   INI_ALL  
+yaz.log_mask    null    INI_ALL Доступно с yaz 1.0.3.
+zend.assertions &quot;1&quot; INI_ALL  
+zend.detect_unicode &quot;1&quot; INI_ALL  
+zend.enable_gc  &quot;1&quot; INI_ALL  
+zend.multibyte  &quot;0&quot; INI_PERDIR   
+zend.script_encoding    null    INI_ALL  
+zend.signal_check   &quot;0&quot; INI_SYSTEM   
+zend_extension  null    Только php.ini   
+zlib.output_compression &quot;0&quot; INI_ALL  
+zlib.output_compression_level   &quot;-1&quot;    INI_ALL  
+zlib.output_handler &quot;&quot;  INI_ALL  </code></pre>
+<h3 id="библиография">Библиография</h3>
+<h4 id="создание-и-использование-собственного-файла-php.ini"><a href="https://fornex.com/ru/help/php-ini/">Создание и использование собственного файла php.ini</a></h4>
+</body>
+</html>
