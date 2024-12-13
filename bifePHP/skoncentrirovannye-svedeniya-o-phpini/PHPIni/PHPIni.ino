@@ -1,4 +1,4 @@
-[PHP]
+[PHP]                                                                   <?php ?>
 
 ;;;;;;;;;;;;;;;;;;;
 ; About php.ini   ;

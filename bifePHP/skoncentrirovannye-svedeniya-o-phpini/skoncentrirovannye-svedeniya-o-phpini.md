@@ -459,7 +459,7 @@ weertrty
 
 wsdddf
 
-#### [Обучающий пример PHP.INI](phpini/phpini.txt)
+#### [Обучающий пример PHP.INI](PHPIni/PHPIni.ino)
 
 eerrt
 
