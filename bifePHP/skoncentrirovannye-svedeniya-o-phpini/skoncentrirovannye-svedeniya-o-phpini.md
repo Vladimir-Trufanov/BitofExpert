@@ -1,7 +1,4 @@
-## [Сконцентрированные сведения о PHP.INI](#)
-
-
-## [Как настроить дату и время в ESP32 IDE Arduino](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifeEsp32/kak-nastroit-datu-i-vremya-v-esp32/kak-nastroit-datu-i-vremya-v-esp32.md) [2024-11-14]
+## [Сконцентрированные сведения о PHP.INI](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md) [2024-12-15]
 
 > Каждый пользователь может создать собственный файл php.ini и разместить его в папке вызываемого скрипта. Это удобно для самостоятельного редактирования своих настроек без обращения в службу тех.поддержки.
 
@@ -45,7 +42,7 @@ lsapi_phpini     /home/user/public_html
 Имя	                   По умолчанию Место изменения	              Изменения
 --------------------------------------------------------------------------- 
 allow_url_fopen	                "1" INI_SYSTEM	 
-allow_url_include	            "0"	INI_SYSTEM	 Объявлено устаревшим в PHP 7.4.0.
+allow_url_include	            "0"	INI_SYSTEM	       Устарело в PHP 7.4.0
 arg_separator.input             "&"	INI_PERDIR	 
 arg_separator.output            "&"	INI_ALL	 
 assert.active	                "1"	INI_ALL	 
@@ -127,7 +124,7 @@ extension_dir	     "/path/to/php"	INI_SYSTEM
 fastcgi.impersonate	            "0"	INI_SYSTEM	 
 fastcgi.logging	                "1"	INI_SYSTEM	 
 file_uploads	                "1"	INI_SYSTEM	 
-filter.default	       "unsafe_raw"	INI_PERDIR	        Устарел с PHP 8.1.0
+filter.default	       "unsafe_raw"	INI_PERDIR	       Устарело с PHP 8.1.0
 filter.default_flags	       NULL	INI_PERDIR	 
 from	                         ""	INI_ALL	 
 gd.jpeg_ignore_warning	        "1"	INI_ALL	 
@@ -190,9 +187,9 @@ max_input_vars	              1000	INI_PERDIR
 max_input_time	                -1	INI_PERDIR	 
 mbstring.language	     "neutral"	INI_ALL
 mbstring.detect_order	      NULL	INI_ALL	 
-mbstring.http_input         "pass"	INI_ALL	                       Устарела
-mbstring.http_output	    "pass"	INI_ALL	                       Устарела
-mbstring.internal_encoding	  NULL	INI_ALL	                       Устарела
+mbstring.http_input         "pass"	INI_ALL	                       Устарело
+mbstring.http_output	    "pass"	INI_ALL	                       Устарело
+mbstring.internal_encoding	  NULL	INI_ALL	                       Устарело
 mbstring ... itute_character  NULL	INI_ALL	 
 mbstring.func_overload	      "0"	INI_SYSTEM	Устарело PHP7.2 удалено 8.0
 mbstring.encoding_translation "0"	INI_PERDIR	 
@@ -339,7 +336,7 @@ pcre.recursion_limit	  "100000"	INI_ALL
 pcre.jit	                   "1"	INI_ALL	 
 pdo.dsn.                         * 	только php.ini	 
 pdo_odb . ection_pooling  "strict"	INI_ALL	 
-pdo_odbc.db2_instance_name	  NULL	INI_SYSTEM	           удалят в будущем
+pdo_odbc.db2_instance_name	  NULL	INI_SYSTEM	                   Устарело
 pgsql.allow_persistent	       "1"	INI_SYSTEM	 
 pgsql.max_persistent	      "-1"	INI_SYSTEM	 
 pgsql.max_links	              "-1"	INI_SYSTEM	 
@@ -396,10 +393,10 @@ sname "PHP_SESSION_UPLOAD_PROGRESS"	INI_PERDIR
 session.upload_progress.freq   "1%"	INI_PERDIR	 
 ssion.upload_progress.min_freq  "1"	INI_PERDIR	 
 session.lazy_write	            "1"	INI_ALL	 
-session.hash_function	        "0"	INI_ALL	            Удалена в PHP 7.1.0
-session.hash_bits_per_character "4"	INI_ALL	            Удалена в PHP 7.1.0
-session.entropy_file	         ""	INI_ALL	            Удалена в PHP 7.1.0
-session.entropy_length	        "0"	INI_ALL	            Удалена в PHP 7.1.0
+session.hash_function	        "0"	INI_ALL	            Удалено в PHP 7.1.0
+session.hash_bits_per_character "4"	INI_ALL	            Удалено в PHP 7.1.0
+session.entropy_file	         ""	INI_ALL	            Удалено в PHP 7.1.0
+session.entropy_length	        "0"	INI_ALL	            Удалено в PHP 7.1.0
 short_open_tag	                "1"	INI_PERDIR	 
 SMTP	                "localhost"	INI_ALL	 
 smtp_port	                   "25"	INI_ALL	 
@@ -420,21 +417,21 @@ sys_temp_dir	                 ""	INI_SYSTEM
 sysvshm.init_mem	          10000	INI_SYSTEM	 
 tidy.default_config	             ""	INI_SYSTEM	 
 tidy.clean_output	            "0"	INI_USER	 
-track_errors	                "0"	INI_ALL	         устаревшее > PHP 7.2.0
+track_errors	                "0"	INI_ALL	           Устарело > PHP 7.2.0
 unserialize_callback_func	   null	INI_ALL	 
 unserialize_max_depth	     "4096"	INI_ALL	           Доступно с PHP 7.4.0
 uploade_template  "/tmp/upt_%s.txt"	INI_ALL	 
 upload_max_filesize	           "2M"	INI_PERDIR	 
 max_file_uploads	           "20"	INI_SYSTEM	 
 upload_tmp_dir	               null	INI_SYSTEM	 
-url_rewriter.hosts	             ""	INI_ALL	           Доступна с PHP 7.1.0
-url_rewriter.tags	        "form="	INI_ALL	 <7.1 "a=href,area=href,frame=src,form=,fieldset=".
+url_rewriter.hosts	             ""	INI_ALL	           Доступно с PHP 7.1.0
+url_rewriter.tags	        "form="	INI_ALL	 
 user_agent	                   null	INI_ALL	 
 user_dir	                   null	INI_SYSTEM	 
 user_ini.cache_ttl	          "300"	INI_SYSTEM	 
 user_ini.filename	    ".user.ini"	INI_SYSTEM	 
-uopz.disable	                "0"	INI_SYSTEM	      Доступна с uopz 5.0.2
-uopz.exit	                    "0"	INI_SYSTEM	      Доступна с uopz 6.0.1
+uopz.disable	                "0"	INI_SYSTEM	      Доступно с uopz 5.0.2
+uopz.exit	                    "0"	INI_SYSTEM	      Доступно с uopz 6.0.1
 uopz.overloads	                "1"	INI_SYSTEM  > uopz 2.0.2 и < uopz 5.0.0
 variables_order	            "EGPCS"	INI_PERDIR	 
 windows.show_crt_warning	    "0"	INI_ALL	 
@@ -456,6 +453,15 @@ zlib.output_compression	       "0"	INI_ALL
 zlib.output_compression_level "-1"	INI_ALL	 
 zlib.output_handler	            ""	INI_ALL	 
 ```
+
+
+weertrty
+
+wsdddf
+
+#### [Обучающий пример PHP.INI](phpini/phpini.txt)
+
+eerrt
 
 
 ### Библиография
