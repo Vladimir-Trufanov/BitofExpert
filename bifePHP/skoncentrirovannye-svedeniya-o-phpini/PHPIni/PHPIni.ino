@@ -740,7 +740,7 @@ register_argc_argv = Off
 ; http://php.net/auto-globals-jit
 auto_globals_jit = On
 
-; Maximum size of POST data that PHP will accept.
+; Максимальный размер данных POST, который может принять PHP.
 ; http://php.net/post-max-size
 post_max_size = 8M
 
@@ -897,7 +897,7 @@ file_uploads = On
 ; http://php.net/upload-tmp-dir
 ; upload_tmp_dir =
 
-; Maximum allowed size for uploaded files.
+; Максимально допустимый размер загружаемых файлов.
 ; http://php.net/upload-max-filesize
 upload_max_filesize = 2M
 
@@ -1007,7 +1007,7 @@ default_socket_timeout = 60
 ;;;;;;;;;;;;;;;;;;;
 
 [Date]
-; Defines the default timezone used by the date functions
+; Часовой пояс по умолчанию, используемый функциями определения даты
 ; http://php.net/date.timezone
 date.timezone = "Europe/Moscow"
 

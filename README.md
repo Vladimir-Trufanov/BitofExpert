@@ -71,7 +71,7 @@
 
 ### PHP - искусство для разума
 
-#### [Сконцентрированные сведения о PHP.INI](bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md) [2024-12-15]
+#### [Сконцентрированные сведения о PHP.INI](bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md) [2024-12-14]
 
 ---
 
