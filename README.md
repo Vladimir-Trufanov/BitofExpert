@@ -51,7 +51,7 @@
 
 #### [Обнаружение блокировки ESP32 с помощью внутреннего сторожевого таймера](bifeEsp32/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md) [2024-11-04]
 
-#### [TEsparTools, v3.2.7](https://github.com/Vladimir-Trufanov/TEsparTools) [2024-12-24]
+#### [TEsparTools, v3.2.8](https://github.com/Vladimir-Trufanov/TEsparTools) [2024-12-27]
 
 Библиотека прикладных классов и функций в IDE Arduino для ESP. 
 
@@ -59,7 +59,7 @@
 
 ***TQue - [Обеспечить передачу и приём сообщений "как есть", максимум 1023 символа, плюс завершающий ноль, через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQue.md) - v1.0.0, 23.12.2024***
 
-***TQueMessage - [Обеспечить передачу и приём сообщений через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQueMessage.md) - v3.2.6, 21.12.2024***
+***TQueMessage - [Обеспечить передачу и приём сообщений через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQueMessage.md) - v3.2.8, 26.12.2024***
 
 ---
 
