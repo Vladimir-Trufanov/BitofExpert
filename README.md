@@ -51,11 +51,11 @@
 
 #### [Обнаружение блокировки ESP32 с помощью внутреннего сторожевого таймера](bifeEsp32/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md) [2024-11-04]
 
-#### [TEsparTools, v3.2.8](https://github.com/Vladimir-Trufanov/TEsparTools) [2024-12-27]
+#### [TEsparTools, v3.2.9](https://github.com/Vladimir-Trufanov/TEsparTools) [2025-01-02]
 
-Библиотека прикладных классов и функций в IDE Arduino для ESP. 
+Библиотека прикладных классов и функций в IDE Arduino для ESP. Как правило, модули библиотеки опираются на операционную систему FreeRTOS.
 
-Как правило, модули библиотеки опираются на операционную систему FreeRTOS.
+***TAttachSNTP -  [Подключиться к пулу серверов точного времени и синхронизировать время контроллера по протоколу SNTP](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TAttachSNTP.md) -  v1.0.2, 02.01.2025***
 
 ***TQue - [Обеспечить передачу и приём сообщений "как есть", максимум 1023 символа, плюс завершающий ноль, через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQue.md) - v1.0.0, 23.12.2024***
 
