@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="как-сделать-бегущую-строку-2025-01-08"><a href="https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md">Как сделать бегущую строку</a> [2025-01-08]</h2>
+<p>Да, когда-нибудь возникает необходимость сделать бегущую строку. Вариантов множество. Посмотрим несколько из них.</p>
+<hr />
+<style>
+.titles 
+{
+   color:#7B68EE;
+   background:transparent;
+   font-size:1rem;  
+   font-weight:bold;
+}
+</style>
+<div class="titles">
+<ul>
+<li>Первый, простейший, классический вариант. Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.</li>
+</ul>
+</div>
+<p>Вкладываем всё, что хочется, в тег <strong><em>&lt;marquee&gt;</em></strong> и оно поехало <a href="https://htmlbook.ru/html/marquee/" class="uri">https://htmlbook.ru/html/marquee/</a>:</p>
+<p><marquee> <strong><em>Первый, простейший, классический вариант. Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.</em></strong> </marquee></p>
+<p><strong><em>HTML:</em></strong></p>
+<pre><code>&lt;marquee&gt;
+   Бегущая строка, созданная при помощи HTML тега Marquee
+   &lt;img id=&quot;kwf&quot; src=&quot;../Images/majskij-vecher-v-karelii_2416x503.jpg&quot; alt=&quot;Kwinflat-близкий всем!&quot; /&gt;
+&lt;/marquee&gt;</code></pre>
+<hr />
+<div class="titles">
+<ul>
+<li>Второй вариант <a href="https://wpschool.ru/beguschaya-stroka-wordpress/" class="uri">https://wpschool.ru/beguschaya-stroka-wordpress/</a>. Текст размещается в диве, а анимация управляется в CSS. Такой вариант считается чистым и современным, 100% работающий в любом приложении, но требует некоторые познания CSS и HTML.</li>
+</ul>
+</div>
+<p><strong><em>PHP:</em></strong></p>
+<pre><code>echo &#39;&lt;div class=&quot;begush&quot;&gt;&#39;;
+echo &#39;Бегущая строка, размещенная в диве!&#39;;
+echo &#39;&lt;/div&gt;&#39;;</code></pre>
+<p><strong><em>CSS:</em></strong></p>
+<pre><code>.begush 
+{
+   overflow: hidden;
+   white-space: nowrap;
+   animation: nazvanie-animacii 10s linear infinite normal;
+}
+@keyframes nazvanie-animacii 
+{
+   from { margin-left: 1px; }
+   to { margin-left: 600px; }
+}</code></pre>
+<style>
+.begush 
+{
+   overflow: hidden;
+   white-space: nowrap;
+   animation: nazvanie-animacii 10s linear infinite normal;
+}
+@keyframes nazvanie-animacii 
+{
+   from { margin-left: 1px; }
+   to { margin-left: 600px; }
+}
+</style>
+<div class="begush">
+<p><strong><em>Бегущая строка, размещенная в диве!</em></strong></p>
+</div>
+<hr />
+<div class="titles">
+<ul>
+<li>Третий вариант: <a href="https://4xpro.ru/profblog/563/" class="uri">https://4xpro.ru/profblog/563/</a> позволяет остановить бегущую строку курсором.</li>
+</ul>
+</div>
+<p><strong><em>HTML:</em></strong></p>
+<pre><code>&lt;div class=&quot;marquee&quot;&gt;
+&lt;span&gt;Бегущая строка, которую можно остановить курсором!&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<p><strong><em>CSS:</em></strong></p>
+<pre><code>.marquee{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
+.marquee span
+{
+   display:inline-block;width:100%;text-indent:0;
+   animation: marquee 10s linear infinite
+}
+.marquee span:hover{animation-play-state: paused}
+@keyframes marquee 
+{
+   0%   { transform: translate(100%, 0);  }
+   100% { transform: translate(-100%, 0); }
+}
+@media only screen and (max-width: 440px) 
+{
+   .marquee span{animation:none;padding-left:0}
+}</code></pre>
+<style>
+.marquee{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
+.marquee span{display:inline-block;width:100%;text-indent:0;animation: marquee 15s linear infinite}
+.marquee span:hover{animation-play-state: paused}
+@keyframes marquee 
+{
+   0%   { transform: translate(100%, 0);  }
+   100% { transform: translate(-100%, 0); }
+}
+@media only screen and (max-width: 440px) 
+{
+   .marquee span{animation:none;padding-left:0}
+}
+</style>
+<div class="marquee">
+<p><span><strong><em>Бегущая строка, которую можно остановить курсором!</em></strong></span></p>
+</div>
+<hr />
+<div class="titles">
+<ul>
+<li>Четвертый вариант: <a href="https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/" class="uri">https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/</a>, который хорошо объяснен в оригинале.</li>
+</ul>
+</div>
+<p>В этом примере элемент <strong><em>.marquee</em></strong> содержит бегущий текст, который находится внутри контейнера <strong><em>.marquee-container</em></strong>. Контейнер <strong><em>.marquee-container</em></strong> имеет фиксированную высоту и свойство <strong><em>overflow</em></strong>, имеющее значение <strong><em>hidden</em></strong>, чтобы скрыть содержимое <strong><em>.marquee</em></strong>, которое выходит за его границы.</p>
+<p>Анимация определена с помощью <strong><em><span class="citation" data-cites="keyframes">@keyframes</span></em></strong>. В начале анимации (<strong><em>0%</em></strong>), текст находится в начальном положении, а в конце (<strong><em>100%</em></strong>) текст сдвигается влево на <strong><em>100%</em></strong> от ширины элемента <strong><em>.marquee</em></strong>.</p>
+<p>С помощью <strong><em>animation</em></strong> анимация marquee применяется к элементу <strong><em>.marquee</em></strong>, её длительность равна 20 секундам, <strong><em>linear</em></strong> определяет равномерную скорость перемещения текста, а <strong><em>infinite</em></strong> позволяет анимации циклически повторяться.</p>
+<p>Чтобы текст перемещался горизонтально и не переносился на новую строку, свойство <strong><em>white-space</em></strong> установлено в значение <strong><em>nowrap</em></strong>, а для сдвига содержимого внутри .marquee используется <strong><em>padding-right</em></strong>, равное <strong><em>100%</em></strong>.</p>
+<p><strong><em>HTML:</em></strong></p>
+<pre><code>&lt;div class=&quot;marquee-container&quot;&gt;
+  &lt;div class=&quot;marquee2&quot;&gt;
+    &lt;p&gt;Четвертый вариант: 
+    &quot;https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/&quot; 
+    хорошо объяснен в оригиналеt.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><strong><em>CSS:</em></strong></p>
+<pre><code>.marquee-container 
+{
+   overflow: hidden;
+   height: 20px;
+}
+.marquee2 
+{
+   animation: marquee2 20s linear infinite;
+   display: inline-block;
+   white-space: nowrap;
+   padding-right: 100%;
+}
+@keyframes marquee2 
+{
+   0% 
+   {
+      transform: translateX(0);
+   }
+   100% 
+   {
+      transform: translateX(-100%);
+   }
+}</code></pre>
+<style>
+.marquee-container 
+{
+   overflow: hidden;
+   height: 20px;
+}
+.marquee2 
+{
+   animation: marquee2 20s linear infinite;
+   display: inline-block;
+   white-space: nowrap;
+   padding-right: 100%;
+}
+@keyframes marquee2 
+{
+   0% 
+   {
+      transform: translateX(0);
+   }
+   100% 
+   {
+      transform: translateX(-100%);
+   }
+}
+</style>
+<div class="marquee-container">
+<div class="marquee2">
+<p>
+Четвертый вариант: <a href="https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/" class="uri">https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/</a> хорошо объяснен в оригиналеt.
+</p>
+</div>
+</div>
+<hr />
+<div class="titles">
+<ul>
+<li>Пятый вариант громоздкий, но интересный. Четвертый вариант: <a href="https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/" class="uri">https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/</a>, который хорошо объяснен в оригинале.</li>
+</ul>
+</div>
+</body>
+</html>
