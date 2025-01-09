@@ -1,4 +1,4 @@
-## [Как сделать бегущую строку](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md) [2025-01-08]
+## [Как сделать бегущую строку](https://github.com/Vladimir-Trufanov/BitofExpert/blob/main/bifePHP/kak-sdelat-begushchuyu-stroku/kak-sdelat-begushchuyu-stroku.md) [2025-01-08]
 
 Да, когда-нибудь возникает необходимость сделать бегущую строку. Вариантов множество. Посмотрим несколько из них.
 
@@ -9,20 +9,16 @@
 {
    color:#7B68EE;
    background:transparent;
-   font-size:1rem;  
+   font-size:2rem; 
    font-weight:bold;
 }
 </style>
 
 <div class="titles">
-- Первый, простейший, классический вариант. Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.
+- Первый, простейший, классический вариант: [https://htmlbook.ru/html/marquee/](https://htmlbook.ru/html/marquee/) . Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.
 </div>
 
-Вкладываем всё, что хочется, в тег ***\<marquee\>*** и оно поехало [https://htmlbook.ru/html/marquee/](https://htmlbook.ru/html/marquee/):
-
-<marquee>
-***Первый, простейший, классический вариант. Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.***
-</marquee>
+Вкладываем всё, что хочется, в тег ***\<marquee\>*** и оно поехало.
 
 ***HTML:***
 ```
@@ -31,10 +27,15 @@
    <img id="kwf" src="../Images/majskij-vecher-v-karelii_2416x503.jpg" alt="Kwinflat-близкий всем!" />
 </marquee>
 ```
+
+<marquee>
+***Первый, простейший, классический вариант. Когда-то, специально, был задуман для браузеров в HTML. Профессиональному сообществу CSS не очень понравился, но, в браузерах остался.***
+</marquee>
+
 ---
 
 <div class="titles">
-- Второй вариант [https://wpschool.ru/beguschaya-stroka-wordpress/](https://wpschool.ru/beguschaya-stroka-wordpress/). Текст размещается в диве, а анимация управляется в CSS. Такой вариант считается чистым и современным, 100% работающий в любом приложении, но требует некоторые познания CSS и HTML.
+- Второй вариант: [https://wpschool.ru/beguschaya-stroka-wordpress/](https://wpschool.ru/beguschaya-stroka-wordpress/). Текст размещается в диве, а анимация управляется в CSS. Такой вариант считается чистым и современным, 100% работающий в любом приложении, но требует некоторые познания CSS и HTML.
 </div>
 
 ***PHP:***
@@ -84,10 +85,13 @@ echo '</div>';
 
 ***HTML:***
 ```
+
 <div class="marquee">
 <span>Бегущая строка, которую можно остановить курсором!</span>
 </div>
+
 ```
+
 ***CSS:***
 ```
 .marquee{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
@@ -172,55 +176,141 @@ echo '</div>';
 {
    0% 
    {
-      transform: translateX(0);
+      transform: translate(0);
    }
    100% 
    {
-      transform: translateX(-100%);
+      transform: translate(-100%);
    }
 }
 ```
 
+<video src="kesha-sdelal-podumal-ne-ponravilos.mp4" width="640" type='video/mp4' controls poster="poster-pult.jpg"></video>
 
+---
+
+<div class="titles">
+- Пятый вариант громоздкий, но интересный. 
+
+В оригинале: [https://ru.stackoverflow.com/questions/1533916/Сделать-на-чистом-css-зацикленую-бегущую-строку-без-рывков](https://ru.stackoverflow.com/questions/1533916/Сделать-на-чистом-css-зацикленую-бегущую-строку-без-рывков/)
+</div>
+
+***HTML:***
+```
 <style>
-.marquee-container 
+.tickers 
 {
-   overflow: hidden;
-   height: 20px;
-}
-.marquee2 
-{
-   animation: marquee2 20s linear infinite;
+   position: relative;
    display: inline-block;
    white-space: nowrap;
-   padding-right: 100%;
+   overflow: hidden;
 }
-@keyframes marquee2 
+.ticker 
 {
-   0% 
-   {
-      transform: translateX(0);
+   display: flex;
+   font-family: var(--font-first);
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   color: #969696;
+   animation: startLine 15s linear, marquee12 15s linear 15s infinite; 
+   margin: 0 auto;
+}
+.ticker__head 
+{
+   width: 430px;
+   text-align: center;
+   margin-left: 10px;
+}
+@keyframes startLine {
+   0% {
+    transform: translateX(-100%);
    }
-   100% 
-   {
-      transform: translateX(-100%);
+   100% {
+    transform: translateX(-50%);
+   }
+}
+@keyframes marquee12 {
+   0% {
+    transform: translateX(-50%);
+   }
+   100% {
+    transform: translateX(0%);
    }
 }
 </style>
 
+<div class="tickers">
+<div class="ticker">
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+</div>
+</div>
+```
 
-<div class="marquee-container">
-<div class="marquee2">
-<p>Четвертый вариант: [https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/](https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/) хорошо объяснен в оригиналеt.</p>
+<style>
+.tickers 
+{
+   position: relative;
+   display: inline-block;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.ticker 
+{
+   display: flex;
+   font-family: var(--font-first);
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   color: #969696;
+   animation: startLine 15s linear, marquee12 15s linear 15s infinite; 
+   margin: 0 auto;
+}
+.ticker__head 
+{
+   width: 430px;
+   text-align: center;
+   margin-left: 10px;
+}
+@keyframes startLine {
+   0% {
+    transform: translateX(-100%);
+   }
+   100% {
+    transform: translateX(-50%);
+   }
+}
+@keyframes marquee12 {
+   0% {
+    transform: translateX(-50%);
+   }
+   100% {
+    transform: translateX(0%);
+   }
+}
+</style>
+
+<div class="tickers">
+<div class="ticker">
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
+<h2 class="ticker__head">ДОБРОГО ВАМ ДНЯ!</h2>
 </div>
 </div>
 
----
+В примере можно сделать больше блоков с текстом и перемещать их в начальное положение, когда они наполовину вышли из кадра. Сначала запускается анимация появления текста из левой части экрана, а потом начинает работать бесконечная анимация, которая перемещает блок с текстом назад, когда он наполовину выехал за правую сторону.
 
 
 
-<div class="titles">
-- Пятый вариант громоздкий, но интересный. Четвертый вариант: [https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/](https://liondigital.ru/kak-sdelat-begushhuyu-stroku-v-css/), который хорошо объяснен в оригинале.
-</div>
+
+
 
 

@@ -81,6 +81,8 @@
 
 ### PHP - искусство для разума
 
+#### [Как сделать бегущую строку](bifePHP/kak-sdelat-begushchuyu-stroku/kak-sdelat-begushchuyu-stroku.md) [2025-01-08]
+
 #### [Сконцентрированные сведения о PHP.INI](bifePHP/skoncentrirovannye-svedeniya-o-phpini/skoncentrirovannye-svedeniya-o-phpini.md) [2024-12-14]
 
 ---
