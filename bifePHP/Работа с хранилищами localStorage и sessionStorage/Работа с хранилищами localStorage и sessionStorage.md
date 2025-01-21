@@ -6,6 +6,19 @@
 "как изменить размер хранилища localstorage",
 "исключения в localstorage".
 
+Проверить, поддерживает ли браузер эти API можно с помощью следующей строки:
+
+```
+if (window.sessionStorage && window.localStorage) 
+{
+   //объекты sessionStorage и localtorage поддерживаются
+}
+else 
+{
+   //объекты sessionStorage и localtorage не поддерживаются
+}
+```
+
 ### [LocalStorage, sessionStorage](https://learn.javascript.ru/localstorage)
 
 Объекты веб-хранилища localStorage и sessionStorage позволяют хранить пары ключ/значение в браузере.
