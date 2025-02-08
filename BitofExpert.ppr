@@ -20,20 +20,11 @@ BitofExpert
 	+BitofExpert
 		-bifeArduino
 			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
-				-PL2303_Prolific_DriverInstaller_1025
-					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303_Prolific_DriverInstaller_1025\PL2303_Prolific_DriverInstaller_1025.exe
-				-PL2303-Prolific-DriverInstaller-v1.5.0
-					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNote.txt
-					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_DriverInstallerv1.5.0_ReleaseNotes.pdf
-					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\PL2303_Prolific_DriverInstaller_v1.5.0.exe
-					bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0\um_pl2303_DriverInstallerManual_v1.5.0.pdf
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini Loading.md
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini.jpg
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\drajver-i-port-dlya-arduino-pro-mini.jpg
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\nastrojki-ide-pered-proshivkoj-platy.jpg
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\nazhat-klavishu-reset.jpg
-				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303_Prolific_DriverInstaller_1025.7z
-				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\PL2303-Prolific-DriverInstaller-v1.5.0.zip
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\proshivka-arduini-pro-mini-c-avtomaticheskim-sbrosom.jpg
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\zagruzka-v-arduino-pro-mini.fzz
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\zagruzka-v-arduino-pro-mini-sbros-knopkoj.jpg
@@ -139,10 +130,16 @@ BitofExpert
 			-Всякие-разные ошибки в IDE Arduino
 				bifeArduino\Всякие-разные ошибки в IDE Arduino\Всякие-разные ошибки в IDE Arduino.md
 			-Порядок подключения библиотек к IDE Arduino
+			-Установка драйверов для ардуино в Windows
+				bifeArduino\Установка драйверов для ардуино в Windows\ch340ser-windows.zip
+				bifeArduino\Установка драйверов для ардуино в Windows\CP210x_Windows_Drivers.zip
+				bifeArduino\Установка драйверов для ардуино в Windows\PL2303_Prolific_DriverInstaller_1025.7z
+				bifeArduino\Установка драйверов для ардуино в Windows\PL2303-Prolific-DriverInstaller-v1.5.0.zip
+				bifeArduino\Установка драйверов для ардуино в Windows\Установка драйверов для ардуино в Windows.md
 			-Хитрости при работе со строками
 				-sketch_dec02a
 					bifeArduino\Хитрости при работе со строками\sketch_dec02a\sketch_dec02a.ino
-		-bifeEsp32
+		+bifeEsp32
 			-gde-nahoditsya-fpermissive
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md.backup
@@ -247,6 +244,14 @@ BitofExpert
 				bifeEsp32\vse-pro-sram-pamyat\shema-vnutrennej-operativnoj-pamyati.jpg
 				bifeEsp32\vse-pro-sram-pamyat\vse-pro-sram-pamyat.jpg
 				bifeEsp32\vse-pro-sram-pamyat\vse-pro-sram-pamyat.md
+			-как раньше - 24 кадра в секунду
+			+оповещения задач
+				+NotificForSynchro
+					bifeEsp32\оповещения задач\NotificForSynchro\NotificForSynchro.ino
+				bifeEsp32\оповещения задач\kommunikaciya-cherez-obekt-posrednik.jpg
+				bifeEsp32\оповещения задач\obshchenie-bez-posrednicheskogo-obekta.jpg
+				bifeEsp32\оповещения задач\оповещения задач.md
+				bifeEsp32\оповещения задач\оповещения задач.md.backup
 		-bifeFritzing
 			-kak-sobrat-komponent-fritzing-s-pomoshchyu-make-fzpz
 				-original
@@ -299,17 +304,26 @@ BitofExpert
 				bifeGitHub\kak-udalit-repozitarij-iz-github\probnyj-proekt.jpg
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Setting.jpg
 				bifeGitHub\kak-udalit-repozitarij-iz-github\Toconfirm.jpg
-		+bifePHP
-			+skoncentrirovannye-svedeniya-o-phpini
-				+PHPIni
+		-bifePHP
+			-kak-sdelat-begushchuyu-stroku
+				bifePHP\kak-sdelat-begushchuyu-stroku\kak-sdelat-begushchuyu-stroku.md
+				bifePHP\kak-sdelat-begushchuyu-stroku\kesha-sdelal-podumal-ne-ponravilos.mp4
+			-skoncentrirovannye-svedeniya-o-phpini
+				-PHPIni
 					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\php.ini-production
 					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\PHPIni.ino
-					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\Как изменить настройки конфигурации.doc
 					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\Меры по устранению уязвимостей PHP.xls
-					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\Описание встроенных директив php.doc
 					bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\Трюки с Phpinfo.doc
 				bifePHP\skoncentrirovannye-svedeniya-o-phpini\skoncentrirovannye-svedeniya-o-phpini.md
-				bifePHP\skoncentrirovannye-svedeniya-o-phpini\skoncentrirovannye-svedeniya-o-phpini.md.backup
+			-Как время сервера синхронизировать с пулом точного времени
+				bifePHP\Как время сервера синхронизировать с пулом точного времени\Как время сервера синхронизировать с пулом точного времени.md
+			-Как почистить кэш страницы в браузере
+				bifePHP\Как почистить кэш страницы в браузере\Как почистить кэш страницы в браузере.md
+			-Отзывчивый размер шрифта
+				bifePHP\Отзывчивый размер шрифта\Отзывчивый размер шрифта.md
+			-Работа с хранилищами localStorage и sessionStorage
+				bifePHP\Работа с хранилищами localStorage и sessionStorage\SessionStorage и LocalStorage.doc
+				bifePHP\Работа с хранилищами localStorage и sessionStorage\Работа с хранилищами localStorage и sessionStorage.md
 		-bifeRaspberry
 			bifeRaspberry\README.md
 		-bifeWindows
@@ -324,9 +338,13 @@ BitofExpert
 		README.md
 [Open project files]
 0=bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\PHPIni.ino
+1=bifeEsp32\оповещения задач\NotificForSynchro\NotificForSynchro.ino
 [Selected Project Files]
 Main=
-Selected=bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\PHPIni.ino
+Selected=bifeEsp32\оповещения задач\NotificForSynchro\NotificForSynchro.ino
 [bifePHP\skoncentrirovannye-svedeniya-o-phpini\PHPIni\PHPIni.ino]
 TopLine=1574
 Caret=58,1590
+[bifeEsp32\оповещения задач\NotificForSynchro\NotificForSynchro.ino]
+TopLine=25
+Caret=36,53
