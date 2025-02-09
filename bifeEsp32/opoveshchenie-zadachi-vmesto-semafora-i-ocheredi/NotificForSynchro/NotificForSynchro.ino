@@ -71,7 +71,7 @@ void ARDUINO_ISR_ATTR onTimer()
    // Так как xHigherPriorityTaskWoken теперь pdTRUE, то вызов 
    // portYIELD_FROM_ISR() приведет к переключению контекста и это прерывание 
    // вернется непосредственно к разблокированной задаче
-   portYIELD_FROM_ISR( xHigherPriorityTaskWoken );  
+   portYIELD_FROM_ISR(xHigherPriorityTaskWoken);  
 }  
 // ****************************************************************************
 // *                    Выполнить основной цикл приложения                    *
