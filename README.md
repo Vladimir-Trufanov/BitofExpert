@@ -51,6 +51,8 @@
 
 #### [Обнаружение блокировки ESP32 с помощью внутреннего сторожевого таймера](bifeEsp32/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera/obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera.md) [2024-11-04]
 
+#### [Оповещение задачи вместо семафора и очереди](bifeEsp32/opoveshchenie-zadachi-vmesto-semafora-i-ocheredi/opoveshchenie-zadachi-vmesto-semafora-i-ocheredi.md) [2025-02-09]
+
 #### [TEsparTools, v3.2.9](https://github.com/Vladimir-Trufanov/TEsparTools) [2025-01-02]
 
 Библиотека прикладных классов и функций в IDE Arduino для ESP. Как правило, модули библиотеки опираются на операционную систему FreeRTOS.

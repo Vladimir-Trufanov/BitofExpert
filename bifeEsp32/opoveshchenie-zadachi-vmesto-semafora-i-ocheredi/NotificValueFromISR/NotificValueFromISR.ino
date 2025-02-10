@@ -1,4 +1,4 @@
-/** Arduino-Esp32-CAM                               *** NotificValueFromISR.ino ***
+/** Arduino-Esp32-CAM                           *** NotificValueFromISR.ino ***
  * 
  *               Использовать уведомления для отправки значения из ISR в задачу
  * 
@@ -17,8 +17,6 @@ hw_timer_t *timer = NULL;
 // помощью DMA и в завершении прерывания также DMA используется для отправки 
 // уведомления задаче
 static TaskHandle_t xHandlingTask = NULL;  
-// Переопределяем количество индексов в массивах «уведомлений о задачах»
-//#define configTASK_NOTIFICATION_ARRAY_ENTRIES 3
 
 // ****************************************************************************
 // *                          Инициировать приложение                         *
@@ -44,25 +42,20 @@ void setup()
    // всегда повторяем перезапуск (третий параметр = true), неограниченное число 
    // раз (четвертый параметр = 0) 
    timerAlarm(timer, 3000000, true, 0);
-
-
-   //Serial.print("configTASK_NOTIFICATION_ARRAY_ENTRIES = "); Serial.println(configTASK_NOTIFICATION_ARRAY_ENTRIES);
-//
-
    Serial.println("SETUP отработал!");
 }
 // ****************************************************************************
-// *                 Отправить уведомление задаче из прерывания               *
+// *           Отправить уведомление cо значением задаче из прерывания        *
 // ****************************************************************************
-int i=0;
+int i=0; // счётчик прерываний
 void ARDUINO_ISR_ATTR onTimer() 
 {
-   // Резервируем 
-   BaseType_t xHigherPriorityTaskWoken;
+   // Резервируем переменную для значения
    uint32_t ulStatusRegister;
+   // Резервируем регистратор приоритета разблокированной задачи
+   BaseType_t xHigherPriorityTaskWoken;
    i++;
    Serial.print("Прерывание сработало "); Serial.print(i); Serial.println(" раз");
-
    // Готовим значение для передачи с оповещением
    ulStatusRegister = i;
    // Инициализируем xHigherPriorityTaskWoken значением false. При вызове
@@ -99,27 +92,16 @@ static void vNotifiedTask(void *pvParameters)
    for( ;; )  
    { 
       // Ждём получения уведомления, которое будет отправлено непосредственно в эту задачу.   
-      /*
-      xTaskNotifyWaitIndexed  ( 2,                  / * Wait for 0th Notificaition * /
-                                //0x00,               / * Don't clear any bits on entry. * /
-                                //ULONG_MAX,          / * Clear all bits on exit. * /
-                                0,              
-                                0,       
-                                &ulInterruptStatus, / * Receives the notification value. * /
-                                portMAX_DELAY );    / * Block indefinitely. * /
-                                */
-     xTaskNotifyWait ( 
-                                0,              
-                                0,       
-                                &ulInterruptStatus, /* Receives the notification value. */
-                                portMAX_DELAY );    /* Block indefinitely. */
-                                
-       DoSomething(ulInterruptStatus);
-
-
+      xTaskNotifyWait ( 
+         0,              
+         0,       
+         &ulInterruptStatus, // для приёма значения из прерывания
+         portMAX_DELAY       // блокировка до приема на неопределённый срок
+      );
+      // Выполняем обработку уведомления                       
+      DoSomething(ulInterruptStatus);
    }  
 }  
-
 // ****************************************************************************
 // *            Обрабатываем событие, заблокированное уведомлением            *
 // ****************************************************************************
@@ -129,5 +111,4 @@ void DoSomething(uint32_t value)
    Serial.println(value);
 }
 
-
-// **************************************************** NotificValueFromISR.ino ***
+// ************************************************ NotificValueFromISR.ino ***
