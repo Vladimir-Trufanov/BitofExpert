@@ -173,19 +173,20 @@ BitofExpert
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-18.png
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\image-8.png
 				bifeEsp32\kak-nastroit-datu-i-vremya-v-esp32\kak-nastroit-datu-i-vremya-v-esp32.md
-			-kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
+			+kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos
 				-ex5-1-33-twousoneBlink
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneBlink\ex5-1-33-twousoneBlink.ino
-				-ex5-1-33-twousoneMutex
+				+ex5-1-33-twousoneMutex
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneMutex\ex5-1-33-twousoneMutex.ino
 				-ex5-1-33-twousonePortCritical
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousonePortCritical\ex5-1-33-twousonePortCritical.ino
-				-ex5-1-33-twousoneSemaphore
+				+ex5-1-33-twousoneSemaphore
 					bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneSemaphore\ex5-1-33-twousoneSemaphore.ino
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x556.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\CIRCUITSTATE-Electronics-01-1280x751.png
 				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md
+				bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos.md.backup
 			-kak-rabotat-s-ocheredyami-vo-freertos
 				-QueueHandleOne
 					bifeEsp32\kak-rabotat-s-ocheredyami-vo-freertos\QueueHandleOne\QueueHandleOne.ino
@@ -211,10 +212,10 @@ BitofExpert
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\prostaya-proverka-rabotosposobnosti.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-neskolkih-zadachah.jpg
 				bifeEsp32\obnaruzhenie-blokirovki-esp32-s-pomoshchyu-storozhevogo-tajmera\proverka-rabotosposobnosti-s-neskolkimi-flagami-v-odnom-cikle.jpg
-			+opoveshchenie-zadachi-vmesto-semafora-i-ocheredi
-				+NotificForSynchro
+			-opoveshchenie-zadachi-vmesto-semafora-i-ocheredi
+				-NotificForSynchro
 					bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificForSynchro\NotificForSynchro.ino
-				+NotificValueFromISR
+				-NotificValueFromISR
 					bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificValueFromISR\NotificValueFromISR.ino
 				bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\kommunikaciya-cherez-obekt-posrednik.jpg
 				bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\obshchenie-bez-posrednicheskogo-obekta.jpg
@@ -340,12 +341,20 @@ BitofExpert
 [Open project files]
 0=bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificForSynchro\NotificForSynchro.ino
 1=bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificValueFromISR\NotificValueFromISR.ino
+2=bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneSemaphore\ex5-1-33-twousoneSemaphore.ino
+3=bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneMutex\ex5-1-33-twousoneMutex.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificValueFromISR\NotificValueFromISR.ino
+Selected=bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneSemaphore\ex5-1-33-twousoneSemaphore.ino
 [bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificForSynchro\NotificForSynchro.ino]
 TopLine=1
 Caret=1,1
 [bifeEsp32\opoveshchenie-zadachi-vmesto-semafora-i-ocheredi\NotificValueFromISR\NotificValueFromISR.ino]
-TopLine=74
+TopLine=73
 Caret=30,113
+[bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneSemaphore\ex5-1-33-twousoneSemaphore.ino]
+TopLine=1
+Caret=34,10
+[bifeEsp32\kak-pisat-parallelnye-mnogozadachnye-prilozheniya-esp32-v-arduino-s-freertos\ex5-1-33-twousoneMutex\ex5-1-33-twousoneMutex.ino]
+TopLine=1
+Caret=1,1
