@@ -227,16 +227,21 @@ BitofExpert
 				bifeEsp32\raznye-sistemnye-api-dlya-esp32\raznye-sistemnye-api-dlya-esp32.md
 				bifeEsp32\raznye-sistemnye-api-dlya-esp32\Обработчик завершения работы.md
 			+soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki
-				+Rus32CAMExt5
+				-Rus32CAMExt5
 					bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\Rus32CAMExt5.ino
 					bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\task_Echo.h
+				+Rus32CAMExt6
+					bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt6\Rus32CAMExt6.ino
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Adafruit_SSD1306.zip
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Adafruit-GFX-Library.zip
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\AdafruitLibs.jpg
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\glcdfont.c.zip
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\OLED SSD1306 i2c.jpg
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\OLED SSD1306.jpg
+				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\RaspinovkaESP32CAM.jpg
+				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki.html
 				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki.md
+				bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki.md.backup
 			-vse-pro-pamyat-esp32
 				-ControllerMemory
 					bifeEsp32\vse-pro-pamyat-esp32\ControllerMemory\ControllerMemory.ino
@@ -351,12 +356,16 @@ BitofExpert
 [Open project files]
 0=bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\Rus32CAMExt5.ino
 1=bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\task_Echo.h
+2=bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt6\Rus32CAMExt6.ino
 [Selected Project Files]
 Main=
-Selected=bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\task_Echo.h
+Selected=bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt6\Rus32CAMExt6.ino
 [bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\Rus32CAMExt5.ino]
-TopLine=1
-Caret=29,10
+TopLine=79
+Caret=1,115
 [bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt5\task_Echo.h]
-TopLine=206
+TopLine=148
 Caret=1,148
+[bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt6\Rus32CAMExt6.ino]
+TopLine=16
+Caret=1,54
