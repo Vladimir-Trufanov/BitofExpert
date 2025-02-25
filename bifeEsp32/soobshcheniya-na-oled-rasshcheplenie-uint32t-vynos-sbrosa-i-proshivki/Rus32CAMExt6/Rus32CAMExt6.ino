@@ -42,7 +42,8 @@ void loop()
 {
   // Меняем значение и расщепляем
   product.v++;
-  uint8_t va = product.as_bytes[0];
+  product.as_nibbles.v31=product.as_nibbles.v31+3;
+  uint8_t va = product.as_bytes[0]++;
   uint8_t vc = product.as_nibbles.v21;
   // Выводим значения после расщепления
   Serial.print("PORTA = "); Serial.println(va);

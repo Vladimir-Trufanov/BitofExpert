@@ -53,6 +53,8 @@
 
 #### [Оповещение задачи вместо семафора и очереди](bifeEsp32/opoveshchenie-zadachi-vmesto-semafora-i-ocheredi/opoveshchenie-zadachi-vmesto-semafora-i-ocheredi.md) [2025-02-09]
 
+#### [Сообщения на Oled-дисплей из задачи через уведомления, расщепление uint32_t на составляющие, вынос во вне кнопок сброса и прошивки ESP32-CAM](bifeEsp32/soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki/soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki.md) [2025-02-24]
+
 #### [TEsparTools, v3.2.9](https://github.com/Vladimir-Trufanov/TEsparTools) [2025-01-02]
 
 Библиотека прикладных классов и функций в IDE Arduino для ESP. Как правило, модули библиотеки опираются на операционную систему FreeRTOS.
