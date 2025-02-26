@@ -17,7 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 BitofExpert
-	+BitofExpert
+	-BitofExpert
 		-bifeArduino
 			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini Loading.md
@@ -139,7 +139,7 @@ BitofExpert
 			-Хитрости при работе со строками
 				-sketch_dec02a
 					bifeArduino\Хитрости при работе со строками\sketch_dec02a\sketch_dec02a.ino
-		+bifeEsp32
+		-bifeEsp32
 			-gde-nahoditsya-fpermissive
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md.backup
@@ -367,5 +367,5 @@ Caret=1,115
 TopLine=148
 Caret=1,148
 [bifeEsp32\soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki\Rus32CAMExt6\Rus32CAMExt6.ino]
-TopLine=17
+TopLine=1
 Caret=72,1
