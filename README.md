@@ -55,7 +55,7 @@
 
 #### [Сообщения на Oled-дисплей из задачи через уведомления, расщепление uint32_t на составляющие, вынос во вне кнопок сброса и прошивки ESP32-CAM](bifeEsp32/soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki/soobshcheniya-na-oled-rasshcheplenie-uint32t-vynos-sbrosa-i-proshivki.md) [2025-02-24]
 
-#### [TEsparTools, v3.2.9](https://github.com/Vladimir-Trufanov/TEsparTools) [2025-01-02]
+#### [TEsparTools, v3.3.0](https://github.com/Vladimir-Trufanov/TEsparTools) [2025-03-09]
 
 Библиотека прикладных классов и функций в IDE Arduino для ESP. Как правило, модули библиотеки опираются на операционную систему FreeRTOS.
 
@@ -63,7 +63,7 @@
 
 ***TQue - [Обеспечить передачу и приём сообщений "как есть", максимум 1023 символа, плюс завершающий ноль, через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQue.md) - v1.0.0, 23.12.2024***
 
-***TQueMessage - [Обеспечить передачу и приём сообщений через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQueMessage.md) - v3.2.8, 26.12.2024***
+***TQueMessage - [Обеспечить передачу и приём сообщений через очередь в задачах и из прерываний](https://github.com/Vladimir-Trufanov/TEsparTools/blob/main/extras/TQueMessage.md) - v3.3.0, 09.03.2025***
 
 ---
 
