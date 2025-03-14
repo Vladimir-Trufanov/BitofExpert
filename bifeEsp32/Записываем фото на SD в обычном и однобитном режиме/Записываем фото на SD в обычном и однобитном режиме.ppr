@@ -1,0 +1,41 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultDir=C:\BitofExpert\bifeEsp32\«аписываем фото на SD в обычном и однобитном режиме
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+«аписываем фото на SD в обычном и однобитном режиме
+	+«аписываем фото на SD в обычном и однобитном режиме
+		+InStream
+			InStream\InStream.ino
+			InStream\OV2640.cpp
+			InStream\OV2640.h
+		«аписываем фото на SD в обычном и однобитном режиме.md
+[Open project files]
+0=InStream\InStream.ino
+1=InStream\OV2640.cpp
+2=InStream\OV2640.h
+[Selected Project Files]
+Main=
+Selected=InStream\InStream.ino
+[InStream\InStream.ino]
+TopLine=80
+Caret=1,145
+[InStream\OV2640.cpp]
+TopLine=52
+Caret=2,120
+[InStream\OV2640.h]
+TopLine=5
+Caret=7,44
