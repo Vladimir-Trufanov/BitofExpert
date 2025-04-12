@@ -117,7 +117,7 @@ void callphoto(uint8_t *payload, uint16_t len)
   nCikl++;
   Serial.print("Цикл: "); Serial.println(nCikl);
 
-  if ((nCikl>10) && (nCikl<15))
+  if ((nCikl>1) && (nCikl<15))
   {
     pictureNumber = EEPROM.read(0) + 1;
     // Определяем имя своего файла фотографии в каталоге карты microSD
