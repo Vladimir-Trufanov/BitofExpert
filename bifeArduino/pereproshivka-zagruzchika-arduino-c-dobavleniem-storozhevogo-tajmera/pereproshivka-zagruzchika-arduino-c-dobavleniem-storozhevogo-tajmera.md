@@ -1,35 +1,16 @@
 ### [Перепрошивка загрузчика Arduino c добавлением сторожевого таймера]()
 
 
+### Библиография
+
+#### [Сторожевой таймер - Watchdog](https://alexgyver.ru/lessons/arduino-watchdog/)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Старый материал
 
 
 Поисковые запросы:
@@ -38,9 +19,7 @@
 
 "исходники стандартного загрузчика ардуино".
 
-> [ArduinoIDE содержит все исходники загрузчиков и тулчейн для компиляции.
-> Папка hardware](https://arduino.ru/forum/programmirovanie/tekst-programmy-zagruzchika).
-> 
+> [ArduinoIDE содержит все исходники загрузчиков и тулчейн для компиляции. Папка hardware](https://arduino.ru/forum/programmirovanie/tekst-programmy-zagruzchika). 
 
 #### [Программатор USB в алюминиевом корпусе USBASP USBISP AVR, USB ISP USB ASP ATMEGA8 ATMEGA128, поддержка Win7 64 (случайный цвет)](https://aliexpress.ru/item/1005001621886173.html?spm=a2g2w.orderdetail.0.0.7b054aa6W7Qksy&sku_id=12000020040993383)
 
@@ -131,8 +110,6 @@ AT90PWM2 AT90PWM3.
 #### [Урок 16. Повышение надежности программ для Ардуино. Сторожевой таймер.](http://mypractic.ru/urok-16-povyshenie-nadezhnosti-programm-dlya-arduino-storozhevoj-tajmer.html)
 
 #### [ПРОГРАММАТОРЫ, ISP, ФЬЮЗЫ](https://alexgyver.ru/lessons/programmer-tips/)
-
-#### [СТОРОЖЕВОЙ ТАЙМЕР (WATCHDOG)](https://alexgyver.ru/lessons/arduino-watchdog/)
 
 
 #### Попытка заменить загрузчик Arduino Pro Mini

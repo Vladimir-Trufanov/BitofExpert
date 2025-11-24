@@ -17,7 +17,7 @@ HTServer=localhost
 Extensions=*.*
 [Project tree]
 BitofExpert
-	-BitofExpert
+	+BitofExpert
 		-bifeArduino
 			-Arduino - загрузка скетчей с ручным и автоматическим сбросом
 				bifeArduino\Arduino - загрузка скетчей с ручным и автоматическим сбросом\ArduinoProMini Loading.md
@@ -139,7 +139,7 @@ BitofExpert
 			-Хитрости при работе со строками
 				-sketch_dec02a
 					bifeArduino\Хитрости при работе со строками\sketch_dec02a\sketch_dec02a.ino
-		-bifeEsp32
+		+bifeEsp32
 			-gde-nahoditsya-fpermissive
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md
 				bifeEsp32\gde-nahoditsya-fpermissive\gde-nahoditsya-fpermissive.md.backup
